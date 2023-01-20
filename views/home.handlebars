@@ -1,0 +1,12 @@
+<h1>Essays. Thoughts. Letters.</h1>
+
+<hr />
+
+<div class="list essays-list">
+{{#each essays}}
+  <div class="list-item"><a href="{{this.slug}}/">{{this.title}}</a> [{{this.timestamp}}]</div>
+{{/each}}
+</div>
+
+<hr />
+<h4><i>NB! I don't necessarily agree with everything I write.</i></h4>

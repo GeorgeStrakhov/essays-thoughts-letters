@@ -1,0 +1,12 @@
+.content h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+img {
+  padding: 1em;
+}
+
+.essays-list .list-item {
+  margin-bottom: 1.5em;
+}
