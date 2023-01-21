@@ -40,12 +40,10 @@ However, when we get to the idea of computers making decisions for us, things st
 
 Let's consider the following scenarios and hypothetical "common sense" reactions to them[^3]:
 
-
-
 * _“An algorithm making decisions about which verified taxi driver is best positioned to take me where I need to get to? Yes please!”_
 
 * _“An algorithm making decisions about which route I should take in the light of current traffic conditions? Sure, as long as I am still in control and can at any point disagree and take a different turn.”_
-_
+
 * _“An algorithm finding the best deals for me and using chat to negotiate further discounts on my behalf? Sure. But wait, does this mean that people who can afford better algorithms will always have more favourable conditions?_[^4]_”_
 
 
