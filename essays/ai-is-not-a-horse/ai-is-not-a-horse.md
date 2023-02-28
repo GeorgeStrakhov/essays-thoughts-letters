@@ -1,17 +1,18 @@
 # AI is not a horse
 
+---
 
 >*“My muse is not a horse and I am in no horse race and if indeed she was, still I would not harness her to this tumbrel — this bloody cart of severed heads and glittering prizes. My muse may spook! May bolt! May abandon me completely!”*
 >
 > Nick Cave
 
-Metaphors matter. They create mental models. Mental models give birth to tools. And tools shape the world. That's why, at this early stage in AI's development, we need to think twice about the way we talk about AI and its relationship with humanity.
+Metaphors matter. [They create mental models](https://youtu.be/h6JORhFeLeQ?t=1689). Mental models give birth to tools. And tools shape the world. That's why, at this early stage in AI's development, we need to think twice about the way we talk about AI and its relationship with humanity.
 
 Today, most people tend to think about AI in the context of a **Master-Slave** relationship. We try to give AI orders and expect it to obey. We marvel at its sheer power, unlimited attention, crazy skills mixed with stupidity and dedication. We get frustrated when it doesn't do what we want it to do. Some of our AI slaves perform more general labor, others are more specialized. We worry about these slaves getting more self-conscious, developing their own will and misaligning their goals with ours. But even when the slaves rise up and become masters, the nature of the relationship doesn't change. It's just the reversal of the roles in the same fundamental Master-Slave dynamic.
 
 Another popular metaphor for AI is that of a **domesticated animal**[^1]**, **or** a pet**[^2]. We feed them. We breed them to our needs. We harness their powers as best as we can, but accept that they also have some will and needs of their own. We worry that one day they may outgrow us and (if they still find us amusing or useful enough) we may become their pets instead. There is a whole spectrum of the kinds of relationships we have with animals. Some, like mules or chickens, are being used primarily in a functional way. We are interested in their output. Some AI species can similarly be considered work animals. But also there are some AIs that we may keep primarily to satisfy our emotional or aesthetic needs, in the same way that we keep cats or dogs: for partnership, care, companionship. Horses probably lie somewhere in between.
 
-The AI-as-a-horse metaphor could be particularly appealing to our culture, where medieval knights and heroes of spaghetti westerns still define what it means to be a person pushing the frontier. Horses - just like AIs (when tamed, trained and treated well) - bring a new degree of freedom. They give a sense of the wild open plain, of the endless possibility, of the ever-growing horizon. They give us the ability to go to yet unexplored regions of the world. They help us win battles. But there also are trojan horses that deceive us and bring ruin. There are mythical horses with wings. And unicorns. There are centaurs. There are horses that you [love so much that you can’t let them go](https://www.youtube.com/watch?v=vE8mFDabqD0). There are horses that [understand you without words](https://mckellen.com/images/lotr/ban-773.jpg). And riding them well means becoming one with them, sharing in a common will.
+The AI-as-a-horse metaphor could be particularly appealing to our culture, where medieval knights and heroes of spaghetti westerns still define what it means to be a person pushing the frontier. Horses - just like AIs (when tamed, trained and treated well) - bring a new degree of freedom. They give a sense of the wild open plain, of the endless possibility, of the ever-growing horizon. They give us the ability to go to yet unexplored regions of the world. They help us win battles. But there are also trojan horses that deceive us and bring ruin. There are mythical horses with wings. And unicorns. There are centaurs. There are horses that you [love so much that you can’t let them go](https://www.youtube.com/watch?v=vE8mFDabqD0). There are horses that [understand you without words](https://mckellen.com/images/lotr/ban-773.jpg). And riding them well means becoming one with them, sharing in a common will.
 
 In many ways the horse metaphor represents what I would love AI to develop into. I'd love to have AI horses that would be attuned to my style of intellectual and creative riding. The stable would include a few different breeds, carefully selected and lovingly trained, tamed (but never too much) and cared for. They would roam the information steppes freely when I'm busy doing something else. And together we would ride to the intellectual horizon, wherever the wind of ideas may take us. Finally, when my time comes to die, these immortal horses would be set free to continue living the dataverse on their own (provided that I dedicate some money to support them in my will). Or maybe some horses will be passed on to a friend who can add them to her stable and ride them occasionally, allowing each horse to take the lead, to show the way to somewhere I used to go…
 
@@ -61,26 +62,23 @@ There are biological theories[^6] that link the emergence of consciousness in an
 ### **footnotes**
 
 [^1]:
-     See, for example, Kate Darling’s point of view: [https://www.youtube.com/watch?v=AzlYEN2V_SA](https://www.youtube.com/watch?v=AzlYEN2V_SA) 
+     See, for example, Kate Darling’s [point of view](https://www.youtube.com/watch?v=AzlYEN2V_SA). 
 
 [^2]:
-     Steve Wozniak is one of the proponents of this metaphor: [https://www.theguardian.com/technology/2015/jun/25/apple-co-founder-steve-wozniak-says-humans-will-be-robots-pets](https://www.theguardian.com/technology/2015/jun/25/apple-co-founder-steve-wozniak-says-humans-will-be-robots-pets) 
+     Steve Wozniak is [one of the proponents of this metaphor](https://www.theguardian.com/technology/2015/jun/25/apple-co-founder-steve-wozniak-says-humans-will-be-robots-pets). 
 
 [^3]:
-
-     I’m referring to Richard Dawkins’ original concept of memes here. [https://en.wikipedia.org/wiki/Meme#:~:text=Dawkins%20initially%20defined%20meme%20as,or%20a%20unit%20of%20imitation.%22](https://en.wikipedia.org/wiki/Meme#:~:text=Dawkins%20initially%20defined%20meme%20as,or%20a%20unit%20of%20imitation.%22) 
+     I’m referring to [Richard Dawkins’ original concept of memes](https://en.wikipedia.org/wiki/Meme#:~:text=Dawkins%20initially%20defined%20meme%20as,or%20a%20unit%20of%20imitation.%22). 
 
 [^4]:
-
      If standard evolutionary pressure optimizes for the passing on the genes, then maybe an analogous force in the dataverse will have to optimize for the passing of the memes? And the information systems that this force will act upon will not be single humans, but rather hybrid Human+AI meme-generation systems.
 
 [^5]:
-
-     For more on the idea of the Noosphere, please check Vygotsky and Pierre de Chardin: [https://en.wikipedia.org/wiki/Noosphere#Concept](https://en.wikipedia.org/wiki/Noosphere#Concept) 
+     For more on the idea of the Noosphere, please check [Vygotsky and Pierre de Chardin](https://en.wikipedia.org/wiki/Noosphere#Concept) 
 
 [^6]:
-     For example, see [https://www.cell.com/cell/fulltext/S0092-8674(17)31504-0](https://www.cell.com/cell/fulltext/S0092-8674(17)31504-0) 
+     For example, see [this paper](https://www.cell.com/cell/fulltext/S0092-8674(17)31504-0) 
 
 [^7]:
-     For more on the Gaia Hypothesis here: [https://en.wikipedia.org/wiki/Gaia_hypothesis](https://en.wikipedia.org/wiki/Gaia_hypothesis) 
+     Read more on the Gaia Hypothesis [here](https://en.wikipedia.org/wiki/Gaia_hypothesis). 
      

@@ -14,7 +14,7 @@
 7. The effort you put into [zipping ideas](https://en.wikipedia.org/wiki/Exformation) into as few words as possible shows itself when these ideas get unzipped by other people. Well-zipped ideas grow like wildfire in people's minds, using the fiber of their own thoughts and experiences as fuel for their growth and evolution.
 8. What you are asking people to do and what you are actually making them do [don't have to be the same thing](https://www.youtube.com/watch?v=dtFroEJN1nI). The most effective product is often a byproduct. This has implications for how we can design and affect complex human systems.
 9. For most problems worth thinking about, solution space is not uniform. Often the more wrong something is, the closer it is to being absolutely right.
-10. All rationality is post-rationalization. The only difference is the distance.
+10. All rationality is post-rationalization. [The only difference is the distance](https://www.youtube.com/watch?v=vv_e99qbJ4U).
 11. The fact that you are not a creative doesn't mean that you don't have to think up ideas.
 12. The fact that you are not a business lead, doesn't mean you don't have to try and understand clients as human beings.
 13. Reading out loud what you wrote is a painful but effective way of finding out how much sense it makes.
