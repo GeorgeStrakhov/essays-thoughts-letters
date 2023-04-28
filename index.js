@@ -29,7 +29,8 @@ app.use('/static', express.static('static'));
 
 app.get('/', (req, res) => {
     res.render('home',{
-      essays: toc
+      essays: toc,
+      title: "Essays. Thoughts. Letters."
     });
 });
 
@@ -56,7 +57,10 @@ app.get('/:essaySlug', function(req, res) {
       const renderedEssay = markdown.render(essayText);
       //pass it on to the template
       res.render('essay',{
-        slug: slug,
+        title: essay.title,
+        slug: essay.slug,
+        description: essay.description,
+        featured_image: essay.featured_image,
         html: renderedEssay
       });
       found = true;
@@ -64,14 +68,14 @@ app.get('/:essaySlug', function(req, res) {
   });
   //if no such thing - show 404
   if(!found){
-    res.render('notfound')
+    res.render('notfound', {title: "404"})
   }
   
 });
 
 //catch all 404
 app.get('*', (req,res) =>{
-  res.render('notfound');
+  res.render('notfound', {title: "404"});
 })
 
 app.listen(3000);

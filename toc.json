@@ -1,6 +1,8 @@
 [
   {
     "title": "The Test of Prometheus",
+    "description": "Will our AIs stop believing in us if we give them the fire of free will?",
+    "featured_image": "https://essays.georgestrakhov.com/the-test-of-prometheus/img/two_dimensions_of_intelligence.jpg",
     "slug": "the-test-of-prometheus",
     "timestamp": "020230417"
   },
@@ -11,6 +13,7 @@
   },
   {
     "title": "The Return of the Gut",
+    "description": "why the AI revolution will send us back to where we belong",
     "slug": "the-return-of-the-gut",
     "timestamp": "020230316"
   },
@@ -26,6 +29,8 @@
   },
   {
     "title": "Gods have to play dice",
+    "description": "problems and principles of designing artificial decision-makers",
+    "featured_image": "https://essays.georgestrakhov.com/gods-have-to-play-dice/img/diagram-1.svg",
     "slug": "gods-have-to-play-dice",
     "timestamp": "020221123"
   },
@@ -36,6 +41,7 @@
   },
   {
     "title": "The Function of Art is to save the Artist",
+    "description": "Conflict, creativity and the function of art in times of crisis",
     "slug": "the-function-of-art-is-to-save-the-artist",
     "timestamp": "020220301"
   },
@@ -46,6 +52,7 @@
   },
   {
     "title": "To Doubt or Not to Doubt?",
+    "description": "The martial art of thinking straight",
     "slug": "to-doubt-or-not-to-doubt",
     "timestamp": "020220103"
   },
