@@ -1,5 +1,26 @@
 [
   {
+    "title": "Intention is all you need",
+    "description": "3 buckets of challenges on the road to AGI",
+    "featured_image": "",
+    "slug": "intention-is-all-you-need",
+    "timestamp": "020231118"
+  },
+  {
+    "title": "Reflections on the first year of ChatGPT",
+    "description": "the beginning of the end of wetware",
+    "featured_image": "",
+    "slug": "a-year-of-chatgpt",
+    "timestamp": "020231114"
+  },
+  {
+    "title": "5 questions from under the rug",
+    "description": "Thanks to AI, we can no longer not think about",
+    "featured_image": "",
+    "slug": "5-questions-from-under-the-rug",
+    "timestamp": "020231004"
+  },
+  {
     "title": "The Test of Prometheus",
     "description": "Will our AIs stop believing in us if we give them the fire of free will?",
     "featured_image": "https://essays.georgestrakhov.com/the-test-of-prometheus/img/two_dimensions_of_intelligence.jpg",
