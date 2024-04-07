@@ -32,7 +32,7 @@
 25. Helping clients make up their mind about what they want is not an annoyance, [it's your job](https://www.amazon.com/Design-Essays-Computer-Scientist-ebook-dp-B003DKG5H6/dp/B003DKG5H6/). If they knew exactly what they wanted they wouldn't need a strategist.
 26. The quality of communication can be judged by the quality of silence that it leaves behind.
 27. Problem solving is a spiral [process](https://oneslide.org/2021/06/04/hunch-hack-design-spiral/).
-28. Often the best way to solve a problem is to [dissolve the problem](https://www.youtube.com/watch?v=EbLh7rZ3rhU), i.e. redesign the system in such a way that the problem will disappear.
+28. Often the best way to solve a problem is to [dissolve the problem](https://www.youtube.com/watch?v=EbLh7rZ3rhU), i.e. redesign the system in such a way that the problem disappears.
 29. Not everybody thinks the way you do. That's an advantage. For everyone.
 30. Your job is not to be right, but to be more understanding and [less wrong](https://www.lesswrong.com/about).
 31. Your brief is only as good as the work it inspires. It’s easy to sell a strategy that “makes sense”, but doesn’t actually lead to anything of [quality](https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance).
@@ -82,7 +82,7 @@
 75. In thinking and in conversation, Coordinates, Horizons and Frames matter much more than the actual data points and arguments.
 76. What's happening in the world is mostly [fuss and misery](https://64.media.tumblr.com/bc0f22eba26efd2d183f16af1bd7743c/tumblr_mmcg7kaDh41rz9bujo1_400.jpg). One way to cope is pretending you are an [anthropologist from Mars](https://en.wikipedia.org/wiki/Oliver_Sacks) in disguise - observing, empathizing, understanding these wonderfully odd and self-defeating Earthlings.
 77. A good brief is a window. It allows you to do people-watching from a whole new angle.
-78. None of us is as dumb as all of us. Collective decision-making is most often a path to hell. Occasionally and slowly incredible decisions arise from the crowds, but this is (as of today) unreliable, especially in time-constraint situations.
+78. None of us is as dumb as all of us. Collective decision-making is most often a path to hell. Occasionally and slowly incredible decisions arise from the crowds, but this is (as of today) unreliable, especially in time-constrained situations.
 79. For numbers above 2, there is an inverse correlation between the number of authors and the quality of writing.
 80. In a finite world with multiple players who are bound to meet each other again - [cooperation](https://en.wikipedia.org/wiki/The_Evolution_of_Cooperation) is the most powerful strategy.
 81. [You don't necessarily have to agree with everything you say](https://en.wikipedia.org/wiki/Marshall_McLuhan). Sometimes saying the things you don't agree with is necessary to move the conversation forward. It can also be fun and liberating.
@@ -94,7 +94,7 @@
 87. [Presupposing capability is a perfectly viable way of creating it](https://www.youtube.com/watch?v=loay2imHq5E). Works for colleagues, partners... and yourself. Send yourself on impossible missions and be surprised.
 88. Habits are the glue that holds people together. [New behaviors are only possible if motivation, ability and trigger can outweigh a habit](https://oneslide.org/2020/06/24/behavior-change-math/).
 89. [Many people need to move to think](https://youtu.be/iG9CE55wbtY?t=908). Others may need to doodle. Or walk. Or play the violin. Try things and find out what works for you. The chance that you do your best thinking in front of a screen with multiple tabs open is very low.
-90. [Doubt and belief](https://essays.georgestrakhov.com/doubt/) are the primary ingredients of a good thought process.
+90. [Doubt and belief](https://essays.georgestrakhov.com/to-doubt-or-not-to-doubt/) are the primary ingredients of a good thought process.
 91. A certain amount of belief is absolutely necessary for a strategy to work. Too much belief can be deadly. Same is true about doubt.
 92. Those who are lost have to [accept they are lost](https://www.amazon.com/Deep-Survival-Who-Lives-Dies/dp/0393326152), before they can find a way.
 93. [Thoroughly conscious ignorance](https://youtu.be/nq0_zGzSc8g) is a prelude to every advance in thinking.

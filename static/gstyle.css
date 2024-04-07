@@ -40,3 +40,11 @@ table {
     margin-top: 1.5em;
     margin-bottom: 1em;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.text-italic {
+    font-style: italic;
+}

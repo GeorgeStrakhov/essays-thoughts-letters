@@ -1,6 +1,9 @@
 
-# 
+##### a thought experiment in playful living {.text-center .text-italic}
+
+
 ![You Only Live N Times](./img/you_only_live_n_times.jpg "You Only Live N Times")
+
 
 
 <p style="text-align: right; padding-right: 1em;">
