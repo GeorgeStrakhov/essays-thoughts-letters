@@ -1,11 +1,19 @@
 [
   {
+    "title": "You only live N times",
+    "description": "a thought experiment in playful living",
+    "featured_image": "https://essays.georgestrakhov.com/you-only-live-n-times/img/you_only_live_n_times.jpg",
+    "slug": "you-only-live-n-times",
+    "timestamp": "020240406"
+  },
+  {
     "title": "The Pact with Power",
     "description": "How people tolerate their governments (and how they don't).",
     "featured_image": "",
     "slug": "pact-with-power",
     "timestamp": "020240317"
-  },{
+  },
+  {
     "title": "Intention is all you need",
     "description": "3 buckets of challenges on the road to AGI",
     "featured_image": "",

@@ -10,3 +10,33 @@ img {
 .essays-list .list-item {
   margin-bottom: 1.5em;
 }
+
+.gs-img-border {
+    border: 1px solid #999;
+    margin-top: 3rem;
+    padding: 0;
+}
+
+.gs-figure-description {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 3rem !important;
+}
+
+h2 {
+    font-weight: bold !important;
+    font-size: 2rem !important;
+    margin-top: 4rem !important;
+    margin-bottom: 2rem !important;
+}
+
+table {
+    margin-top: 3rem;
+    border: 1px solid #ddd
+}
+
+.content li+li {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
