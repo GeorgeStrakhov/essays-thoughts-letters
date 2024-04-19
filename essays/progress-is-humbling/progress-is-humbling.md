@@ -26,10 +26,10 @@ Children early on in their development assume that they are the center of the wo
 
 Nations also go through the phases of Great Arrogance, ineviatbly followed by a Great Humbling (unfortunately normally achieved only through a lot of bloodshed). And if the Great Humbling was successful, then a period of Great Progress tends to follow (e.g. Japan  & Germany after WWII).
 
-Going back to the world today, we seem to be on the brink of a few great humblings at the same time. Our great arrogance as the only intelligent species is being humbled by AI & Robotics. Our great arrogance as the rulers of the earth is being humbled by climate events and pandemics at the scale that we can't control. And our great arrogance as the "United West" unilaterally telling the rest of the world how they should live is being humbled by the rebalancing of world economies and
-consequently powers (particularly China, Middle East and India).
+Going back to the world today, we seem to be on the brink of a few great humblings at the same time. Our great arrogance as the only intelligent species is being humbled by AI & Robotics, as well as latest reseach in computational biology. Our great arrogance as the rulers of the earth is being humbled by climate events and pandemics at the scale that we can't control. And our great arrogance as the "United West" unilaterally telling the rest of the world how everyone should live is being humbled by the rebalancing of world economies and,
+consequently, powers (particularly China, Middle East and India).
 
-I have little doubt that in the long run this mega-humbling event on our current horizon will lead to progress. But the question is: could we get humbled without a big war (with each other and/or with the machines)? And then - could we stay humbled for longer? Could we decide to always take ourselves as little less seriously? Could we feel perpetually free and playful on the periphery, rather than "being focused, critical and all-important" at the center?
+I have little doubt that in the long run this mega-humbling event on our current horizon will lead to progress. But the question is: could we get humbled without a big war (with each other and/or with the machines)? And then - could we stay humbled for longer? Could we decide to always take ourselves a little less seriously? Could we feel perpetually free and playful on the periphery, rather than "focused, critical and all-important" at the center?
 
 Just imagine a kind of progress we could unlock if learned to simply stay humbled - as individuals, as nations and as a species.
 
