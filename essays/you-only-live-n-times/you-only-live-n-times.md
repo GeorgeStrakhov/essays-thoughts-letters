@@ -188,7 +188,7 @@ With these references as a cultural template, it’s easy to imagine the kinds o
 ![People Chasing Death](./img/people_chasing_death.jpg "People Chasing Death"){.gs-img-border}
 
 
-## 10. Playful vs. Purposeful modes living
+## 10. Playful vs. Purposeful modes of living
 
 Rejecting the "one body - one life" idea opens a lot of questions. But one thing the N-lives model doesn't explicitly address is [the ultimate question](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy) of what life is all about. Do you want to go to heaven? Do you want to maximize experience? Do you want to maximize impact? Do you want to minimize harm? Do you want to maximize love or joy? Do you want to maximize understanding? Are you just chilling out, observing what's going on in this strange world?
 
