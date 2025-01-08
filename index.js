@@ -172,7 +172,11 @@ app.get('/:essaySlug', function(req, res) {
             //get the .md file
             const essayText = fs.readFileSync(`./essays/${slug}/${slug}.md`, 'utf8');
             //render .md as .html
-            const renderedEssay = markdown.render(essayText);
+            let renderedEssay = markdown.render(essayText);
+            
+            // Fix relative image paths by adding the slug prefix - for when the url is loaded without the trailing slash
+            renderedEssay = renderedEssay.replace(/src="\.\/img\//g, `src="/${slug}/img/`);
+            
             //pass it on to the template
             res.render('essay', {
                 title: essay.title,
