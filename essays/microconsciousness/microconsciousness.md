@@ -1,6 +1,6 @@
 # 23 Points on Microconsciousness
 
-1. A microconscious independent digital organism (MIDO) lives in a datasphere, but is separated from it.
+1. A microconsciously independent digital organism (MIDO) lives in a datasphere, but is separated from it.
 
 2. The information membrane that separates MIDO from the rest of the datasphere is porous. Sensors allow a MIDO to pull information in and turn parts of it into the MIDO's own structures. Actuators allow it to put information out there. In reality it's a little more nuanced, because sensors can and should also work on internal state and actuators can and should modify not just external environments, but internal state as well. We will get to that.
 
@@ -20,7 +20,7 @@
 
 10. We have a functioning MIDO, but it doesn't have a mind yet. We need to put a mind somewhere into the loop part. The mind should be responsible for collecting data from sensors, integrating it with the context and goals and possible actions and then determining possible actions. The model doesn't need to be very smart or fast. Drastic reduction is fine. Maybe it is actually necessary because otherwise the context-window will overflow quickly. Maybe that's what mother nature had to deal with too. Hello, Nørretranders.
 
-11. The design of the mind of the MIDO is at the heart of the problem of making it our MIDO truly interesting and functionally conscious. This is not a time and place to go into the deep debate about what consciousness actually is. For now it will suffice to outline three major propositions upon which the current design of microconscious is based.
+11. The design of the mind of the MIDO is at the heart of the problem of making it our MIDO truly interesting and functionally conscious. This is not a time and place to go into the deep debate about what consciousness actually is. For now it will suffice to outline three major propositions upon which the current design concept is based.
 
 12. Consciousness requires a self-model. There needs to be a capacity for thinking about oneself and modeling oneself in the past / future. Hello, Metzinger.
 
@@ -42,7 +42,7 @@
 
 21. It's important is that the goal doesn't have to be strictly immutable. One of many possible actions that our MIDO may choose to take could be - rewriting its own long-term goal. That's where things get really interesting. Obviously, the not just the goal should be self re-writable but also almost anything else - like the system prompts of different minds etc. This complicates the design and self-destruction is likely. But it's worth a try.
 
-22. This completes our overall basic design for a microconscious independent digital organism. Let's recap the components in no particular order:
+22. This completes our overall basic design for a microconsciously independent digital organism. Let's recap the components in no particular order:
 
     - GOAL: you can think of this as an overall system prompt for the organism.
     - LOOP: an quanta of the organism's operation. Some information gets in, some action is taken.
@@ -54,4 +54,4 @@
     - SOM (society of minds): a collective of thought-processes (for now LLMs) each suggesting the next best action and a special reflective mind for postrationalization and passing on the self
     - DAIMOCRACY: the process by which society of LLM-powered thought-processes reaches a decision about the next best action for the MIDO as a whole
 
-23. This is a conceptual design. I bet when you start building things, everything will fall apart. But it's good to start with a plan before you get punched in the face.
+23. This is a conceptual design. I bet when you (or I) start building things, everything will fall apart. But it's good to start with a plan before you get punched in the face.
