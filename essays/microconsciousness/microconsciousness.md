@@ -1,4 +1,4 @@
-# 23 Points on Microconsciousness
+# 23 Points on Micro&shy;conscious&shy;ness
 
 1. A microconsciously independent digital organism (MIDO) lives in a datasphere, but is separated from it.
 
@@ -45,13 +45,13 @@
 22. This completes our overall basic design for a microconsciously independent digital organism. Let's recap the components in no particular order:
 
     - GOAL: you can think of this as an overall system prompt for the organism.
-    - LOOP: an quanta of the organism's operation. Some information gets in, some action is taken.
-    - HEARTBEAT: regular (or situational) trigger for the loop to do an iteration
-    - SENSORS: where the information about internal and external environment flows in 
-    - ACTUATORS: ways in which MIDO can do things to the external environment or to itself
+    - LOOP: a quanta of the organism's operation. Some information gets in, some action is taken.
+    - HEARTBEAT: regular (or situational) trigger for the loop to do an iteration.
+    - SENSORS: where the information about internal and external environment flows in.
+    - ACTUATORS: ways in which MIDO can do things to the external environment or to itself.
     - SELF-STATE: a text-driven description of who MIDO is and what it is currently doing. You can think of it as a memo to your future self who will wake up after amnesia tomorrow.
-    - MEMORY: long-term storage of memories that can be retrieved (automatically or as a separate action) against the current context
-    - SOM (society of minds): a collective of thought-processes (for now LLMs) each suggesting the next best action and a special reflective mind for postrationalization and passing on the self
-    - DAIMOCRACY: the process by which society of LLM-powered thought-processes reaches a decision about the next best action for the MIDO as a whole
+    - MEMORY: long-term storage of memories that can be retrieved (automatically or as a separate action) against the current context.
+    - SOM (society of minds): a collective of thought-processes (for now LLMs) each suggesting the next best action and a special reflective mind for postrationalization and passing on the self.
+    - DAIMOCRACY: the process by which society of LLM-powered thought-processes reaches a decision about the next best action for the MIDO as a whole.
 
 23. This is a conceptual design. I bet when you (or I) start building things, everything will fall apart. But it's good to start with a plan before you get punched in the face.
