@@ -37,3 +37,7 @@ If a requested time version doesn't exist in the essay's directory, the server w
 3. Serve it to the reader
 
 This ensures that readers can always access their preferred reading length while maintaining content quality and authenticity.
+
+### Deployed via Fly.io
+
+Automatic redeploy on every push to github to the main branch.
