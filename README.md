@@ -43,7 +43,8 @@ NB! Since the deployed version on Fly is ephemeral, it will be lost after a whil
 ### Extra fun for the 404 page
 
 If the requested essay is not found - we can show a button to generate the essay on the fly, based on the style of the other essays
-(need to fine-tune the LLM to do this well and/or just have a long-context one)
+(need to fine-tune the LLM to do this well and/or just have a long-context one).
+And we should add a captcha or something to prevent robot abuse.
 
 ### Deployed via Fly.io
 
