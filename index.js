@@ -152,7 +152,7 @@ app.get('/feed.rss', async function(req, res) {
     res.send(feed);
 });
 
-//this is specifically for images. we do it this ugly way because it's silly, but works and we want the images to be inside the essay directory
+//this is specifically for images. we do it this ugly way because it's silly, but works and we want the images to be inside the essay directory - so that markdown is self-contained and also renders on github etc.
 app.get('/:essaySlug/img/:imgName', function(req, res) {
     const imgPath = path.resolve(`./essays/${req.params.essaySlug}/img/${req.params.imgName}`);
     if (fs.existsSync(imgPath)) {
