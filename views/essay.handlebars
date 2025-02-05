@@ -5,16 +5,21 @@
         {{#each zoomLevels}}
             <a href="?zoom={{@key}}" 
                class="zoom-level {{#if (eq @key ../zoomLevel)}}active{{/if}}"
-               title="{{this.description}}">
+               title="{{this.description}} {{#if (lookup ../essay.versions @key)}}({{lookup (lookup ../essay.versions @key) 'wordCount'}} words){{/if}}"
+               {{#unless (or (eq @key '5m') (lookup (lookup ../essay.versions @key) 'isHumanVetted'))}}data-ai="true"{{/unless}}>
                 {{this.name}}
+                {{#if (lookup (lookup ../essay.versions @key) 'isHumanVetted')}}✓{{/if}}
             </a>
         {{/each}}
     </div>
     
     {{#if isGenerated}}
     <div class="version-info">
-        This is an AI-generated version based on the original essay.
-        {{#unless isProofread}}(Not yet human-reviewed){{/unless}}
+        {{#if (lookup (lookup essay.versions zoomLevel) 'isHumanVetted')}}
+            This is an AI-generated, human-reviewed version based on the original essay.
+        {{else}}
+            This is an AI-generated version based on the original essay (not yet human-reviewed).
+        {{/if}}
     </div>
     {{/if}}
 </div>

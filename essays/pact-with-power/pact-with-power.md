@@ -35,7 +35,7 @@ People are playing the blame game: "it's because of China", or "It's because of 
 
 Western Europe in general, and The Netherlands specifically, has had a really wonderful time over the past 70 years. There has been peace (for the first time in centuries). There has been a lot of prosperity. The summary could sound something like this: **"We are done with fighting, we will just live a good life"**. The focus on growth is not as accute as in the US, because the societies are older. They have mostly already got over their teenage domination drive and superiority complexes (through terrible crimes and empires of the previous centuries, but let's leave that for another conversation). So, with life being generally quite good and growth or superiority obsession not playing such a great role in the public consciousness, people in the Netherlands ended up with a very simple Pact with Power:
 
-> As longs as you live me alone, don't steal and let me (and everyone else) live a good life, you are good.
+> As longs as you leave me alone, don't steal and let me (and everyone else) live a good life, you are good.
 
 There is a long history of ["Live and Let Live"](https://en.wiktionary.org/wiki/live_and_let_live) attitude in the Netherlands. So this pact was culturally easy to adopt and uphold (similarly to how the US and China pacts we discussed above were also to a degree influenced and preconditioned by their cultures and histories over the longer period than the last 70 years).
 

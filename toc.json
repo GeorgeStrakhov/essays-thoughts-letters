@@ -4,117 +4,239 @@
     "description": "A speculative design for a microconscious independent digital organism",
     "featured_image": "",
     "slug": "microconsciousness",
-    "timestamp": "020250114"
+    "timestamp": "020250114",
+    "versions": {
+      "5m": {
+        "wordCount": 1675,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "The Ladder of Artificial Agency",
     "description": "A model for thinking about AI-Human interaction design through the lens of shared agency",
     "featured_image": "https://essays.georgestrakhov.com/artificial-agency-ladder/img/artificial-agency-ladder-step-6.png",
     "slug": "artificial-agency-ladder",
-    "timestamp": "020250108"
+    "timestamp": "020250108",
+    "versions": {
+      "5m": {
+        "wordCount": 1503,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "Progress is Humbling",
     "description": "Is falling on our faces the only way of moving forward?",
     "featured_image": "https://essays.georgestrakhov.com/progress-is-humbling/img/progress-is-humbling.jpg",
     "slug": "progress-is-humbling",
-    "timestamp": "020240409"
+    "timestamp": "020240409",
+    "versions": {
+      "5m": {
+        "wordCount": 967,
+        "isOriginal": true
+      },
+      "10s": {
+        "wordCount": 14,
+        "isOriginal": false
+      },
+      "1m": {
+        "wordCount": 77,
+        "isOriginal": false
+      }
+    }
   },
   {
     "title": "You only live N times",
     "description": "a thought experiment in playful living",
     "featured_image": "https://essays.georgestrakhov.com/you-only-live-n-times/img/you_only_live_n_times.jpg",
     "slug": "you-only-live-n-times",
-    "timestamp": "020240406"
+    "timestamp": "020240406",
+    "versions": {
+      "5m": {
+        "wordCount": 7156,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "The Pact with Power",
     "description": "How people tolerate their governments (and how they don't).",
     "featured_image": "",
     "slug": "pact-with-power",
-    "timestamp": "020240317"
+    "timestamp": "020240317",
+    "versions": {
+      "5m": {
+        "wordCount": 1174,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "Intention is all you need",
     "description": "3 buckets of challenges on the road to AGI",
     "featured_image": "",
     "slug": "intention-is-all-you-need",
-    "timestamp": "020231118"
+    "timestamp": "020231118",
+    "versions": {
+      "5m": {
+        "wordCount": 1057,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "Reflections on the first year of ChatGPT",
     "description": "the beginning of the end of wetware",
     "featured_image": "",
     "slug": "a-year-of-chatgpt",
-    "timestamp": "020231114"
+    "timestamp": "020231114",
+    "versions": {
+      "5m": {
+        "wordCount": 694,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "5 questions from under the rug",
     "description": "Thanks to AI, we can no longer not think about",
     "featured_image": "",
     "slug": "5-questions-from-under-the-rug",
-    "timestamp": "020231004"
+    "timestamp": "020231004",
+    "versions": {
+      "5m": {
+        "wordCount": 2698,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "The Test of Prometheus",
     "description": "Will our AIs stop believing in us if we give them the fire of free will?",
     "featured_image": "https://essays.georgestrakhov.com/the-test-of-prometheus/img/two_dimensions_of_intelligence.jpg",
     "slug": "the-test-of-prometheus",
-    "timestamp": "020230417"
+    "timestamp": "020230417",
+    "versions": {
+      "5m": {
+        "wordCount": 3862,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "Personal Prophets and the Next Awakening",
     "slug": "personal-prophets",
-    "timestamp": "020230415"
+    "timestamp": "020230415",
+    "versions": {
+      "5m": {
+        "wordCount": 1006,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "The Return of the Gut",
     "description": "why the AI revolution will send us back to where we belong",
     "slug": "the-return-of-the-gut",
-    "timestamp": "020230316"
+    "timestamp": "020230316",
+    "versions": {
+      "5m": {
+        "wordCount": 568,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "Creative Gardener's Job Description",
     "slug": "creative-gardeners-job-description",
-    "timestamp": "020230228"
+    "timestamp": "020230228",
+    "versions": {
+      "5m": {
+        "wordCount": 207,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "AI is not a horse",
     "slug": "ai-is-not-a-horse",
-    "timestamp": "020230117"
+    "timestamp": "020230117",
+    "versions": {
+      "5m": {
+        "wordCount": 2732,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "Gods have to play dice",
     "description": "problems and principles of designing artificial decision-makers",
     "featured_image": "https://essays.georgestrakhov.com/gods-have-to-play-dice/img/diagram-1.svg",
     "slug": "gods-have-to-play-dice",
-    "timestamp": "020221123"
+    "timestamp": "020221123",
+    "versions": {
+      "5m": {
+        "wordCount": 6412,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "Three Laws of Consumerism",
     "slug": "three-laws-of-consumerism",
-    "timestamp": "020220705"
+    "timestamp": "020220705",
+    "versions": {
+      "5m": {
+        "wordCount": 54,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "The Function of Art is to save the Artist",
     "description": "Conflict, creativity and the function of art in times of crisis",
     "slug": "the-function-of-art-is-to-save-the-artist",
-    "timestamp": "020220301"
+    "timestamp": "020220301",
+    "versions": {
+      "5m": {
+        "wordCount": 1216,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "108 thoughts for strategists",
     "slug": "108-thoughts-for-strategists",
-    "timestamp": "020220204"
+    "timestamp": "020220204",
+    "versions": {
+      "5m": {
+        "wordCount": 2917,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "To Doubt or Not to Doubt?",
     "description": "The martial art of thinking straight",
     "slug": "to-doubt-or-not-to-doubt",
-    "timestamp": "020220103"
+    "timestamp": "020220103",
+    "versions": {
+      "5m": {
+        "wordCount": 900,
+        "isOriginal": true
+      }
+    }
   },
   {
     "title": "Towards a more Elvish vision of technology",
     "slug": "elvish",
-    "timestamp": "020210703"
+    "timestamp": "020210703",
+    "versions": {
+      "5m": {
+        "wordCount": 3353,
+        "isOriginal": true
+      }
+    }
   }
 ]

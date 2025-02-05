@@ -13,4 +13,15 @@
 
 .generating p {
     color: #888;
+}
+
+.zoom-level[data-ai="true"] {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.zoom-level[data-ai="true"]:hover::after {
+    content: "(AI-generated)";
+    font-size: 0.8em;
+    margin-left: 0.5em;
 } 

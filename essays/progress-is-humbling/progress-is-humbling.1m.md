@@ -1,0 +1,6 @@
+- Copernicus demoted humans from the center of the universe to an insignificant planet
+- Darwin demoted humans from God's creation to an accidental branch on the tree of life
+- AI is demoting humans from the sole intelligent species to one form of reasoning
+- Progress often follows great humblings that challenge human arrogance
+- Nations, communities, and individuals go through cycles of arrogance and humbling
+- Staying perpetually humbled could unlock unprecedented progress for humanity

@@ -56,6 +56,12 @@ app.engine('handlebars', engine({
     helpers: {
         eq: function (a, b) {
             return a === b;
+        },
+        or: function () {
+            return Array.prototype.slice.call(arguments, 0, -1).some(Boolean);
+        },
+        lookup: function (obj, field) {
+            return obj && obj[field];
         }
     }
 }));
@@ -258,7 +264,8 @@ app.get('/:essaySlug/', async function(req, res) {
             zoomLevel,
             zoomLevels: ZOOM_LEVELS,
             isGenerated,
-            currentZoom: ZOOM_LEVELS[zoomLevel]
+            currentZoom: ZOOM_LEVELS[zoomLevel],
+            essay
         });
 
     } catch (error) {
