@@ -38,6 +38,13 @@ If a requested time version doesn't exist in the essay's directory, the server w
 
 This ensures that readers can always access their preferred reading length while maintaining content quality and authenticity.
 
+NB! Since the deployed version on Fly is ephemeral, it will be lost after a while. So what we need to also implement is a service that whenever a new non-existing version is generated - it will send the new version to me via email. And if I like it - I will manually add it to the repo and redeploy it.
+
+### Extra fun for the 404 page
+
+If the requested essay is not found - we can show a button to generate the essay on the fly, based on the style of the other essays
+(need to fine-tune the LLM to do this well and/or just have a long-context one)
+
 ### Deployed via Fly.io
 
 Automatic redeploy on every push to github to the main branch.

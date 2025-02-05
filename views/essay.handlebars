@@ -1,5 +1,55 @@
 <a href="/" class="back-link">← Essays. Thoughts. Letters.</a>
 
+<div class="zoom-control">
+    <div class="zoom-slider">
+        {{#each zoomLevels}}
+            <a href="?zoom={{@key}}" 
+               class="zoom-level {{#if (eq @key ../zoomLevel)}}active{{/if}}"
+               title="{{this.description}}">
+                {{this.name}}
+            </a>
+        {{/each}}
+    </div>
+    
+    {{#if isGenerated}}
+    <div class="version-info">
+        This is an AI-generated version based on the original essay.
+        {{#unless isProofread}}(Not yet human-reviewed){{/unless}}
+    </div>
+    {{/if}}
+</div>
+
 <hr />
 
 {{{html}}}
+
+{{#if isGenerating}}
+<script>
+    function checkVersion() {
+        fetch('/{{slug}}/check-version?zoom={{zoomLevel}}')
+            .then(response => response.json())
+            .then(data => {
+                if (data.exists) {
+                    window.location.reload();
+                }
+            })
+            .catch(console.error);
+    }
+
+    // Poll every 2 seconds
+    const pollInterval = setInterval(checkVersion, 2000);
+
+    // Stop polling after 60 seconds (30 attempts)
+    setTimeout(() => {
+        clearInterval(pollInterval);
+        // Update the generating message if we timeout
+        const generating = document.querySelector('.generating');
+        if (generating) {
+            generating.innerHTML = `
+                <h2>Taking longer than expected...</h2>
+                <p>Please refresh the page manually to check if the version is ready.</p>
+            `;
+        }
+    }, 60000);
+</script>
+{{/if}}

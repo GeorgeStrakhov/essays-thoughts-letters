@@ -7,6 +7,9 @@ import { readFile } from 'fs/promises';
 import fs from 'fs';
 import path from 'path';
 import xml from 'xml';
+import { ZOOM_LEVELS } from './services/prompts.js';
+import { getChatCompletion } from './services/llm.js';
+import { SYSTEM_PROMPT, USER_PROMPT_TEMPLATE } from './services/prompts.js';
 
 const BASE_URL = process.env['BASE_URL'];
 
@@ -48,7 +51,14 @@ const formatDate = (dateString) => { //date string in YYYYMMDD format
 
 const app = express();
 
-app.engine('handlebars', engine());
+// Configure handlebars with helpers
+app.engine('handlebars', engine({
+    helpers: {
+        eq: function (a, b) {
+            return a === b;
+        }
+    }
+}));
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 
@@ -162,37 +172,121 @@ app.get('/:essaySlug/img/:imgName', function(req, res) {
     }
 });
 
-app.get('/:essaySlug', function(req, res) {
+app.get('/:essaySlug/', async function(req, res) {
     const slug = req.params.essaySlug;
+    const zoomLevel = req.query.zoom || '5m';
 
-    //if the slug exists in the toc.json - then serve the right essay
-    let found = false;
-    toc.forEach(essay => {
-        if (essay.slug == slug) {
-            //get the .md file
-            const essayText = fs.readFileSync(`./essays/${slug}/${slug}.md`, 'utf8');
-            //render .md as .html
-            let renderedEssay = markdown.render(essayText);
-            
-            // Fix relative image paths by adding the slug prefix - for when the url is loaded without the trailing slash
-            renderedEssay = renderedEssay.replace(/src="\.\/img\//g, `src="/${slug}/img/`);
-            
-            //pass it on to the template
-            res.render('essay', {
-                title: essay.title,
-                slug: essay.slug,
-                description: essay.description,
-                featured_image: essay.featured_image,
-                html: renderedEssay
-            });
-            found = true;
-        }
-    });
-    //if no such thing - show 404
-    if (!found) {
-        res.render('notfound', { title: "404" })
+    if (!ZOOM_LEVELS[zoomLevel]) {
+        return res.status(400).render('notfound', { 
+            title: "Invalid zoom level",
+            message: "Please select a valid reading time" 
+        });
     }
 
+    // Find essay in TOC
+    const essay = toc.find(e => e.slug === slug);
+    if (!essay) {
+        return res.status(404).render('notfound', { title: "404" });
+    }
+
+    try {
+        // Try to get the specific version file
+        const versionPath = zoomLevel === '5m' 
+            ? `./essays/${slug}/${slug}.md`
+            : `./essays/${slug}/${slug}.${zoomLevel}.md`;
+        
+        let essayText;
+        let isGenerated = false;
+        let isGenerating = false;
+
+        try {
+            essayText = await readFile(versionPath, 'utf8');
+        } catch (err) {
+            // File doesn't exist, generate it
+            if (zoomLevel !== '5m') { // Don't generate for 5m - that's the original
+                const originalText = await readFile(`./essays/${slug}/${slug}.md`, 'utf8');
+                isGenerating = true;
+                
+                // First render the loading state
+                res.render('essay', {
+                    title: essay.title,
+                    slug: essay.slug,
+                    description: essay.description,
+                    featured_image: essay.featured_image,
+                    html: `<div class="generating">
+                        <h2>Generating ${ZOOM_LEVELS[zoomLevel].name} version...</h2>
+                        <p>This may take a few seconds. Please refresh the page.</p>
+                    </div>`,
+                    zoomLevel,
+                    zoomLevels: ZOOM_LEVELS,
+                    isGenerating,
+                    currentZoom: ZOOM_LEVELS[zoomLevel]
+                });
+
+                // Generate in the background
+                getChatCompletion(
+                    SYSTEM_PROMPT,
+                    USER_PROMPT_TEMPLATE(
+                        originalText, 
+                        ZOOM_LEVELS[zoomLevel].format,
+                        ZOOM_LEVELS[zoomLevel].targetLength
+                    )
+                ).then(async (generatedText) => {
+                    // Save generated version
+                    await fs.promises.writeFile(versionPath, generatedText);
+                }).catch(console.error);
+
+                return; // End the request here
+            } else {
+                throw new Error('Original essay not found');
+            }
+        }
+
+        // Render markdown to HTML
+        let renderedEssay = markdown.render(essayText);
+        
+        // Fix relative image paths
+        renderedEssay = renderedEssay.replace(/src="\.\/img\//g, `src="/${slug}/img/`);
+
+        // Pass to template
+        res.render('essay', {
+            title: essay.title,
+            slug: essay.slug,
+            description: essay.description,
+            featured_image: essay.featured_image,
+            html: renderedEssay,
+            zoomLevel,
+            zoomLevels: ZOOM_LEVELS,
+            isGenerated,
+            currentZoom: ZOOM_LEVELS[zoomLevel]
+        });
+
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).render('notfound', { 
+            title: "Error",
+            message: "Failed to load or generate essay" 
+        });
+    }
+});
+
+// Add this before the catch-all 404 route
+
+app.get('/:essaySlug/check-version', function(req, res) {
+    const slug = req.params.essaySlug;
+    const zoomLevel = req.query.zoom;
+    
+    if (!zoomLevel || !ZOOM_LEVELS[zoomLevel]) {
+        return res.status(400).json({ error: 'Invalid zoom level' });
+    }
+
+    const versionPath = zoomLevel === '5m' 
+        ? `./essays/${slug}/${slug}.md`
+        : `./essays/${slug}/${slug}.${zoomLevel}.md`;
+
+    res.json({
+        exists: fs.existsSync(versionPath)
+    });
 });
 
 //catch all 404
