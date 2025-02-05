@@ -1,50 +1,190 @@
+/* Theme toggle */
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, opacity 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Show/hide icons based on theme */
+.theme-light .sun-icon {
+    display: none;
+}
+
+.theme-light .moon-icon {
+    display: block;
+}
+
+.theme-dark .sun-icon {
+    display: block;
+}
+
+.theme-dark .moon-icon {
+    display: none;
+}
+
+.theme-dark .theme-toggle {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Base typography */
+body {
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.7;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Headings with more spacing */
 .content h1 {
-  font-size: 3em;
-  font-weight: 700;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
+.content h2 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.content h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Increased paragraph spacing */
+.content p {
+    margin-bottom: 2rem;
+}
+
+/* Make sure bold text is clearly visible */
+strong, b {
+    font-weight: 700;
+}
+
+/* Links */
+a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+/* Lists and spacing */
+.content li+li {
+    margin-top: 0.75em;
+}
+
+/* Images */
 img {
-  padding: 1em;
-}
-
-.essays-list .list-item {
-  margin-bottom: 1.5em;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
 }
 
 .gs-img-border {
-    border: 1px solid #999;
-    margin-top: 3rem;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     padding: 0;
 }
 
 .gs-figure-description {
     text-align: center;
     font-style: italic;
-    color: #777;
-    margin-bottom: 3rem !important;
-}
-
-h2 {
-    font-weight: bold !important;
-    font-size: 2rem !important;
-    margin-top: 4rem !important;
     margin-bottom: 2rem !important;
+    font-size: 0.9em;
 }
 
-table {
-    margin-top: 3rem;
-    border: 1px solid #ddd
+/* Home page specific */
+.essays-list .list-item {
+    margin-bottom: 1.25em;
+    line-height: 1.5;
 }
 
-.content li+li {
-    margin-top: 1.5em;
-    margin-bottom: 1em;
+.essays-list .list-item a {
+    font-size: 1.1em;
 }
 
+/* Utilities */
 .text-center {
     text-align: center;
 }
 
 .text-italic {
     font-style: italic;
+}
+
+/* Layout */
+.section {
+    padding: 2rem 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding: 3rem 1.5rem;
+    }
+    
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Horizontal rules */
+hr {
+    height: 1px;
+    margin: 2rem 0;
+}
+
+.footer-divider {
+    margin-top: 4rem;
+}
+
+.footer-note {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Tables */
+table {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+}
+
+/* Back link in essays */
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
 }
