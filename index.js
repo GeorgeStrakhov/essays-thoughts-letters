@@ -7,7 +7,7 @@ import { readFile } from 'fs/promises';
 import fs from 'fs';
 import path from 'path';
 import xml from 'xml';
-import { ZOOM_LEVELS } from './services/prompts.js';
+import { ZOOM_LEVELS, findNaturalZoomLevel } from './services/prompts.js';
 import { getChatCompletion } from './services/llm.js';
 import { SYSTEM_PROMPT, USER_PROMPT_TEMPLATE } from './services/prompts.js';
 
@@ -180,7 +180,32 @@ app.get('/:essaySlug/img/:imgName', function(req, res) {
 
 app.get('/:essaySlug/', async function(req, res) {
     const slug = req.params.essaySlug;
-    const zoomLevel = req.query.zoom || '5m';
+    
+    // Find essay in TOC
+    const essay = toc.find(e => e.slug === slug);
+    if (!essay) {
+        return res.status(404).render('notfound', { title: "404" });
+    }
+
+    // Use naturalZoomLevel from TOC or calculate it if missing
+    let zoomLevel = req.query.zoom;
+    if (!zoomLevel) {
+        // If no zoom specified, use the natural zoom level
+        if (!essay.naturalZoomLevel) {
+            // Find the original version
+            const originalVersion = Object.entries(essay.versions)
+                .find(([_, v]) => v.isOriginal)?.[0];
+            
+            if (originalVersion && essay.versions[originalVersion]) {
+                essay.naturalZoomLevel = findNaturalZoomLevel(
+                    essay.versions[originalVersion].wordCount
+                );
+            } else {
+                essay.naturalZoomLevel = '5m'; // Default if can't determine
+            }
+        }
+        zoomLevel = essay.naturalZoomLevel;
+    }
 
     if (!ZOOM_LEVELS[zoomLevel]) {
         return res.status(400).render('notfound', { 
@@ -189,15 +214,9 @@ app.get('/:essaySlug/', async function(req, res) {
         });
     }
 
-    // Find essay in TOC
-    const essay = toc.find(e => e.slug === slug);
-    if (!essay) {
-        return res.status(404).render('notfound', { title: "404" });
-    }
-
     try {
         // Try to get the specific version file
-        const versionPath = zoomLevel === '5m' 
+        const versionPath = zoomLevel === essay.naturalZoomLevel 
             ? `./essays/${slug}/${slug}.md`
             : `./essays/${slug}/${slug}.${zoomLevel}.md`;
         
@@ -207,9 +226,11 @@ app.get('/:essaySlug/', async function(req, res) {
 
         try {
             essayText = await readFile(versionPath, 'utf8');
+            // Set isGenerated true if this is not the original version
+            isGenerated = zoomLevel !== essay.naturalZoomLevel;
         } catch (err) {
             // File doesn't exist, generate it
-            if (zoomLevel !== '5m') { // Don't generate for 5m - that's the original
+            if (zoomLevel !== essay.naturalZoomLevel) { // Don't generate for natural zoom level
                 const originalText = await readFile(`./essays/${slug}/${slug}.md`, 'utf8');
                 isGenerating = true;
                 
@@ -221,7 +242,7 @@ app.get('/:essaySlug/', async function(req, res) {
                     featured_image: essay.featured_image,
                     html: `<div class="generating">
                         <h2>Generating ${ZOOM_LEVELS[zoomLevel].name} version...</h2>
-                        <p>This may take a few seconds. Please refresh the page.</p>
+                        <p>This may take a few seconds.</p>
                     </div>`,
                     zoomLevel,
                     zoomLevels: ZOOM_LEVELS,
@@ -240,6 +261,21 @@ app.get('/:essaySlug/', async function(req, res) {
                 ).then(async (generatedText) => {
                     // Save generated version
                     await fs.promises.writeFile(versionPath, generatedText);
+                    
+                    // Update TOC with the new version
+                    const wordCount = generatedText.trim().split(/\s+/).length;
+                    if (!essay.versions) essay.versions = {};
+                    essay.versions[zoomLevel] = {
+                        wordCount,
+                        isOriginal: false,
+                        isHumanVetted: false
+                    };
+                    
+                    // Save updated TOC
+                    await fs.promises.writeFile(
+                        new URL('./toc.json', import.meta.url),
+                        JSON.stringify(toc, null, 2)
+                    );
                 }).catch(console.error);
 
                 return; // End the request here
@@ -262,6 +298,7 @@ app.get('/:essaySlug/', async function(req, res) {
             featured_image: essay.featured_image,
             html: renderedEssay,
             zoomLevel,
+            naturalZoomLevel: essay.naturalZoomLevel,
             zoomLevels: ZOOM_LEVELS,
             isGenerated,
             currentZoom: ZOOM_LEVELS[zoomLevel],
@@ -287,7 +324,12 @@ app.get('/:essaySlug/check-version', function(req, res) {
         return res.status(400).json({ error: 'Invalid zoom level' });
     }
 
-    const versionPath = zoomLevel === '5m' 
+    const essay = toc.find(e => e.slug === slug);
+    if (!essay) {
+        return res.status(404).json({ error: 'Essay not found' });
+    }
+
+    const versionPath = zoomLevel === essay.naturalZoomLevel 
         ? `./essays/${slug}/${slug}.md`
         : `./essays/${slug}/${slug}.${zoomLevel}.md`;
 

@@ -1,0 +1,7 @@
+- AI is reshaping how decisions are made, with different levels of agency distribution between humans and machines
+- At the bottom, AI operates as pure technology amplifying human capabilities without much autonomy
+- Higher up, AI acts as a tool or cognitive prosthetic directly shaping human thought processes
+- AI can also function as a distinct team member or autonomous team within human organizations
+- At the top, AI can serve as an autonomous trustee making real-world decisions with significant delegated agency
+- This ladder highlights tensions between efficiency gains and human agency atrophy as we offload cognition to AI
+- The key question is what agency we want to retain versus what we're willing to delegate to AI systems

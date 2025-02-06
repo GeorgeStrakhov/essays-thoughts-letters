@@ -1,41 +1,41 @@
 export const ZOOM_LEVELS = {
-    '10s': {
-        name: '10 seconds',
-        format: 'one-liner',
-        targetLength: 20, // words
-        description: 'Key idea in one punchy sentence'
-    },
     '1m': {
         name: '1 minute',
         format: 'bullet-points',
-        targetLength: 200, // words
-        description: 'TLDR with key points'
+        targetLength: 200,
+        wordRange: [1, 300],
+        description: 'TL;DR with key points'
     },
     '5m': {
         name: '5 minutes',
         format: 'article',
-        targetLength: 1000, // words
-        description: 'Original essay'
+        targetLength: 1000,
+        wordRange: [301, 2000],
+        description: 'Standard essay'
     },
     '15m': {
         name: '15 minutes',
         format: 'detailed',
-        targetLength: 3000, // words
-        description: 'Detailed exploration with commentary'
+        targetLength: 3000,
+        wordRange: [2001, 4000],
+        description: 'Detailed exploration'
     },
     '30m': {
         name: '30 minutes',
         format: 'comprehensive',
-        targetLength: 6000, // words
-        description: 'Comprehensive analysis'
-    },
-    '1h': {
-        name: '1 hour',
-        format: 'extensive',
-        targetLength: 12000, // words
-        description: 'Deep dive with extensive commentary'
+        targetLength: 6000,
+        wordRange: [4001, Infinity],
+        description: 'Longread'
     }
 };
+
+// Helper to find natural zoom level based on word count
+export function findNaturalZoomLevel(wordCount) {
+    return Object.entries(ZOOM_LEVELS).find(([_, config]) => {
+        const [min, max] = config.wordRange;
+        return wordCount >= min && wordCount <= max;
+    })?.[0] || '30m'; // Default to 30m if outside all ranges
+}
 
 export const SYSTEM_PROMPT = `You are an expert at adapting essays to different reading lengths while preserving their core ideas and adding insightful commentary.
 
@@ -45,8 +45,7 @@ For shorter versions:
 - Distill to essential points
 - Use concise, impactful language
 - Remove all meta-text like "Here's a shortened version..."
-- For 10s: Create exactly one powerful sentence
-- For 1m: Create a brief TLDR with key bullet points
+- For 1m: Create a brief TL;DR with 3-5 key bullet points
 
 For longer versions:
 - Keep the original text

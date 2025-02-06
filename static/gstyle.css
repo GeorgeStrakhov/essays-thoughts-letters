@@ -193,3 +193,210 @@ table td {
     margin-bottom: 1.5rem;
     text-decoration: none;
 }
+
+/* Zoom control styles */
+.zoom-control {
+    margin: 2rem 0;
+    padding: 2rem 1.5rem 1.5rem;  /* Even more padding at top */
+    background: #f8f8f8;
+    border-radius: 12px;
+}
+
+.zoom-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    gap: 0.5rem;
+}
+
+/* Progress bar behind the buttons */
+.zoom-slider::before {
+    content: '';
+    position: absolute;
+    left: 2.5rem;
+    right: 2.5rem;
+    height: 1px;
+    background: #ddd;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.zoom-level {
+    position: relative;
+    padding: 0.6rem 1rem;
+    min-width: 4rem;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: all 0.2s;
+    z-index: 1;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Current zoom level - fix contrast */
+.zoom-level.active {
+    background: #2b5c8c;
+    color: white !important; /* Ensure text is always white when active */
+    border-color: #2b5c8c;
+    font-weight: 500;
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Natural length indicator */
+.zoom-level.natural {
+    border-color: #2b5c8c;
+}
+
+/* Original version indicator */
+.zoom-level.original::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border: 1px solid #2b5c8c;
+    border-radius: 22px;
+    opacity: 0.5;
+}
+
+/* AI-generated version */
+.zoom-level.ai {
+    color: #888;
+    border-style: dashed;
+}
+
+.zoom-level:hover {
+    transform: scale(1.05);
+    border-color: #2b5c8c;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Status indicators - more subtle approach */
+.zoom-level .status {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.zoom-level.original .status {
+    background: #2b5c8c;
+}
+
+.zoom-level:not(.original):not(.ai) .status {
+    background: #4CAF50;
+}
+
+/* Version info below slider */
+.version-info {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+}
+
+/* Dark theme adjustments */
+.theme-dark .zoom-control {
+    background: #2a2a2a;
+}
+
+.theme-dark .zoom-slider::before {
+    background: #444;
+}
+
+.theme-dark .zoom-level {
+    background: #333;
+    border-color: #444;
+    color: #ccc;
+}
+
+.theme-dark .zoom-level.active {
+    background: #8ab4e8;
+    color: #1a1a1a !important; /* Ensure text is always dark when active in dark mode */
+    border-color: #8ab4e8;
+}
+
+.theme-dark .zoom-level.natural {
+    border-color: #8ab4e8;
+}
+
+.theme-dark .zoom-level.original::before {
+    border-color: #8ab4e8;
+}
+
+.theme-dark .zoom-level.ai {
+    color: #999;
+}
+
+/* TL;DR header */
+.tldr-header {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.theme-dark .tldr-header {
+    color: #999;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .zoom-control {
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .zoom-slider {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: center;
+    }
+
+    /* Hide the connecting line on mobile */
+    .zoom-slider::before {
+        display: none;
+    }
+
+    .zoom-level {
+        padding: 0.5rem 0.75rem;
+        min-width: auto;  /* Let buttons be their natural width */
+        flex: 0 1 calc(50% - 0.75rem);  /* Two buttons per row, accounting for gap */
+        font-size: 0.85em;
+    }
+
+    /* Make active state more prominent on mobile */
+    .zoom-level.active {
+        flex: 0 1 100%;  /* Active button takes full width */
+        order: -1;  /* Put active button at the top */
+        margin-bottom: 0.5rem;
+    }
+
+    .version-info {
+        margin-top: 1rem;
+        font-size: 0.85em;
+        padding: 0 0.5rem;
+    }
+}
+
+/* Even smaller screens */
+@media screen and (max-width: 380px) {
+    .zoom-level {
+        flex: 0 1 100%;  /* Stack all buttons vertically */
+    }
+}

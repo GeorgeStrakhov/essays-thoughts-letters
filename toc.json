@@ -10,7 +10,8 @@
         "wordCount": 1675,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "The Ladder of Artificial Agency",
@@ -22,8 +23,15 @@
       "5m": {
         "wordCount": 1503,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 121,
+        "isOriginal": false,
+        "isHumanVetted": true,
+        "vettedTimestamp": "020250108"
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "Progress is Humbling",
@@ -36,15 +44,14 @@
         "wordCount": 967,
         "isOriginal": true
       },
-      "10s": {
-        "wordCount": 14,
-        "isOriginal": false
-      },
       "1m": {
         "wordCount": 77,
-        "isOriginal": false
+        "isOriginal": false,
+        "isHumanVetted": true,
+        "vettedTimestamp": "020240409"
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "You only live N times",
@@ -53,11 +60,12 @@
     "slug": "you-only-live-n-times",
     "timestamp": "020240406",
     "versions": {
-      "5m": {
+      "30m": {
         "wordCount": 7156,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "30m"
   },
   {
     "title": "The Pact with Power",
@@ -70,7 +78,8 @@
         "wordCount": 1174,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "Intention is all you need",
@@ -83,7 +92,8 @@
         "wordCount": 1057,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "Reflections on the first year of ChatGPT",
@@ -96,7 +106,8 @@
         "wordCount": 694,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "5 questions from under the rug",
@@ -105,11 +116,12 @@
     "slug": "5-questions-from-under-the-rug",
     "timestamp": "020231004",
     "versions": {
-      "5m": {
+      "15m": {
         "wordCount": 2698,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "15m"
   },
   {
     "title": "The Test of Prometheus",
@@ -118,11 +130,18 @@
     "slug": "the-test-of-prometheus",
     "timestamp": "020230417",
     "versions": {
-      "5m": {
+      "15m": {
         "wordCount": 3862,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 151,
+        "isOriginal": false,
+        "isHumanVetted": true,
+        "vettedTimestamp": "020230417"
       }
-    }
+    },
+    "naturalZoomLevel": "15m"
   },
   {
     "title": "Personal Prophets and the Next Awakening",
@@ -133,7 +152,8 @@
         "wordCount": 1006,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "The Return of the Gut",
@@ -145,29 +165,32 @@
         "wordCount": 568,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "Creative Gardener's Job Description",
     "slug": "creative-gardeners-job-description",
     "timestamp": "020230228",
     "versions": {
-      "5m": {
+      "1m": {
         "wordCount": 207,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "1m"
   },
   {
     "title": "AI is not a horse",
     "slug": "ai-is-not-a-horse",
     "timestamp": "020230117",
     "versions": {
-      "5m": {
+      "15m": {
         "wordCount": 2732,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "15m"
   },
   {
     "title": "Gods have to play dice",
@@ -176,22 +199,29 @@
     "slug": "gods-have-to-play-dice",
     "timestamp": "020221123",
     "versions": {
-      "5m": {
+      "30m": {
         "wordCount": 6412,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "30m"
   },
   {
     "title": "Three Laws of Consumerism",
     "slug": "three-laws-of-consumerism",
     "timestamp": "020220705",
     "versions": {
-      "5m": {
+      "1m": {
         "wordCount": 54,
         "isOriginal": true
+      },
+      "5m": {
+        "wordCount": 466,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
-    }
+    },
+    "naturalZoomLevel": "1m"
   },
   {
     "title": "The Function of Art is to save the Artist",
@@ -203,18 +233,20 @@
         "wordCount": 1216,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "108 thoughts for strategists",
     "slug": "108-thoughts-for-strategists",
     "timestamp": "020220204",
     "versions": {
-      "5m": {
+      "15m": {
         "wordCount": 2917,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "15m"
   },
   {
     "title": "To Doubt or Not to Doubt?",
@@ -226,17 +258,19 @@
         "wordCount": 900,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "5m"
   },
   {
     "title": "Towards a more Elvish vision of technology",
     "slug": "elvish",
     "timestamp": "020210703",
     "versions": {
-      "5m": {
+      "15m": {
         "wordCount": 3353,
         "isOriginal": true
       }
-    }
+    },
+    "naturalZoomLevel": "15m"
   }
 ]

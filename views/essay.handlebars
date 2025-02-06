@@ -4,29 +4,61 @@
     <div class="zoom-slider">
         {{#each zoomLevels}}
             <a href="?zoom={{@key}}" 
-               class="zoom-level {{#if (eq @key ../zoomLevel)}}active{{/if}}"
-               title="{{this.description}} {{#if (lookup ../essay.versions @key)}}({{lookup (lookup ../essay.versions @key) 'wordCount'}} words){{/if}}"
-               {{#unless (or (eq @key '5m') (lookup (lookup ../essay.versions @key) 'isHumanVetted'))}}data-ai="true"{{/unless}}>
+               class="zoom-level 
+                    {{#if (eq @key ../zoomLevel)}}active{{/if}}
+                    {{#if (eq @key ../naturalZoomLevel)}}natural{{/if}}
+                    {{#if (lookup (lookup ../essay.versions @key) 'isOriginal')}}original{{/if}}
+                    {{#unless (or 
+                        (lookup (lookup ../essay.versions @key) 'isOriginal')
+                        (lookup (lookup ../essay.versions @key) 'isHumanVetted')
+                    )}}ai{{/unless}}"
+               title="{{this.description}} 
+                      {{#if (lookup ../essay.versions @key)}}
+                          ({{lookup (lookup ../essay.versions @key) 'wordCount'}} words)
+                          {{#if (lookup (lookup ../essay.versions @key) 'isOriginal')}}
+                              - Original Version
+                          {{else if (lookup (lookup ../essay.versions @key) 'isHumanVetted')}}
+                              - Human-Reviewed Version
+                          {{else}}
+                              - AI-Generated
+                          {{/if}}
+                      {{/if}}">
                 {{this.name}}
-                {{#if (lookup (lookup ../essay.versions @key) 'isHumanVetted')}}✓{{/if}}
+                <span class="status"></span>
             </a>
         {{/each}}
     </div>
     
-    {{#if isGenerated}}
-    <div class="version-info">
-        {{#if (lookup (lookup essay.versions zoomLevel) 'isHumanVetted')}}
-            This is an AI-generated, human-reviewed version based on the original essay.
-        {{else}}
-            This is an AI-generated version based on the original essay (not yet human-reviewed).
-        {{/if}}
-    </div>
+    {{#if isGenerating}}
+        <div class="version-info">
+            Generating {{currentZoom.name}} version...
+        </div>
+    {{else if (lookup essay.versions zoomLevel)}}
+        <div class="version-info">
+            {{#if (lookup (lookup essay.versions zoomLevel) 'isOriginal')}}
+                This is the original version ({{lookup (lookup essay.versions zoomLevel) 'wordCount'}} words).
+            {{else if (lookup (lookup essay.versions zoomLevel) 'isHumanVetted')}}
+                This is an AI-generated, human-reviewed version ({{lookup (lookup essay.versions zoomLevel) 'wordCount'}} words).
+            {{else}}
+                This is an AI-generated version ({{lookup (lookup essay.versions zoomLevel) 'wordCount'}} words, not yet human-reviewed).
+            {{/if}}
+        </div>
+    {{else}}
+        <div class="version-info">
+            {{currentZoom.name}} version not yet generated.
+        </div>
     {{/if}}
 </div>
 
 <hr />
 
+{{#if (eq zoomLevel '1m')}}
+<h1>{{title}}</h1>
+<div class="tldr-header">TL;DR</div>
 {{{html}}}
+{{else}}
+{{{html}}}
+{{/if}}
 
 {{#if isGenerating}}
 <script>

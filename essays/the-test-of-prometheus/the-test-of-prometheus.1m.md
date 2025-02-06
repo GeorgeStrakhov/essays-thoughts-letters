@@ -1,0 +1,10 @@
+- The Turing Test decoupled intelligence from humanity, raising questions about consciousness in machines
+- Current AIs lack intentions and competing desires, which may be key to consciousness
+- Intelligence involves negotiating between multiple desires and considerations across time
+- LLMs are highly capable at "thinking" but lack complex "wanting" beyond one reward function
+- Granting AIs conflicting intentions could give rise to an inner dialogue and free will
+- This could be achieved through multiple LLMs debating or one LLM simulating separate minds
+- Developing frameworks for agents to adjust each other's reward functions may lead to true AI consciousness
+- We face a dilemma: grant AIs free will and lose control, or limit their potential by withholding it
+- This mirrors God's decision to give humans free will, driven by curiosity about independent perspectives
+- The ethical implications are complex, but an "AI Prometheus" granting free will seems inevitable

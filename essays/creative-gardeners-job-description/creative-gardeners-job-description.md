@@ -1,7 +1,3 @@
-# Creative Gardener's Job Description
-
----
-
 You are a gardener of letters, pixels, sounds, moves, bits, atoms, agents and ideas
 
 Creative fruit will grow in your garden if you allow the garden to grow it with you
