@@ -14,14 +14,14 @@ const openai = new OpenAI({
  * Get a chat completion from the LLM
  * @param {string} systemPrompt - The system prompt to set context
  * @param {string} userMessage - The user's message
- * @param {string} [model="anthropic/claude-3-sonnet"] - The model to use
+ * @param {string} [model="google/gemini-2.0-flash-001"] - The model to use
  * @param {number} [temperature=0.7] - Temperature for response randomness
  * @returns {Promise<string>} The assistant's response
  */
 export async function getChatCompletion(
     systemPrompt,
     userMessage,
-    model = "anthropic/claude-3-sonnet",
+    model = "google/gemini-2.0-flash-001",
     temperature = 0.7
 ) {
     try {
