@@ -9,6 +9,11 @@
       "5m": {
         "wordCount": 1675,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 144,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -77,6 +82,11 @@
       "5m": {
         "wordCount": 1174,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 119,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -91,6 +101,11 @@
       "5m": {
         "wordCount": 1057,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 68,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"

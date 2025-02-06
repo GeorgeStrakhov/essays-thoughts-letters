@@ -9,6 +9,15 @@
     <div class="container is-max-desktop">
         <div class="content">
             <div class="zoom-control">
+                <button class="zoom-close" aria-label="Hide zoom controls">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <p class="zoom-explanation">
+                    This essays is telescopic. It can shrink or expand, depending how much attention you are willing to give.
+                </p>
                 <div class="zoom-slider">
                     {{#each zoomLevels}}
                         <a href="?zoom={{@key}}" 
@@ -58,13 +67,14 @@
                 {{/if}}
             </div>
 
-            <hr />
 
             <h1 class="essay-title">{{title}}</h1>
-            {{#if (eq zoomLevel '1m')}}
-                <div class="tldr-header">TL;DR</div>
+            {{#if isGenerating}}
                 {{{html}}}
             {{else}}
+                {{#if (eq zoomLevel '1m')}}
+                    <div class="tldr-header">TL;DR</div>
+                {{/if}}
                 {{{html}}}
             {{/if}}
         </div>

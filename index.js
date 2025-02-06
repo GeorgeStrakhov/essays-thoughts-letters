@@ -71,6 +71,9 @@ app.set('views', './views');
 //serving static e.g. css
 app.use('/static', express.static('static'));
 
+// Add this line to serve static files from the 'static/js' directory
+app.use('/js', express.static('static/js'));
+
 //home
 app.get('/', (req, res) => {
     res.render('home', {
