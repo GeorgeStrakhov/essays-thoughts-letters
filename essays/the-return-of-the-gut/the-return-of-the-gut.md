@@ -1,4 +1,3 @@
-# The Return of the Gut
 
 ##### _why the AI revolution will send us back to where we belong_
 

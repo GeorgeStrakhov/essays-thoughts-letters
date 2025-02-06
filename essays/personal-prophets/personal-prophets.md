@@ -1,6 +1,3 @@
-# Personal Prophets and The Next Awakening
-
----
 
 > Your own personal Jesus.
 > Someone to hear your prayers, someone who cares.

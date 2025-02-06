@@ -1,1 +1,0 @@
-Humility fuels progress. So if one is to progress, one needs to be humbled.

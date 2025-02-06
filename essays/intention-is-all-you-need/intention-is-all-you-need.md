@@ -1,5 +1,3 @@
-# Intention is all you need
-
 There are many challenges on the path towards creating a generally intelligent [society of mind](https://en.wikipedia.org/wiki/Society_of_Mind) (GISOM), which is the only viable AGI destination I can see.
 
 Broadly speaking, these challenges can be categorized into three buckets:

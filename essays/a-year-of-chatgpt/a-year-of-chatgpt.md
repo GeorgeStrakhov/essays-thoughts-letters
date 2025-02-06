@@ -1,6 +1,3 @@
-# Reflections on the first year of ChatGPT
-
-- - -
 
 While it's been a year since ChatGPT launch, the technology has actually been around for much longer. I started experimenting around the time GPT-2 was released in 2019. And built my first public product (Uncreative Agency) in 2022 using GPT-3.
 

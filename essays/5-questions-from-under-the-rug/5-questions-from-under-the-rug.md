@@ -1,5 +1,3 @@
-# 5 Questions from under the rug
-
 There are lots of skeletons in the cupboard of civilisation. And plenty of big hairy questions that we swipe under the rug and try not to think about, because thinking about them hurts.
 
 Don't get me wrong, I don't believe there is anything categorically immoral about keeping difficult truths locked up in distant cupboards and difficult questions hidden under the rug of consciousness. In fact I would say it is essential to basic functioning of an individual (and a society) to have a mechanism for NOT thinking about these things all the time. Starving due to paralysis of analysis is a rather silly way to die.

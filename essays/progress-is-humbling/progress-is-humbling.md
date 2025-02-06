@@ -1,5 +1,3 @@
-# Progress is Humbling
-
 ##### _Is falling on our faces the only way of moving forward?_
 
 ---

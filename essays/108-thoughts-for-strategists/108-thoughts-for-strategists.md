@@ -1,7 +1,3 @@
-## 108 thoughts for strategists
-
----
-
 > For Ecem, Christian and The Circuit, 020220104
 
 

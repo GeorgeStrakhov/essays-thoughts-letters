@@ -1,10 +1,4 @@
-# Gods have to play dice
-
-
 ##### _problems and principles of designing artificial decision-makers_
-
-
----
 
 
 > "It is a profoundly erroneous truism, repeated by all copy-books and by eminent people when they are making speeches, that we should cultivate the habit of thinking what we are doing. The precise opposite is the case. Civilization advances by extending the number of important operations which we can perform without thinking about them"

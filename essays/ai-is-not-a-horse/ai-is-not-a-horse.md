@@ -1,7 +1,3 @@
-# AI is not a horse
-
----
-
 >*“My muse is not a horse and I am in no horse race and if indeed she was, still I would not harness her to this tumbrel — this bloody cart of severed heads and glittering prizes. My muse may spook! May bolt! May abandon me completely!”*
 >
 > Nick Cave

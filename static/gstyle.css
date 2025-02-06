@@ -1,8 +1,8 @@
-/* Theme toggle */
-.theme-toggle {
+/* Theme toggle and home button shared styles */
+.theme-toggle,
+.home-button {
     position: fixed;
     top: 1rem;
-    right: 1rem;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -17,11 +17,21 @@
     transition: background-color 0.3s, opacity 0.3s ease;
 }
 
-.theme-toggle:hover {
+.theme-toggle {
+    right: 1rem;
+}
+
+.home-button {
+    left: 1rem;
+}
+
+.theme-toggle:hover,
+.home-button:hover {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.theme-toggle svg {
+.theme-toggle svg,
+.home-button svg {
     width: 20px;
     height: 20px;
 }
@@ -43,8 +53,14 @@
     display: none;
 }
 
-.theme-dark .theme-toggle {
+.theme-dark .theme-toggle,
+.theme-dark .home-button {
     background: rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark .theme-toggle:hover,
+.theme-dark .home-button:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 /* Base typography */
@@ -53,6 +69,11 @@ body {
     line-height: 1.7;
     font-size: 18px;
     transition: background-color 0.3s, color 0.3s;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 /* Headings with more spacing */
@@ -180,11 +201,24 @@ hr {
 table {
     margin: 2rem 0;
     width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    overflow-x: auto;
+    display: block;
 }
 
 table th,
 table td {
     padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    min-width: 120px;
+    max-width: 300px;
+}
+
+.theme-dark table td,
+.theme-dark table th {
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Back link in essays */
@@ -308,6 +342,65 @@ table td {
     font-style: italic;
 }
 
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .zoom-control {
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+    }
+
+    .zoom-slider {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: center;
+    }
+
+    /* Hide the connecting line on mobile */
+    .zoom-slider::before {
+        display: none;
+    }
+
+    .zoom-level {
+        padding: 0.5rem 0.75rem;
+        min-width: auto;
+        flex: 0 1 calc(33.33% - 0.75rem); /* Change to 33.33% for 3 items per row */
+        font-size: 0.85em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+    /* Remove the order and full-width properties for active state */
+    .zoom-level.active {
+        transform: scale(1.05);  /* Keep the scale effect */
+    }
+
+    .version-info {
+        margin-top: 1rem;
+        font-size: 0.85em;
+        padding: 0 0.5rem;
+    }
+
+    table {
+        font-size: 0.85em;
+    }
+    
+    table th,
+    table td {
+        padding: 0.5rem;
+        min-width: 100px;
+    }
+}
+
+/* Even smaller screens */
+@media screen and (max-width: 380px) {
+    .zoom-level {
+        flex: 0 1 calc(50% - 0.75rem);  /* Change to 50% for 2 items per row */
+    }
+}
+
 /* Dark theme adjustments */
 .theme-dark .zoom-control {
     background: #2a2a2a;
@@ -353,50 +446,4 @@ table td {
 
 .theme-dark .tldr-header {
     color: #999;
-}
-
-/* Mobile adjustments */
-@media screen and (max-width: 768px) {
-    .zoom-control {
-        padding: 1.5rem 1rem;
-        margin: 1rem 0;
-    }
-
-    .zoom-slider {
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        justify-content: center;
-    }
-
-    /* Hide the connecting line on mobile */
-    .zoom-slider::before {
-        display: none;
-    }
-
-    .zoom-level {
-        padding: 0.5rem 0.75rem;
-        min-width: auto;  /* Let buttons be their natural width */
-        flex: 0 1 calc(50% - 0.75rem);  /* Two buttons per row, accounting for gap */
-        font-size: 0.85em;
-    }
-
-    /* Make active state more prominent on mobile */
-    .zoom-level.active {
-        flex: 0 1 100%;  /* Active button takes full width */
-        order: -1;  /* Put active button at the top */
-        margin-bottom: 0.5rem;
-    }
-
-    .version-info {
-        margin-top: 1rem;
-        font-size: 0.85em;
-        padding: 0 0.5rem;
-    }
-}
-
-/* Even smaller screens */
-@media screen and (max-width: 380px) {
-    .zoom-level {
-        flex: 0 1 100%;  /* Stack all buttons vertically */
-    }
 }

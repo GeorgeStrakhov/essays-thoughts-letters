@@ -1,4 +1,3 @@
-# To Doubt or Not to Doubt?
 
 > For June, 020220103
 

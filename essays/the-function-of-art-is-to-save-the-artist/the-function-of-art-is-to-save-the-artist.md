@@ -1,4 +1,3 @@
-# The Function of Art is to save the Artist
 
 #### _Conflict, creativity and the function of art in times of crisis_
 

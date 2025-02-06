@@ -1,7 +1,3 @@
-# Towards a more Elvish vision for Technology
-
----
-
 > For Gavin, 020210703
 
 There are at least two kinds of magic. These two kinds may not always be distinct in their appearance, but are very different in their underlying motives and their ultimate outcomes[^1].

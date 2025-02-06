@@ -88,25 +88,41 @@
       }
     });
 
-    // Add scroll behavior for theme toggle
+    // Update scroll behavior for both buttons
     let lastScrollY = window.scrollY;
-    const scrollThreshold = 100; // Show button when within 100px of top
+    const scrollThreshold = 100; // Show buttons when within 100px of top
+    const homeButton = document.getElementById('home-button');
 
     window.addEventListener('scroll', () => {
-      const currentScrollY = window.scrollY;
-      
-      if (currentScrollY <= scrollThreshold) {
-        // Near the top - show the button
-        themeToggle.style.opacity = '1';
-        themeToggle.style.pointerEvents = 'auto';
-      } else {
-        // Scrolled down - hide the button
-        themeToggle.style.opacity = '0';
-        themeToggle.style.pointerEvents = 'none';
-      }
-      
-      lastScrollY = currentScrollY;
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY <= scrollThreshold) {
+            // Near the top - show the buttons
+            themeToggle.style.opacity = '1';
+            themeToggle.style.pointerEvents = 'auto';
+            if (homeButton) { // Check if home button exists (only on essay pages)
+                homeButton.style.opacity = '1';
+                homeButton.style.pointerEvents = 'auto';
+            }
+        } else {
+            // Scrolled down - hide the buttons
+            themeToggle.style.opacity = '0';
+            themeToggle.style.pointerEvents = 'none';
+            if (homeButton) {
+                homeButton.style.opacity = '0';
+                homeButton.style.pointerEvents = 'none';
+            }
+        }
+        
+        lastScrollY = currentScrollY;
     });
+
+    // Add click handler for home button if it exists
+    if (homeButton) {
+        homeButton.addEventListener('click', () => {
+            window.location.href = '/';
+        });
+    }
   </script>
 </body>
 </html>

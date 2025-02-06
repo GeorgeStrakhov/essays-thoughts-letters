@@ -1,4 +1,3 @@
-# The Pact with Power
 
 If you are interested in understanding the structural stability of any society, one useful question to ask is this:
 

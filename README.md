@@ -49,3 +49,11 @@ And we should add a captcha or something to prevent robot abuse.
 ### Deployed via Fly.io
 
 Automatic redeploy on every push to github to the main branch.
+
+
+## TODO
+
+- get in gemini with large context to generate
+- adjust prompts to be more consistent in style and quality of writing
+- 404 generate logic
+- add email service to send new versions to me for review

@@ -1,5 +1,3 @@
-# 23 Points on Micro&shy;conscious&shy;ness
-
 1. A microconsciously independent digital organism (MIDO) lives in a datasphere, but is separated from it.
 
 2. The information membrane that separates MIDO from the rest of the datasphere is porous. Sensors allow a MIDO to pull information in and turn parts of it into the MIDO's own structures. Actuators allow it to put information out there. In reality it's a little more nuanced, because sensors can and should also work on internal state and actuators can and should modify not just external environments, but internal state as well. We will get to that.

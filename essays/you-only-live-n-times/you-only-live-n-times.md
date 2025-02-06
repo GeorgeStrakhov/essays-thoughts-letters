@@ -1,6 +1,7 @@
 
-##### a thought experiment in playful living {.text-center .text-italic}
+##### a thought experiment in playful living {.text-italic}
 
+---
 
 ![You Only Live N Times](./img/you_only_live_n_times.jpg "You Only Live N Times")
 

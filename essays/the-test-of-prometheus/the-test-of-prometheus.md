@@ -1,4 +1,3 @@
-# The Test of Prometheus
 
 ##### _Will our AIs stop believing in us if we give them the fire of free will?_
 
