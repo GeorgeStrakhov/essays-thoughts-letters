@@ -2,8 +2,9 @@ import OpenAI from "openai";
 import dotenv from "dotenv";
 import { getReferenceCorpus } from './corpus.js';
 import fs from 'fs';
-import { NEW_ESSAY_PROMPTS } from './prompts.js';
+import { NEW_ESSAY_PROMPTS, SYSTEM_PROMPTS } from './prompts.js';
 import path from 'path';
+import { sendMarkdownEmail } from './email.js';
 
 // Load environment variables
 dotenv.config();
@@ -17,7 +18,7 @@ const openai = new OpenAI({
 //const DEFAULT_MODEL = "anthropic/claude-3.5-sonnet";
 const DEFAULT_MODEL = "google/gemini-2.0-flash-001";
 const FALLBACK_MODEL = "google/gemini-2.0-flash-001";
-const DEFAULT_TEMPERATURE = 0.4;
+const DEFAULT_TEMPERATURE = 0.7;
 
 /**
  * Get a chat completion from the LLM
@@ -37,7 +38,7 @@ export async function getVersion(
     let lastError = null;
 
     // Determine if this is a long-form content request (30m)
-    const contentLength = userMessage.includes('30m') ? '30m' : null;
+    const contentLength = userMessage.match(/(\d+)m/)?.[1] + 'm';
     
     // Choose initial model based on content length
     let currentModel = contentLength === '30m' ? FALLBACK_MODEL : DEFAULT_MODEL;
@@ -87,7 +88,25 @@ export async function getVersion(
 
             clearTimeout(timeoutId);
             console.log(`[LLM] Successfully got response`);
-            return completion.choices[0].message.content;
+
+            const response = completion.choices[0].message.content;
+            
+            // Extract zoom level from the system prompt by matching it with SYSTEM_PROMPTS
+            const contentLength = Object.entries(SYSTEM_PROMPTS)
+                .find(([_, prompt]) => prompt === systemPrompt)?.[0] || '5m';
+            
+            const filename = `${currentSlug}${contentLength ? `.${contentLength}` : ''}.md`;
+            const emailSubject = originalContent !== null ?
+                `New Version Generated: ${currentSlug} (${contentLength})` :
+                `New Essay Generated: ${currentSlug} (${contentLength})`;
+                
+            await sendMarkdownEmail(
+                emailSubject,
+                response,
+                filename
+            );
+
+            return response;
 
         } catch (error) {
             lastError = error;
@@ -160,7 +179,7 @@ export async function generateNewEssay(slug) {
             NEW_ESSAY_PROMPTS.system,
             NEW_ESSAY_PROMPTS.user(topic),
             slug,
-            null
+            null  // This indicates it's a new essay
         );
 
         // Create essay directory
@@ -198,6 +217,13 @@ export async function generateNewEssay(slug) {
         toc.push(newEssay);
         await fs.promises.writeFile(tocPath, JSON.stringify(toc, null, 2));
         console.log(`Added new essay to TOC: ${slug} with ${wordCount} words`);
+
+        // Send email notification for new essay
+        await sendMarkdownEmail(
+            `New Essay Generated: ${slug}`,
+            essayContent,
+            `${slug}.md`
+        );
 
         return true;
     } catch (error) {

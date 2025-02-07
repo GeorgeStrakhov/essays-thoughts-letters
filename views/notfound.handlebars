@@ -1,10 +1,14 @@
-<a href="/">Essays. Thoughts. Letters.</a>
-<hr />
+<button id="home-button" class="home-button" aria-label="Go to homepage">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+    </svg>
+</button>
 
 <div class="not-found-container">
     {{#if isEssayPath}}
         <h1>Not found... yet!</h1>
-        <p>Looks like the real flesh-and-bone George hasn't written about "{{topicName}}" yet.</p>
+        <p>Looks like the flesh and blood George hasn't written about "{{topicName}}" yet.</p>
         
         <div class="ai-generate-section">
             <p>But if you're curious what he might write about it... you can get his AI doppelganger to have a go.</p>
@@ -20,3 +24,8 @@
         <p>Page not found.</p>
     {{/if}}
 </div>
+
+{{#if isEssayPath}}
+    <script src="/static/js/notfound.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
+{{/if}}

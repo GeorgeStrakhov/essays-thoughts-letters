@@ -22,6 +22,7 @@
     "marked": "^4.2.12",
     "node-fetch": "^3.2.6",
     "openai": "^4.83.0",
+    "postmark": "^4.0.5",
     "xml": "^1.0.1"
   },
   "devDependencies": {

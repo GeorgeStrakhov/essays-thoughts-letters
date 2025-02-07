@@ -5,7 +5,7 @@
     "timestamp": "020250206",
     "versions": {
       "1m": {
-        "wordCount": 278,
+        "wordCount": 313,
         "isOriginal": true
       },
       "5m": {
@@ -47,7 +47,7 @@
         "vettedTimestamp": "020250114"
       },
       "15m": {
-        "wordCount": 1018,
+        "wordCount": 984,
         "isOriginal": false,
         "isHumanVetted": false
       }
@@ -106,7 +106,7 @@
         "isOriginal": true
       },
       "1m": {
-        "wordCount": 190,
+        "wordCount": 155,
         "isOriginal": false,
         "isHumanVetted": false
       }
@@ -123,6 +123,16 @@
       "5m": {
         "wordCount": 1167,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 158,
+        "isOriginal": false,
+        "isHumanVetted": false
+      },
+      "15m": {
+        "wordCount": 466,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -177,7 +187,7 @@
         "isHumanVetted": false
       },
       "5m": {
-        "wordCount": 384,
+        "wordCount": 410,
         "isOriginal": false,
         "isHumanVetted": false
       }
@@ -269,6 +279,21 @@
       "30m": {
         "wordCount": 6405,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 163,
+        "isOriginal": false,
+        "isHumanVetted": false
+      },
+      "5m": {
+        "wordCount": 644,
+        "isOriginal": false,
+        "isHumanVetted": false
+      },
+      "15m": {
+        "wordCount": 1158,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "30m"
@@ -300,6 +325,11 @@
       "5m": {
         "wordCount": 1206,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 71,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -312,6 +342,16 @@
       "15m": {
         "wordCount": 2911,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 668,
+        "isOriginal": false,
+        "isHumanVetted": false
+      },
+      "5m": {
+        "wordCount": 381,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "15m"
@@ -325,6 +365,11 @@
       "5m": {
         "wordCount": 893,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 2028,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -346,5 +391,22 @@
       }
     },
     "naturalZoomLevel": "15m"
+  },
+  {
+    "title": "Telescopic Content",
+    "slug": "telescopic-content",
+    "timestamp": "020250207",
+    "versions": {
+      "5m": {
+        "wordCount": 828,
+        "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 103,
+        "isOriginal": false,
+        "isHumanVetted": true
+      }
+    },
+    "naturalZoomLevel": "5m"
   }
 ]

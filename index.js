@@ -109,91 +109,86 @@ app.get('/', (req, res) => {
 
 //RSS
 app.get('/feed.rss', async function(req, res) {
+    // Set base URL with fallback for local development
+    const baseUrl = BASE_URL || 'http://localhost:3000';
 
+    // Create feed object
+    const feed = {
+        rss: [{
+            _attr: {
+                version: '2.0',
+                'xmlns:atom': 'http://www.w3.org/2005/Atom'
+            }
+        }, {
+            channel: [
+                { title: "George Strakhov's Telescopic Essays" },
+                { link: baseUrl },
+                { description: "Telescopic essays that can be read at different zoom levels" },
+                {
+                    'atom:link': {
+                        _attr: {
+                            href: `${baseUrl}/feed.rss`,
+                            rel: 'self',
+                            type: 'application/rss+xml'
+                        }
+                    }
+                },
+                { language: 'en-US' }
+            ]
+        }]
+    };
+
+    // Will store feed items here
     const feedItems = [];
-    let feedItem = {};
     let essayText;
     let renderedEssay;
 
-    //build feed Items
-    toc.forEach((essay) => {
-
-        essayText = fs.readFileSync(`./essays/${essay.slug}/${essay.slug}.md`, 'utf8');
-        //render .md as .html
-        renderedEssay = markdown.render(essayText);
-
-        //replace relative paths to images to absolute ones
-        renderedEssay = renderedEssay.replace(/src="([^"]*)"/g, (match, path) => {
-            let absoluteUrl = new URL(path, `${BASE_URL}/${essay.slug}/`).toString();
-            return `src="${absoluteUrl}"`;
-        });
-
-        //construct feed item
-        feedItem = {
-            item: [
-                { title: essay.title },
-                {
-                    pubDate: formatDate(essay.timestamp.slice(1))
-                },
-                {
-                    guid: [
-                        { _attr: { isPermaLink: true } },
-                        `${BASE_URL}/${essay.slug}/`,
-                    ],
-                },
-                {
-                    description: {
-                        _cdata: renderedEssay,
-                    },
-                },
-            ],
-        };
-
-        feedItems.push(feedItem);
-
+    // Sort essays by timestamp (newest first)
+    const sortedEssays = [...toc].sort((a, b) => {
+        const timeA = parseInt(a.timestamp.slice(1));
+        const timeB = parseInt(b.timestamp.slice(1));
+        return timeB - timeA;
     });
 
-    //sort feed items by date
-    feedItems.sort((a, b) => a.pubDate - b.pubDate);
+    // Process each essay
+    for (const essay of sortedEssays) {
+        try {
+            // Get essay content
+            const essayPath = `./essays/${essay.slug}/${essay.slug}.md`;
+            essayText = await readFile(essayPath, 'utf8');
 
-    //build feed object
+            // Convert relative image paths to absolute URLs
+            essayText = essayText.replace(
+                /!\[([^\]]*)\]\(\.\/img\/(.*?)\)/g,
+                (match, alt, imgPath) => `![${alt}](${baseUrl}/${essay.slug}/img/${imgPath})`
+            );
 
-    const feedObject = {
-        rss: [
-            {
-                _attr: {
-                    version: "2.0",
-                    "xmlns:atom": "http://www.w3.org/2005/Atom",
-                },
-            },
-            {
-                channel: [
-                    {
-                        "atom:link": {
-                            _attr: {
-                                href: `${BASE_URL}/feed.rss`,
-                                rel: "self",
-                                type: "application/rss+xml",
-                            },
-                        },
-                    },
-                    {
-                        title: "George Strakhov's Essays",
-                    },
-                    {
-                        link: `${BASE_URL}`,
-                    },
-                    { description: "Essays. Thoughts. Letters. By George." },
-                    { language: "en-US" },
-                    ...feedItems,
-                ],
-            },
-        ],
-    };
+            // Render markdown to HTML
+            renderedEssay = markdown.render(essayText);
 
-    const feed = '<?xml version="1.0" encoding="UTF-8"?>' + xml(feedObject);
-    res.set('Content-Type', 'text/xml');
-    res.send(feed);
+            // Construct feed item
+            feedItems.push({
+                item: [
+                    { title: essay.title },
+                    { link: `${baseUrl}/${essay.slug}/` },
+                    { pubDate: formatDate(essay.timestamp) },
+                    { guid: `${baseUrl}/${essay.slug}/` },
+                    { description: { _cdata: renderedEssay } }
+                ]
+            });
+
+        } catch (error) {
+            console.error(`Error processing essay ${essay.slug}:`, error);
+            continue;
+        }
+    }
+
+    // Add items to feed
+    feed.rss[1].channel.push(...feedItems);
+
+    // Set content type and send response
+    res.set('Content-Type', 'application/xml');
+    res.send(xml(feed, { declaration: true }));
 });
 
 //this is specifically for images. we do it this ugly way because it's silly, but works and we want the images to be inside the essay directory - so that markdown is self-contained and also renders on github etc.
@@ -351,7 +346,6 @@ app.get('/:essaySlug/', async function(req, res, next) {
     }
 });
 
-// Add this before the catch-all 404 route
 
 app.get('/:essaySlug/check-version', function(req, res) {
     const slug = req.params.essaySlug;

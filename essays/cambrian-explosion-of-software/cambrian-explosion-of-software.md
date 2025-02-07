@@ -11,3 +11,5 @@
 - In the short to mid term, this means that software engineers will need to become software architects and designers. People who decide what to build and how to build in a way that will anticipate change, rather than do the grunt work of the building.
 
 - In the long term, the architecture itself will also become secondary because building will become so cheap and trivial that you can just build inefficient things and let them die out. So the real job will be that of a software breeder. Or a software gardener. Extending natural selection with artificial one. Guiding software evolution in ways they find purposeful, profitable, interesting or aesthetically pleasing.
+
+- If the most important thing for a software breeder is to find the right niche, then most critical effort should be in problem-hunting. That's why we are are building [a platform just for that](https://problemhunt.org).

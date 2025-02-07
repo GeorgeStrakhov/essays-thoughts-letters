@@ -31,17 +31,15 @@ export async function getReferenceCorpus(currentSlug = null) {
         const tocPath = path.join(process.cwd(), 'toc.json');
         const toc = JSON.parse(await fs.readFile(tocPath, 'utf-8'));
         
-        // Sort by timestamp (most recent first) and filter out current essay if provided
-        const sortedEssays = toc
+        // Filter essays and shuffle them
+        const eligibleEssays = toc
             .filter(essay => 
-                // Skip current essay
                 (!currentSlug || essay.slug !== currentSlug) &&
-                // Skip essays with no versions (incomplete/generating)
                 essay.versions && Object.keys(essay.versions).length > 0 &&
-                // Skip AI-generated essays when getting reference corpus
                 !essay.isAIGenerated
             )
-            .sort((a, b) => b.timestamp - a.timestamp);
+            // Shuffle the array using Fisher-Yates algorithm
+            .sort(() => Math.random() - 0.5);
 
         // Get content for each essay, limiting total size
         const essays = [];
@@ -50,7 +48,7 @@ export async function getReferenceCorpus(currentSlug = null) {
         // Rough approximation: 1 token ≈ 4 characters
         const CHARS_PER_TOKEN = 4;
 
-        for (const essay of sortedEssays) {
+        for (const essay of eligibleEssays) {
             try {
                 const content = await getEssayContent(essay.slug);
                 
