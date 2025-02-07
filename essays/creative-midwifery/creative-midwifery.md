@@ -30,4 +30,4 @@ Like a midwife assisting a mother in labor, the creative midwife is present, att
 
 In a world increasingly dominated by algorithms and automation, it's easy to feel like we are losing our agency, our ability to shape our own destinies. But creative midwifery offers a different perspective: a way of working *with* technology, rather than being controlled by it. By embracing a more humble and receptive approach to creativity, we can harness the power of technology to bring forth new possibilities, new forms of expression, and new ways of being human.
 
-Think of it as a larger pond. With more fishes. Beautiful fishes. [Weird fishes]https://www.youtube.com/watch?v=pcEJyvv6_kc). Do you have your hook out?
+Think of it as a larger pond. With more fishes. Beautiful fishes. [Weird fishes](https://www.youtube.com/watch?v=pcEJyvv6_kc). Do you have your hook out?
