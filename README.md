@@ -49,10 +49,3 @@ And we should add a captcha or something to prevent robot abuse.
 ### Deployed via Fly.io
 
 Automatic redeploy on every push to github to the main branch.
-
-
-## TODO
-
-- 404 generate logic
-- add email service to send new versions to me for review
-- add an essay on telescopic writing and reading (oh, and a chrome plugin?)
