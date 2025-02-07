@@ -15,8 +15,8 @@ const openai = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY
 });
 
-//const DEFAULT_MODEL = "anthropic/claude-3.5-sonnet";
-const DEFAULT_MODEL = "google/gemini-2.0-flash-001";
+const DEFAULT_MODEL = "anthropic/claude-3.5-sonnet";
+//const DEFAULT_MODEL = "google/gemini-2.0-flash-001";
 const FALLBACK_MODEL = "google/gemini-2.0-flash-001";
 const DEFAULT_TEMPERATURE = 0.7;
 
