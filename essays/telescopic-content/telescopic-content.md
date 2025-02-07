@@ -1,6 +1,6 @@
 I find the best non-fiction writing to be fractal, or [telescopic](https://telescopictext.org). It scales nicely with the amount of attention that you decide to bestow on it, and still makes sense and is tightly packed at every scale.
 
-Chris Alexander's ["A city is not a tree"](https://bp.ntu.edu.tw/001/Upload/1352/ckfile/176357fb-2068-4e40-8c50-593780261ce7.pdf) is a great example of that. It works at a slogan level. Just the title itself in 6 words outlines the key idea. And yet - at the essay level it works too and is not just a lot extra length without much extra signal. I can also imagine that if Chris Alexander wrote a book-length exposition - it would still be powerful in its own right. Without feeling like a "a book that could have been a blogpost".
+Christopher Alexander's ["A city is not a tree"](https://bp.ntu.edu.tw/001/Upload/1352/ckfile/176357fb-2068-4e40-8c50-593780261ce7.pdf) is a great example of that. It works at a slogan level. Just the title itself in 6 words outlines the key idea. And yet - at the essay level it works too and is not just a lot of extra words without much extra signal. I can also imagine that if Christopher Alexander wrote a book-length exposition - it would still be powerful in its own right. Without feeling like a "a book that could have been a blogpost".
 
 Writing telescopically is difficult. It pushes you to get to the core of your argument in a similar way that Picasso's famous [bull exploration](https://en.wikipedia.org/wiki/Le_Taureau) did. What are the key lines that make this bull really what it is?
 
