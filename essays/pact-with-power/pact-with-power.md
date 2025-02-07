@@ -47,4 +47,3 @@ This relaxed pact makes for a very comfortable life. But this are changing in Th
 The renegotiation of the pact is happening across Europe as we speak. The "rise of the right" is merely a symptom of the breakdown of Western Europeans' "leave me alone, don't steal and you are good" pact with their governments. The new pact will probably be much less about non-interference and much more about active protection.
 
 
-[Amstelveen, 020240317]

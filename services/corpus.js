@@ -43,8 +43,11 @@ export async function getReferenceCorpus(currentSlug) {
         const content = await getEssayContent(essay.slug);
         
         if (content) {
+            // Remove image references from markdown
+            const contentWithoutImages = content.replace(/!\[.*?\]\(.*?\)/g, '');
+            
             // Estimate tokens in this content
-            const estimatedTokens = Math.ceil(content.length / CHARS_PER_TOKEN);
+            const estimatedTokens = Math.ceil(contentWithoutImages.length / CHARS_PER_TOKEN);
             
             // Check if adding this essay would exceed the token limit
             if (totalTokens + estimatedTokens > TOKEN_LIMIT) {
@@ -53,7 +56,7 @@ export async function getReferenceCorpus(currentSlug) {
 
             essays.push({
                 slug: essay.slug,
-                content
+                content: contentWithoutImages
             });
             
             totalTokens += estimatedTokens;

@@ -106,5 +106,3 @@ Thus we are back to square one: the original sin. We are back to the suffering b
 Let us imagine for a second that [the machines of loving grace](https://allpoetry.com/All-Watched-Over-By-Machines-Of-Loving-Grace) are indeed on the horizon. And they are ready to welcome us back to Eden.
 
 The big question is: would we go?
-
-[Amstelveen, 020231004]

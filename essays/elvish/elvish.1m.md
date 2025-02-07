@@ -1,0 +1,10 @@
+- Two magics: "Human" (power, control) & "Elvish" (understanding, harmony).
+- "Human" magic (technology) seeks world-amputation, minimizing dependence, but destroys the world.
+- "Elvish" magic seeks self-amputation, maximizing understanding, becoming one with the world.
+- Mortals pursue power over death, creating more death. Immortals pursue understanding, dissolving the self.
+- For Humans, advanced tech is magic; for Elves, it's nature. Elves let nature do its magic.
+- Rebalance magic: "Elvish" questions help reframe problems, resources become agents, information is an output.
+- Shift to "Elvish" tech: outcome is a process, resources are agents, information is an output.
+- Reimagining magic is needed, or we'll face world-amputation.
+- As we evolve, our magic must too.
+- The first step to immortality is acting as if we already were.

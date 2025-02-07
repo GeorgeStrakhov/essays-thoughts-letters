@@ -7,10 +7,10 @@ This is a simple minimal repo for my essays, letters and thoughts that can expan
 - Inside `essays` each essay has its own directory containing:
   - `{essayName}.md` - the original essay (standard 5-minute version)
   - Time-based variations: `{essayName}.{time}.md` where time is:
-    - `10s` - Ten-second version (one-liner)
     - `1m` - One-minute version (TLDR with bullets)
+    - `5m` - Five-minute version (basic argument)
     - `15m` - Fifteen-minute version (detailed exploration)
-    - `30m` - Thirty-minute version (comprehensive analysis with commentary)
+    - `30m` - Thirty-minute version (comprehensive analysis with interdisciplinary commentary)
   - `img/` subfolder - containing images (.png, .jpg, or .svg files)
 - `toc.json` file containing the list of all essays, each with a name, slug(directory_name) and last edited date
 - `index.js` - Express.js server that generates HTML for individual essays, 404s, or the essay list
@@ -53,7 +53,6 @@ Automatic redeploy on every push to github to the main branch.
 
 ## TODO
 
-- get in gemini with large context to generate
-- adjust prompts to be more consistent in style and quality of writing
 - 404 generate logic
 - add email service to send new versions to me for review
+- add an essay on telescopic writing and reading (oh, and a chrome plugin?)

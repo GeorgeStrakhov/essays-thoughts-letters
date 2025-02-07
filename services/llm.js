@@ -1,7 +1,6 @@
 import OpenAI from "openai";
 import dotenv from "dotenv";
 import { getReferenceCorpus } from './corpus.js';
-import { SYSTEM_PROMPT, REFINEMENT_PROMPT, REFINEMENT_USER_TEMPLATE } from './prompts.js';
 
 // Load environment variables
 dotenv.config();
@@ -11,6 +10,10 @@ const openai = new OpenAI({
     baseURL: "https://openrouter.ai/api/v1",
     apiKey: process.env.OPENROUTER_API_KEY
 });
+
+const DEFAULT_MODEL = "anthropic/claude-3.5-sonnet";
+const FALLBACK_MODEL = "google/gemini-2.0-flash-001";
+const DEFAULT_TEMPERATURE = 0.4;
 
 /**
  * Get a chat completion from the LLM
@@ -22,53 +25,86 @@ const openai = new OpenAI({
  * @param {number} [temperature=0.7] - Temperature for response randomness
  * @returns {Promise<string>} The assistant's response
  */
-export async function getChatCompletion(
+export async function getVersion(
     systemPrompt,
     userMessage,
     currentSlug,
-    originalContent,
-    //model = "google/gemini-2.0-flash-001",
-    model = "anthropic/claude-3.5-sonnet",
-    temperature = 0.7
+    model = DEFAULT_MODEL,
+    temperature = DEFAULT_TEMPERATURE
 ) {
-    try {
-        // Get reference essays
-        const referenceEssays = await getReferenceCorpus(currentSlug);
+    // Use Gemini by default for 30min versions
+    if (userMessage.includes("30 min version")) {
+        model = FALLBACK_MODEL;
+        console.log("Using Gemini model for 30min version");
+    }
+    
+    const MAX_RETRIES = 3;
+    const TIMEOUT = 120000; // 2 minutes timeout
+    let currentModel = model;
+    
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+        try {
+            console.log(`Attempt ${attempt} of ${MAX_RETRIES} using model: ${currentModel}`);
 
-        // Construct messages array
-        const messages = [
-            {
-                role: "system",
-                content: systemPrompt
+            // Get reference essays
+            const referenceEssays = await getReferenceCorpus(currentSlug);
+
+            // Construct messages array with zoom-specific system prompt
+            const messages = [
+                {
+                    role: "system",
+                    content: systemPrompt
+                }
+            ];
+
+            // Add reference essays as examples
+            for (const essay of referenceEssays) {
+                messages.push({
+                    role: "user",
+                    content: `REFERENCE STYLE AND CONTENT FROM "${essay.slug}":\n\n${essay.content}`
+                });
             }
-        ];
 
-        // Add reference essays as user messages
-        for (const essay of referenceEssays) {
             messages.push({
                 role: "user",
-                content: `REFERENCE STYLE AND CONTENT FROM "${essay.slug}":\n\n${essay.content}`
+                content: userMessage
             });
+
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
+
+            const completion = await openai.chat.completions.create({
+                model: currentModel,
+                temperature: temperature,
+                messages: messages
+            }, {
+                signal: controller.signal
+            });
+
+            clearTimeout(timeoutId);
+            return completion.choices[0].message.content;
+
+        } catch (error) {
+            console.error(`Attempt ${attempt} failed:`, error);
+            
+            if (error.name === 'AbortError') {
+                console.log('Request timed out');
+            }
+            
+            // Switch to fallback model after first failure if using default model
+            if (attempt === 1 && currentModel === DEFAULT_MODEL) {
+                console.log(`Switching to fallback model: ${FALLBACK_MODEL}`);
+                currentModel = FALLBACK_MODEL;
+                continue; // Skip the retry delay for model switch
+            }
+            
+            if (attempt === MAX_RETRIES) {
+                throw new Error(`Failed after ${MAX_RETRIES} attempts: ${error.message}`);
+            }
+            
+            // Wait before retrying (exponential backoff)
+            await new Promise(resolve => setTimeout(resolve, 1000 * Math.pow(2, attempt)));
         }
-
-        // Add the final instruction
-        messages.push({
-            role: "user",
-            content: userMessage
-        });
-
-        //console.log(messages);
-
-        const completion = await openai.chat.completions.create({
-            model: model,
-            temperature: 0.2,
-            messages: messages
-        });
-
-        return completion.choices[0].message.content;
-    } catch (error) {
-        console.error("Error in LLM service:", error);
-        throw new Error("Failed to get chat completion");
     }
 }
 
@@ -89,11 +125,10 @@ export async function getRefinedChatCompletion(
     originalContent,
     //model = "google/gemini-2.0-flash-001",
     model = "anthropic/claude-3.5-sonnet",
-    temperature = 0.5
+    temperature = 0.4
 ) {
     try {
-        // First pass - get initial adaptation
-        const firstPassResult = await getChatCompletion(
+        const result = await getChatCompletion(
             systemPrompt,
             userMessage,
             currentSlug,
@@ -102,31 +137,7 @@ export async function getRefinedChatCompletion(
             temperature
         );
 
-        /*
-        const targetLengthMatch = userMessage.match(/target length: (\d+)/i);
-        const targetLength = targetLengthMatch ? targetLengthMatch[1] : null;
-
-        // Second pass - refinement
-        const refinementMessages = [
-            {
-                role: "system",
-                content: REFINEMENT_PROMPT
-            },
-            {
-                role: "user",
-                content: REFINEMENT_USER_TEMPLATE(originalContent, firstPassResult, targetLength)
-            }
-        ];
-
-        const refinementCompletion = await openai.chat.completions.create({
-            model: model,
-            temperature: temperature,
-            messages: refinementMessages
-        });
-
-        return refinementCompletion.choices[0].message.content;
-        */
-       return firstPassResult;
+        return result;
 
     } catch (error) {
         console.error("Error in LLM refinement service:", error);

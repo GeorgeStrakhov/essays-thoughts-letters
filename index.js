@@ -8,8 +8,8 @@ import fs from 'fs';
 import path from 'path';
 import xml from 'xml';
 import { ZOOM_LEVELS, findNaturalZoomLevel } from './services/prompts.js';
-import { getChatCompletion } from './services/llm.js';
-import { SYSTEM_PROMPT, USER_PROMPT_TEMPLATE } from './services/prompts.js';
+import { getVersion } from './services/llm.js';
+import { SYSTEM_PROMPTS, USER_PROMPT_TEMPLATE } from './services/prompts.js';
 
 const BASE_URL = process.env['BASE_URL'];
 
@@ -62,6 +62,19 @@ app.engine('handlebars', engine({
         },
         lookup: function (obj, field) {
             return obj && obj[field];
+        },
+        formatDate: function(timestamp) {
+            if (!timestamp) return '';
+            // Remove the leading '0' from the timestamp (e.g., "020250206" -> "20250206")
+            const dateStr = timestamp.slice(1);
+            const year = dateStr.slice(0, 4);
+            const month = dateStr.slice(4, 6) - 1; // JS months are 0-based
+            const day = dateStr.slice(6);
+            return new Date(year, month, day).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
         }
     }
 }));
@@ -244,8 +257,8 @@ app.get('/:essaySlug/', async function(req, res) {
                     description: essay.description,
                     featured_image: essay.featured_image,
                     html: `<div class="generating">
-                        <h2>Generating ${ZOOM_LEVELS[zoomLevel].name} version...</h2>
-                        <p>This may take a few seconds.</p>
+                        <h2>Writing ${ZOOM_LEVELS[zoomLevel].name} version for the first time...</h2>
+                        <p>This may take a little while.</p>
                     </div>`,
                     zoomLevel,
                     zoomLevels: ZOOM_LEVELS,
@@ -254,13 +267,13 @@ app.get('/:essaySlug/', async function(req, res) {
                 });
 
                 // Generate in the background
-                getChatCompletion(
-                    SYSTEM_PROMPT,
+                getVersion(
+                    SYSTEM_PROMPTS[zoomLevel],  // Use zoom-specific system prompt
                     USER_PROMPT_TEMPLATE(
-                        originalText, 
-                        ZOOM_LEVELS[zoomLevel].format,
-                        ZOOM_LEVELS[zoomLevel].targetLength
-                    )
+                        originalText,
+                        zoomLevel
+                    ),
+                    slug
                 ).then(async (generatedText) => {
                     // Save generated version
                     await fs.promises.writeFile(versionPath, generatedText);
@@ -305,7 +318,8 @@ app.get('/:essaySlug/', async function(req, res) {
             zoomLevels: ZOOM_LEVELS,
             isGenerated,
             currentZoom: ZOOM_LEVELS[zoomLevel],
-            essay
+            essay,
+            timestamp: essay.timestamp
         });
 
     } catch (error) {

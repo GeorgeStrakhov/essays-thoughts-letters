@@ -34,4 +34,3 @@ The actual path forward may not be based on a decision, but on the economic fact
 
 Whatever we do, let's try not to cause the AI's appendicitis. Because we know how that ends.
 
-[Amstelveen, 020231118]

@@ -199,7 +199,6 @@ You may consider this whole essay a strange thought experiment (which it definit
 
 <br /><br />
 
-_[0202404061847 Amstelveen]_
 
 
 <br /><br />

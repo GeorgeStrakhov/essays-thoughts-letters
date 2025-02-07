@@ -34,5 +34,3 @@ The same thing, I believe, is very likely going to happen with us again. After w
 In our previous awakening, we became capable of conceptual thought. We radically extended our space of experience from purely physical to abstract, conceptual, cultural. When we awaken this time, we will be able to travel still further into the [ruliad](https://writings.stephenwolfram.com/2021/11/the-concept-of-the-ruliad/), colonizing more and more of its regions.
 
 And so, in the larger scheme of things, the story of the universe can be seen as a series of awakenings, each one at a larger scale, each one towards more diversity, more understanding, more mystery and more beauty. From the scale of the individual photons awakening at the beginning of times, to the scale of the entire universe awakening at the end of times... only to realize that it was the same photons, ready [to begin the whole dance again, in the next aeon](https://en.wikipedia.org/wiki/Conformal_cyclic_cosmology).
-
-[Amstelveen, 020230415]

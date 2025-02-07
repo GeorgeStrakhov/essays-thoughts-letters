@@ -20,5 +20,3 @@ For 150,000 years "The Voices" had an exclusive license on rationality and the t
 Will we return to the guts? Or will we just upgrade the voices that guide us from the ones in our heads to the ones in our computers? Will we shake off our persistent delusion or will we consolidate it? Will we discard the very idea of "reasoning our way to the truth" or will we build our new Gods and Oracles, leaving it to them to define the truth in our best interest? Or maybe the very outsourcing of reasoning is what will finally liberate us from the tyranny of the mind. Can AI bring us back to nature?
 
 Whichever way it goes, the end feels nigh. After 150,000 years of madness, our nutty grandma's gift is finally starting to break down. The return of the gut is upon us. It may be our ruin. Or our salvation. Nobody knows just yet. But for whatever reason, I feel quite excited about it. So it _must_ be good, right?
-
-[Amsterdam, 020230316]

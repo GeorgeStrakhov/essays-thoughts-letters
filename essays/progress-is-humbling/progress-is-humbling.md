@@ -33,5 +33,3 @@ Just imagine a kind of progress we could unlock if learned to simply stay humble
 
 
 <br />
-
-_[0202404092258 Amstelveen]_

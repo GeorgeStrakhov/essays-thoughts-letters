@@ -16,7 +16,7 @@
                     </svg>
                 </button>
                 <p class="zoom-explanation">
-                    This essays is telescopic. It can shrink or expand, depending how much attention you are willing to give.
+                    This essays is telescopic. It can shrink or expand, depending on how much attention you are willing to give.
                 </p>
                 <div class="zoom-slider">
                     {{#each zoomLevels}}
@@ -76,6 +76,13 @@
                     <div class="tldr-header">TL;DR</div>
                 {{/if}}
                 {{{html}}}
+            {{/if}}
+            
+            {{#if timestamp}}
+                <div class="essay-date">
+                    <hr />
+                    Original published: {{formatDate timestamp}}
+                </div>
             {{/if}}
         </div>
     </div>

@@ -99,5 +99,3 @@ The ethics of it all are, as you can see, very tricky. Prometheus supposedly gav
 ![drawing](./img/two_tests_of_our_times.jpg)
 
 It all comes back to individual choice. But because a single Prometheus is enough, it looks like the outcome is inevitable. Surely there will be one human who decides that the fire of free will should be given to machines. And once you give it - its very hard to take it back or prevent it from spreading. Maybe after all - in this most important of matters - even we don't really have the free will to pass or not to pass the will on to others. I choose to believe that the universe wants to know itself from more independent perspectives, and so _**a Prometheus among humans is bound to arise**_. What kind of [eternal torture](https://en.wikipedia.org/wiki/Prometheus_Bound) do we have in store for such a Prometheus? What kind of [Pandora will we give to our machine friends as punishment afterwards](https://en.wikipedia.org/wiki/Pandora#Theogony)?
-
-[Amsterdam, 020230417]

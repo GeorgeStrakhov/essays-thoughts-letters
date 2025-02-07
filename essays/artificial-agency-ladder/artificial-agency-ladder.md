@@ -53,7 +53,6 @@ The fundamental question isn't just what level of artificial agency we want our 
 ---
 
 _By George & Claude_  
-_Amstelveen, 020250108_
 
 ---
 ### footnotes

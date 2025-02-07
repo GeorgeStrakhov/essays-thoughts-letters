@@ -25,5 +25,3 @@ Your job is to love winter
 Your job is to cut the fruit when it’s ripe, but not too early or too late
 
 Your job is to get out of your own way
-
-[Rovaniemi, February 2023]

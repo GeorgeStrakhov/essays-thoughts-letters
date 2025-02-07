@@ -9,19 +9,22 @@
         "isOriginal": true
       },
       "5m": {
-        "wordCount": 464,
+        "wordCount": 412,
         "isOriginal": false,
-        "isHumanVetted": false
+        "isHumanVetted": true,
+        "vettedTimestamp": "020250206"
       },
       "15m": {
-        "wordCount": 882,
+        "wordCount": 988,
         "isOriginal": false,
-        "isHumanVetted": false
+        "isHumanVetted": true,
+        "vettedTimestamp": "020250206"
       },
       "30m": {
-        "wordCount": 813,
+        "wordCount": 1371,
         "isOriginal": false,
-        "isHumanVetted": false
+        "isHumanVetted": true,
+        "vettedTimestamp": "020250206"
       }
     },
     "naturalZoomLevel": "1m"
@@ -36,6 +39,12 @@
       "5m": {
         "wordCount": 1670,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 156,
+        "isOriginal": false,
+        "isHumanVetted": true,
+        "vettedTimestamp": "020250114"
       }
     },
     "naturalZoomLevel": "5m"
@@ -48,7 +57,7 @@
     "timestamp": "020250108",
     "versions": {
       "5m": {
-        "wordCount": 1496,
+        "wordCount": 1494,
         "isOriginal": true
       },
       "1m": {
@@ -68,7 +77,7 @@
     "timestamp": "020240409",
     "versions": {
       "5m": {
-        "wordCount": 963,
+        "wordCount": 961,
         "isOriginal": true
       },
       "1m": {
@@ -88,7 +97,7 @@
     "timestamp": "020240406",
     "versions": {
       "30m": {
-        "wordCount": 7156,
+        "wordCount": 7154,
         "isOriginal": true
       }
     },
@@ -102,7 +111,7 @@
     "timestamp": "020240317",
     "versions": {
       "5m": {
-        "wordCount": 1169,
+        "wordCount": 1167,
         "isOriginal": true
       }
     },
@@ -116,7 +125,7 @@
     "timestamp": "020231118",
     "versions": {
       "5m": {
-        "wordCount": 1051,
+        "wordCount": 1049,
         "isOriginal": true
       }
     },
@@ -144,7 +153,7 @@
     "timestamp": "020231004",
     "versions": {
       "15m": {
-        "wordCount": 2691,
+        "wordCount": 2689,
         "isOriginal": true
       }
     },
@@ -158,7 +167,7 @@
     "timestamp": "020230417",
     "versions": {
       "15m": {
-        "wordCount": 3857,
+        "wordCount": 3855,
         "isOriginal": true
       },
       "1m": {
@@ -176,7 +185,7 @@
     "timestamp": "020230415",
     "versions": {
       "5m": {
-        "wordCount": 998,
+        "wordCount": 996,
         "isOriginal": true
       }
     },
@@ -189,7 +198,7 @@
     "timestamp": "020230316",
     "versions": {
       "5m": {
-        "wordCount": 562,
+        "wordCount": 560,
         "isOriginal": true
       }
     },
@@ -201,8 +210,14 @@
     "timestamp": "020230228",
     "versions": {
       "1m": {
-        "wordCount": 201,
+        "wordCount": 198,
         "isOriginal": true
+      },
+      "5m": {
+        "wordCount": 480,
+        "isOriginal": false,
+        "isHumanVetted": true,
+        "vettedTimestamp": "020230228"
       }
     },
     "naturalZoomLevel": "1m"
@@ -241,6 +256,12 @@
       "1m": {
         "wordCount": 49,
         "isOriginal": true
+      },
+      "5m": {
+        "wordCount": 448,
+        "isOriginal": false,
+        "isHumanVetted": true,
+        "vettedTimestamp": "020220705"
       }
     },
     "naturalZoomLevel": "1m"
@@ -291,6 +312,12 @@
       "15m": {
         "wordCount": 3344,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 127,
+        "isOriginal": false,
+        "isHumanVetted": true,
+        "vettedTimestamp": "020210703"
       }
     },
     "naturalZoomLevel": "15m"
