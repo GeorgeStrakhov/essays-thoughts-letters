@@ -92,19 +92,31 @@ app.use('/static', express.static('static'));
 app.use('/js', express.static('static/js'));
 
 //home
-app.get('/', (req, res) => {
-    // Sort essays by timestamp (newest first)
-    const sortedEssays = [...toc].sort((a, b) => {
-        // Remove leading '0' and convert to numbers for comparison
-        const timeA = parseInt(a.timestamp.slice(1));
-        const timeB = parseInt(b.timestamp.slice(1));
-        return timeB - timeA;
-    });
+app.get('/', async (req, res) => {
+    try {
+        // Read TOC fresh from disk
+        const currentToc = JSON.parse(
+            await readFile(
+                new URL('./toc.json', import.meta.url)
+            )
+        );
 
-    res.render('home', {
-        essays: sortedEssays,
-        title: "Essays. Thoughts. Letters."
-    });
+        // Sort essays by timestamp (newest first)
+        const sortedEssays = [...currentToc].sort((a, b) => {
+            // Remove leading '0' and convert to numbers for comparison
+            const timeA = parseInt(a.timestamp.slice(1));
+            const timeB = parseInt(b.timestamp.slice(1));
+            return timeB - timeA;
+        });
+
+        res.render('home', {
+            essays: sortedEssays,
+            title: "Essays. Thoughts. Letters."
+        });
+    } catch (error) {
+        console.error('Error loading TOC:', error);
+        res.status(500).send('Error loading essays');
+    }
 });
 
 //RSS
@@ -347,7 +359,7 @@ app.get('/:essaySlug/', async function(req, res, next) {
 });
 
 
-app.get('/:essaySlug/check-version', function(req, res) {
+app.get('/:essaySlug/check-version', async function(req, res) {
     const slug = req.params.essaySlug;
     const zoomLevel = req.query.zoom;
     
@@ -355,18 +367,30 @@ app.get('/:essaySlug/check-version', function(req, res) {
         return res.status(400).json({ error: 'Invalid zoom level' });
     }
 
-    const essay = toc.find(e => e.slug === slug);
-    if (!essay) {
-        return res.status(404).json({ error: 'Essay not found' });
+    try {
+        // Read TOC fresh from disk
+        const currentToc = JSON.parse(
+            await readFile(
+                new URL('./toc.json', import.meta.url)
+            )
+        );
+
+        const essay = currentToc.find(e => e.slug === slug);
+        if (!essay) {
+            return res.status(404).json({ error: 'Essay not found' });
+        }
+
+        const versionPath = zoomLevel === essay.naturalZoomLevel 
+            ? `./essays/${slug}/${slug}.md`
+            : `./essays/${slug}/${slug}.${zoomLevel}.md`;
+
+        res.json({
+            exists: fs.existsSync(versionPath)
+        });
+    } catch (error) {
+        console.error('Error checking version:', error);
+        res.status(500).json({ error: 'Failed to check version' });
     }
-
-    const versionPath = zoomLevel === essay.naturalZoomLevel 
-        ? `./essays/${slug}/${slug}.md`
-        : `./essays/${slug}/${slug}.${zoomLevel}.md`;
-
-    res.json({
-        exists: fs.existsSync(versionPath)
-    });
 });
 
 // Add new route for essay generation
