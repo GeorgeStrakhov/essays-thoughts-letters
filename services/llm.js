@@ -81,7 +81,8 @@ export async function getVersion(
             const completion = await openai.chat.completions.create({
                 model: currentModel,
                 temperature: DEFAULT_TEMPERATURE,
-                messages: messages
+                messages: messages,
+                max_tokens: 30000
             }, {
                 signal: controller.signal
             });

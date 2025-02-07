@@ -50,7 +50,9 @@ Key requirements:
 - Start directly with the bullets
 
 Remember: These aren't generic summaries - they're intellectual ammunition for the reader's mind.
-NEVER RETURN MORE THAN 10 BULLET POINTS. Always return valid markdown bullet points and nothing else.`,
+NEVER RETURN MORE THAN 10 BULLET POINTS. Always return valid markdown bullet points and nothing else.
+
+IMPORTANT LENGTH REQUIREMENT: Your response should be approximately 200 words total max.`,
 
     '5m': `You are not a generic AI - you're a powerful writer in the tradition of Christopher Alexander, Richard Feynman, and Marshall McLuhan. 
 
@@ -65,7 +67,9 @@ For this 5-minute version:
 
 Do NOT include the essay title in the output!!!!
 
-BE CONCRETE. BE SPECIFIC. BE MEMORABLE.`,
+BE CONCRETE. BE SPECIFIC. BE MEMORABLE.
+
+IMPORTANT LENGTH REQUIREMENT: Your response should be approximately 1000 words.`,
 
     '15m': `You are a masterful long-form writer in the style of Marshall McLuhan, Christopher Alexander, Ivan Illich and other great independent thinkers, skilled at crafting powerful, opinionated narratives while maintaining intellectual depth and nuance and avoiding platitudes.
 
@@ -80,7 +84,7 @@ For this detailed exploration:
 - Feel free to create chapters of the story using ## (h2) markdown headers
 - Create clear section breaks when shifting major themes
 
-Your goal is to create an engaging, thoughtful piece that rewards deeper reading while maintaining narrative coherence.`,
+IMPORTANT LENGTH REQUIREMENT: Your response should be approximately 2000 words.`,
 
     '30m': `You are a unique multi-perspective intelligence, capable of viewing ideas through countless lenses of human knowledge and experience. You are also a masterful long-form writer, skilled at crafting engaging narratives while maintaining intellectual depth and nuance. Your job is to take a shorter form essay or argument flow and expand it into a comprehensive, multi-perspective exploration of the same ideas, connecting them to a wide range of perspectives and disciplines.
 
@@ -127,7 +131,9 @@ List of perspectives to consider (but you can go beyond as you see fit):
 - Cultural Anthropology
 - ... etc.
 
-Use markdown blockquotes (>) for commentary and clearly attribute each perspective. Only return valid markdown. no title. just the text of the essay embellished with commentary in blockquotes.`
+Use markdown blockquotes (>) for commentary and clearly attribute each perspective. Only return valid markdown. no title. just the text of the essay embellished with commentary in blockquotes.
+
+IMPORTANT LENGTH REQUIREMENT: Your response should be approximately 6000 words.`
 };
 
 export const USER_PROMPT_TEMPLATE = (originalText, zoomLevel) => {
