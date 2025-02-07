@@ -8,8 +8,9 @@ import fs from 'fs';
 import path from 'path';
 import xml from 'xml';
 import { ZOOM_LEVELS, findNaturalZoomLevel } from './services/prompts.js';
-import { getVersion } from './services/llm.js';
+import { getVersion, generateNewEssay } from './services/llm.js';
 import { SYSTEM_PROMPTS, USER_PROMPT_TEMPLATE } from './services/prompts.js';
+import { verifyCaptcha } from './services/captcha.js';
 
 const BASE_URL = process.env['BASE_URL'];
 
@@ -51,6 +52,9 @@ const formatDate = (dateString) => { //date string in YYYYMMDD format
 
 const app = express();
 
+// Add middleware to parse JSON bodies
+app.use(express.json());
+
 // Configure handlebars with helpers
 app.engine('handlebars', engine({
     helpers: {
@@ -89,8 +93,16 @@ app.use('/js', express.static('static/js'));
 
 //home
 app.get('/', (req, res) => {
+    // Sort essays by timestamp (newest first)
+    const sortedEssays = [...toc].sort((a, b) => {
+        // Remove leading '0' and convert to numbers for comparison
+        const timeA = parseInt(a.timestamp.slice(1));
+        const timeB = parseInt(b.timestamp.slice(1));
+        return timeB - timeA;
+    });
+
     res.render('home', {
-        essays: toc,
+        essays: sortedEssays,
         title: "Essays. Thoughts. Letters."
     });
 });
@@ -194,13 +206,21 @@ app.get('/:essaySlug/img/:imgName', function(req, res) {
     }
 });
 
-app.get('/:essaySlug/', async function(req, res) {
+app.get('/:essaySlug/', async function(req, res, next) {
     const slug = req.params.essaySlug;
     
+    // Reload TOC to get latest word counts
+    const updatedToc = JSON.parse(
+        await readFile(
+            new URL('./toc.json', import.meta.url)
+        )
+    );
+    
     // Find essay in TOC
-    const essay = toc.find(e => e.slug === slug);
+    const essay = updatedToc.find(e => e.slug === slug);
     if (!essay) {
-        return res.status(404).render('notfound', { title: "404" });
+        // If essay not found, pass to 404 handler
+        return next();
     }
 
     // Use naturalZoomLevel from TOC or calculate it if missing
@@ -290,7 +310,7 @@ app.get('/:essaySlug/', async function(req, res) {
                     // Save updated TOC
                     await fs.promises.writeFile(
                         new URL('./toc.json', import.meta.url),
-                        JSON.stringify(toc, null, 2)
+                        JSON.stringify(updatedToc, null, 2)
                     );
                 }).catch(console.error);
 
@@ -355,9 +375,67 @@ app.get('/:essaySlug/check-version', function(req, res) {
     });
 });
 
-//catch all 404
+// Add new route for essay generation
+app.post('/generate-essay/:slug', async function(req, res) {
+    const { slug } = req.params;
+    const { captchaToken } = req.body;
+
+    // Verify captcha token
+    try {
+        const verification = await verifyCaptcha(captchaToken);
+        if (!verification.success) {
+            return res.status(400).json({ error: 'Invalid captcha' });
+        }
+    } catch (error) {
+        return res.status(500).json({ error: 'Captcha verification failed' });
+    }
+
+    // Start generation process
+    try {
+        // Start generation immediately
+        generateNewEssay(slug).catch(console.error);
+  
+        // Return success response immediately for UI feedback
+        res.json({ success: true });
+    } catch (error) {
+        console.error('Error starting generation:', error);
+        res.status(500).json({ error: 'Generation failed' });
+    }
+});
+
+function formatCurrentDate() {
+    const now = new Date();
+    // Format: 0YYYYMMDD (with leading 0 as in your current timestamps)
+    return '0' + now.getFullYear() +
+           String(now.getMonth() + 1).padStart(2, '0') +
+           String(now.getDate()).padStart(2, '0');
+}
+
+// The 404 route must be the LAST route
 app.get('*', (req, res) => {
-    res.render('notfound', { title: "404" });
-})
+    // Check if this is a potential essay path (direct child of root)
+    const pathParts = req.path.split('/').filter(Boolean);
+    const isEssayPath = pathParts.length === 1 && 
+                        // Make sure it's not an existing route
+                        !['feed.rss', 'static', 'js'].includes(pathParts[0]) &&
+                        // Check that it's a valid slug format
+                        /^[a-z0-9-]+$/.test(pathParts[0]);
+    
+    
+    let topicName = '';
+    if (isEssayPath) {
+        // Convert slug to readable topic name
+        topicName = pathParts[0]
+            .replace(/-/g, ' ')
+            .replace(/\b\w/g, l => l.toUpperCase());
+    }
+
+    res.render('notfound', { 
+        title: "404",
+        isEssayPath,
+        topicName,
+        generating: req.query.generating === 'true'
+    });
+});
 
 app.listen(3000);

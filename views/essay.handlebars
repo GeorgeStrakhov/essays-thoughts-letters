@@ -25,15 +25,21 @@
                                 {{#if (eq @key ../zoomLevel)}}active{{/if}}
                                 {{#if (eq @key ../naturalZoomLevel)}}natural{{/if}}
                                 {{#if (lookup (lookup ../essay.versions @key) 'isOriginal')}}original{{/if}}
-                                {{#unless (or 
-                                    (lookup (lookup ../essay.versions @key) 'isOriginal')
-                                    (lookup (lookup ../essay.versions @key) 'isHumanVetted')
-                                )}}ai{{/unless}}"
+                                {{#unless (lookup ../essay.versions @key)}}not-generated{{/unless}}
+                                {{#if (lookup (lookup ../essay.versions @key))}}
+                                    {{#unless (lookup (lookup ../essay.versions @key) 'isHumanVetted')}}
+                                        ai
+                                    {{/unless}}
+                                {{/if}}"
                            title="{{this.description}} 
                                   {{#if (lookup ../essay.versions @key)}}
                                       ({{lookup (lookup ../essay.versions @key) 'wordCount'}} words)
                                       {{#if (lookup (lookup ../essay.versions @key) 'isOriginal')}}
-                                          - Original Version
+                                          {{#if ../../essay.isAIGenerated}}
+                                              - AI-Generated Original
+                                          {{else}}
+                                              - Original Version
+                                          {{/if}}
                                       {{else if (lookup (lookup ../essay.versions @key) 'isHumanVetted')}}
                                           - Human-Reviewed Version
                                       {{else}}
@@ -41,7 +47,9 @@
                                       {{/if}}
                                   {{/if}}">
                             {{this.name}}
-                            <span class="status"></span>
+                            {{#if (lookup (lookup ../essay.versions @key) 'isHumanVetted')}}
+                                <span class="status"></span>
+                            {{/if}}
                         </a>
                     {{/each}}
                 </div>
@@ -69,6 +77,12 @@
 
 
             <h1 class="essay-title">{{title}}</h1>
+            {{#if essay.isAIGenerated}}
+                <div class="ai-generated-notice">
+                    This essay was written by a well-educated robot from the 404 page. There was no essay with this title, but somebody (was it you?) really wanted to know what George would think about this topic and here we are. A robot wrote this based on George's other writings. Don't take too seriously. But then again, why would you take seriously anything George writes?
+                </div>
+            {{/if}}
+            
             {{#if isGenerating}}
                 {{{html}}}
             {{else}}

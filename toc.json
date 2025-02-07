@@ -45,6 +45,11 @@
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020250114"
+      },
+      "15m": {
+        "wordCount": 1018,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -99,6 +104,11 @@
       "30m": {
         "wordCount": 7154,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 190,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "30m"
@@ -127,6 +137,11 @@
       "5m": {
         "wordCount": 1049,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 119,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -155,6 +170,16 @@
       "15m": {
         "wordCount": 2689,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 157,
+        "isOriginal": false,
+        "isHumanVetted": false
+      },
+      "5m": {
+        "wordCount": 384,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "15m"

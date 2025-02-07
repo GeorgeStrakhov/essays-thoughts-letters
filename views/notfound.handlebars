@@ -1,4 +1,22 @@
 <a href="/">Essays. Thoughts. Letters.</a>
 <hr />
 
-<h1>404 :(</h1>
+<div class="not-found-container">
+    {{#if isEssayPath}}
+        <h1>Not found... yet!</h1>
+        <p>Looks like the real flesh-and-bone George hasn't written about "{{topicName}}" yet.</p>
+        
+        <div class="ai-generate-section">
+            <p>But if you're curious what he might write about it... you can get his AI doppelganger to have a go.</p>
+            
+            <div class="captcha-container" id="captcha-container"></div>
+            <p>Funny how we need to verify you're human before we can get a robot to write for you. Isn't it?</p>
+            <button id="generate-essay" class="generate-button" disabled>
+                Write, brother George!
+            </button>
+        </div>
+    {{else}}
+        <h1>404 :(</h1>
+        <p>Page not found.</p>
+    {{/if}}
+</div>

@@ -1,6 +1,9 @@
 import OpenAI from "openai";
 import dotenv from "dotenv";
 import { getReferenceCorpus } from './corpus.js';
+import fs from 'fs';
+import { NEW_ESSAY_PROMPTS } from './prompts.js';
+import path from 'path';
 
 // Load environment variables
 dotenv.config();
@@ -11,7 +14,8 @@ const openai = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY
 });
 
-const DEFAULT_MODEL = "anthropic/claude-3.5-sonnet";
+//const DEFAULT_MODEL = "anthropic/claude-3.5-sonnet";
+const DEFAULT_MODEL = "google/gemini-2.0-flash-001";
 const FALLBACK_MODEL = "google/gemini-2.0-flash-001";
 const DEFAULT_TEMPERATURE = 0.4;
 
@@ -20,41 +24,39 @@ const DEFAULT_TEMPERATURE = 0.4;
  * @param {string} systemPrompt - The system prompt to set context
  * @param {string} userMessage - The user's message
  * @param {string} currentSlug - The slug of the essay being processed
- * @param {string} originalContent - The content to be modified
- * @param {string} [model="google/gemini-2.0-flash-001"] - The model to use
- * @param {number} [temperature=0.7] - Temperature for response randomness
  * @returns {Promise<string>} The assistant's response
  */
 export async function getVersion(
     systemPrompt,
     userMessage,
     currentSlug,
-    model = DEFAULT_MODEL,
-    temperature = DEFAULT_TEMPERATURE
+    originalContent = null
 ) {
-    // Use Gemini by default for 30min versions
-    if (userMessage.includes("30 min version")) {
-        model = FALLBACK_MODEL;
-        console.log("Using Gemini model for 30min version");
-    }
-    
     const MAX_RETRIES = 3;
-    const TIMEOUT = 120000; // 2 minutes timeout
-    let currentModel = model;
+    let currentTry = 0;
+    let lastError = null;
+
+    // Determine if this is a long-form content request (30m)
+    const contentLength = userMessage.includes('30m') ? '30m' : null;
     
-    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    // Choose initial model based on content length
+    let currentModel = contentLength === '30m' ? FALLBACK_MODEL : DEFAULT_MODEL;
+    
+    console.log(`[LLM] Starting getVersion for ${currentSlug}`);
+    console.log(`[LLM] Initial model: ${currentModel}`);
+
+    while (currentTry < MAX_RETRIES) {
         try {
-            console.log(`Attempt ${attempt} of ${MAX_RETRIES} using model: ${currentModel}`);
+            console.log(`[LLM] Attempt ${currentTry + 1}/${MAX_RETRIES}`);
+            
+            const referenceEssays = originalContent !== null ? 
+                await getReferenceCorpus(currentSlug) : 
+                await getReferenceCorpus();
+            
+            console.log(`[LLM] Got ${referenceEssays.length} reference essays`);
 
-            // Get reference essays
-            const referenceEssays = await getReferenceCorpus(currentSlug);
-
-            // Construct messages array with zoom-specific system prompt
             const messages = [
-                {
-                    role: "system",
-                    content: systemPrompt
-                }
+                { role: "system", content: systemPrompt }
             ];
 
             // Add reference essays as examples
@@ -71,41 +73,43 @@ export async function getVersion(
             });
 
             const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
+            const timeoutId = setTimeout(() => controller.abort(), 120000);
 
+            console.log(`[LLM] Making API call with model: ${currentModel}`);
+            
             const completion = await openai.chat.completions.create({
                 model: currentModel,
-                temperature: temperature,
+                temperature: DEFAULT_TEMPERATURE,
                 messages: messages
             }, {
                 signal: controller.signal
             });
 
             clearTimeout(timeoutId);
+            console.log(`[LLM] Successfully got response`);
             return completion.choices[0].message.content;
 
         } catch (error) {
-            console.error(`Attempt ${attempt} failed:`, error);
-            
-            if (error.name === 'AbortError') {
-                console.log('Request timed out');
-            }
-            
-            // Switch to fallback model after first failure if using default model
-            if (attempt === 1 && currentModel === DEFAULT_MODEL) {
-                console.log(`Switching to fallback model: ${FALLBACK_MODEL}`);
+            lastError = error;
+            console.error(`[LLM] Error on attempt ${currentTry + 1}:`, error);
+
+            // Switch to fallback model if we're using the default model
+            if (currentModel === DEFAULT_MODEL) {
+                console.log(`[LLM] Switching to fallback model: ${FALLBACK_MODEL}`);
                 currentModel = FALLBACK_MODEL;
-                continue; // Skip the retry delay for model switch
             }
+
+            currentTry++;
             
-            if (attempt === MAX_RETRIES) {
-                throw new Error(`Failed after ${MAX_RETRIES} attempts: ${error.message}`);
+            if (currentTry < MAX_RETRIES) {
+                console.log(`[LLM] Retrying in 2 seconds...`);
+                await new Promise(resolve => setTimeout(resolve, 2000)); // Wait 2 seconds before retry
             }
-            
-            // Wait before retrying (exponential backoff)
-            await new Promise(resolve => setTimeout(resolve, 1000 * Math.pow(2, attempt)));
         }
     }
+
+    console.error(`[LLM] All retry attempts failed`);
+    throw lastError || new Error('Failed to get LLM response after all retries');
 }
 
 /**
@@ -143,5 +147,69 @@ export async function getRefinedChatCompletion(
         console.error("Error in LLM refinement service:", error);
         throw new Error("Failed to get refined chat completion");
     }
+}
+
+// Add new function for generating complete essays
+export async function generateNewEssay(slug) {
+    const topic = slug.replace(/-/g, ' ');
+
+    console.log(`Generating new essay for ${slug}`);
+    
+    try {
+        const essayContent = await getVersion(
+            NEW_ESSAY_PROMPTS.system,
+            NEW_ESSAY_PROMPTS.user(topic),
+            slug,
+            null
+        );
+
+        // Create essay directory
+        const essayDir = `./essays/${slug}`;
+        await fs.promises.mkdir(essayDir, { recursive: true });
+
+        // Save the essay
+        const essayPath = `${essayDir}/${slug}.md`;
+        await fs.promises.writeFile(essayPath, essayContent);
+
+        // Calculate word count
+        const wordCount = essayContent.trim().split(/\s+/).length;
+
+        // Create and add TOC entry
+        const newEssay = {
+            title: slug.replace(/-/g, ' ')
+                .replace(/\b\w/g, l => l.toUpperCase()),
+            slug: slug,
+            timestamp: formatCurrentDate(),
+            versions: {
+                "5m": {
+                    wordCount: wordCount,
+                    isOriginal: true,
+                    isAIGenerated: true
+                }
+            },
+            naturalZoomLevel: '5m',
+            isAIGenerated: true
+        };
+
+        // Update TOC with word count
+        const tocPath = path.join(process.cwd(), 'toc.json');
+        const toc = JSON.parse(await fs.promises.readFile(tocPath, 'utf-8'));
+        
+        toc.push(newEssay);
+        await fs.promises.writeFile(tocPath, JSON.stringify(toc, null, 2));
+        console.log(`Added new essay to TOC: ${slug} with ${wordCount} words`);
+
+        return true;
+    } catch (error) {
+        console.error('Error generating essay:', error);
+        throw error;
+    }
+}
+
+function formatCurrentDate() {
+    const now = new Date();
+    return '0' + now.getFullYear() +
+           String(now.getMonth() + 1).padStart(2, '0') +
+           String(now.getDate()).padStart(2, '0');
 }
 

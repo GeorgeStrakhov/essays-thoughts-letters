@@ -195,7 +195,7 @@ hr {
 .footer-note {
     font-style: italic;
     font-size: 0.9em;
-    padding-left: 1rem;
+    padding-left: 0;
 }
 
 /* Tables */
@@ -289,10 +289,20 @@ table td {
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
-/* Current zoom level - fix contrast */
+.zoom-level.not-generated {
+    border-style: dashed;
+    opacity: 0.7;
+}
+
+.theme-dark .zoom-level {
+    background: #1a1a1a;
+    border-color: #333;
+    color: #999;
+}
+
 .zoom-level.active {
     background: #2b5c8c;
-    color: white !important; /* Ensure text is always white when active */
+    color: white !important;
     border-color: #2b5c8c;
     font-weight: 500;
     transform: scale(1.05);
@@ -505,5 +515,205 @@ blockquote {
 }
 
 .theme-dark .essay-date {
+    color: #999;
+}
+
+/* Not Found and Generation UI */
+.not-found-container {
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.not-found-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 1.5rem;
+}
+
+.ai-generate-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f8f8f8;
+    border-radius: 12px;
+}
+
+.theme-dark .ai-generate-section {
+    background: #2a2a2a;
+}
+
+.generating-state {
+    padding: 2rem;
+    text-align: center;
+}
+
+.generating-state h2 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.captcha-container {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.generate-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1em;
+    background: #2b5c8c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.generate-button:hover:not(:disabled) {
+    background: #1f4468;
+    transform: translateY(-1px);
+}
+
+.generate-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.theme-dark .generate-button:disabled {
+    background: #444;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .not-found-container {
+        padding: 1rem;
+    }
+
+    .ai-generate-section {
+        margin-top: 2rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .generating-state {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* AI Generated Tag */
+.ai-generated-tag {
+    font-size: 0.8em;
+    color: #666;
+    margin-left: 0.5rem;
+}
+
+.theme-dark .ai-generated-tag {
+    color: #999;
+}
+
+.ai-generated-tag button {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .ai-generated-tag {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        line-height: 1.4;
+    }
+}
+
+/* Controls */
+.controls {
+    text-align: right;
+    margin: 1rem 0;
+}
+
+.toggle-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9em;
+    background: transparent;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.theme-dark .toggle-button {
+    color: #999;
+    border-color: #999;
+}
+
+.toggle-button:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.theme-dark .toggle-button:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Hide AI essays when toggled */
+.ai-essay.hidden {
+    display: none;
+}
+
+.loading-animation {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.typing-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.typing-indicator span {
+    width: 8px;
+    height: 8px;
+    background: #666;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.theme-dark .typing-indicator span {
+    background: #999;
+}
+
+.typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+.typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+}
+
+.generation-time {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 1rem;
+}
+
+.theme-dark .generation-time {
+    color: #999;
+}
+
+/* AI Generated Notice */
+.ai-generated-notice {
+    font-size: 0.9em;
+    color: #666;
+    margin: -1rem 0 2rem;
+    font-style: italic;
+}
+
+.theme-dark .ai-generated-notice {
     color: #999;
 }
