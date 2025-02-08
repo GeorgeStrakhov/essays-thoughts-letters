@@ -265,6 +265,10 @@
       "15m": {
         "wordCount": 2725,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 1,
+        "isOriginal": false
       }
     },
     "naturalZoomLevel": "15m"
@@ -398,7 +402,7 @@
     "timestamp": "020250207",
     "versions": {
       "5m": {
-        "wordCount": 828,
+        "wordCount": 829,
         "isOriginal": true
       },
       "1m": {
@@ -421,5 +425,32 @@
       }
     },
     "naturalZoomLevel": "5m"
+  },
+  {
+    "title": "Fucking With The Wind",
+    "slug": "fucking-with-the-wind",
+    "timestamp": "020250208",
+    "versions": {
+      "1m": {
+        "wordCount": 1,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "1m",
+    "isAIGenerated": true
+  },
+  {
+    "title": "Yak Yak Shmuk Fuck",
+    "slug": "yak-yak-shmuk-fuck",
+    "timestamp": "020250208",
+    "versions": {
+      "5m": {
+        "wordCount": 472,
+        "isOriginal": true,
+        "isAIGenerated": true
+      }
+    },
+    "naturalZoomLevel": "5m",
+    "isAIGenerated": true
   }
 ]

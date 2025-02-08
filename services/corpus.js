@@ -44,7 +44,7 @@ export async function getReferenceCorpus(currentSlug = null) {
         // Get content for each essay, limiting total size
         const essays = [];
         let totalTokens = 0;
-        const TOKEN_LIMIT = 500000;
+        const TOKEN_LIMIT = 10000;
         // Rough approximation: 1 token ≈ 4 characters
         const CHARS_PER_TOKEN = 4;
 
