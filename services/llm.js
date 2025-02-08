@@ -219,13 +219,6 @@ export async function generateNewEssay(slug) {
         await fs.promises.writeFile(tocPath, JSON.stringify(toc, null, 2));
         console.log(`Added new essay to TOC: ${slug} with ${wordCount} words`);
 
-        // Send email notification for new essay
-        await sendMarkdownEmail(
-            `New Essay Generated: ${slug}`,
-            essayContent,
-            `${slug}.md`
-        );
-
         return true;
     } catch (error) {
         console.error('Error generating essay:', error);
