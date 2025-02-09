@@ -402,14 +402,24 @@
     "timestamp": "020250207",
     "versions": {
       "5m": {
-        "wordCount": 829,
+        "wordCount": 1287,
         "isOriginal": true
       },
       "1m": {
-        "wordCount": 103,
+        "wordCount": 201,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020250207"
+      },
+      "15m": {
+        "wordCount": 1387,
+        "isOriginal": false,
+        "isHumanVetted": false
+      },
+      "30m": {
+        "wordCount": 4022,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -432,7 +442,7 @@
     "timestamp": "020250208",
     "versions": {
       "5m": {
-        "wordCount": 798,
+        "wordCount": 814,
         "isOriginal": true
       }
     },

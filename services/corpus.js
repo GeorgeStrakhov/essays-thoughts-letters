@@ -35,8 +35,7 @@ export async function getReferenceCorpus(currentSlug = null) {
         const eligibleEssays = toc
             .filter(essay => 
                 (!currentSlug || essay.slug !== currentSlug) &&
-                essay.versions && Object.keys(essay.versions).length > 0 &&
-                !essay.isAIGenerated
+                essay.versions && Object.keys(essay.versions).length > 0
             )
             // Shuffle the array using Fisher-Yates algorithm
             .sort(() => Math.random() - 0.5);
@@ -44,7 +43,7 @@ export async function getReferenceCorpus(currentSlug = null) {
         // Get content for each essay, limiting total size
         const essays = [];
         let totalTokens = 0;
-        const TOKEN_LIMIT = 10000;
+        const TOKEN_LIMIT = 100000;
         // Rough approximation: 1 token ≈ 4 characters
         const CHARS_PER_TOKEN = 4;
 

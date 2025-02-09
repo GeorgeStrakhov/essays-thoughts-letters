@@ -23,11 +23,10 @@ These essays are telescopic (inspired by TelescopicText.org), allowing readers t
 
 - Shorter versions (10s, 1m) are concise distillations of the main ideas
 - The original essay (.md) serves as the standard 5-minute version
-- Longer versions (15m, 30m) don't fabricate additional content but rather enhance the original by adding:
+- Longer versions (15m, 30m) add additional content and enhance the original by adding:
   - Commentary from multiple perspectives
   - Analysis from different viewpoints
   - Related discussions and context
-  - Similar to the Talmudic approach of layered commentary
 
 ### Dynamic Generation
 
@@ -45,7 +44,3 @@ NB! Since the deployed version on Fly is ephemeral, it will be lost after a whil
 If the requested essay is not found - we can show a button to generate the essay on the fly, based on the style of the other essays
 (need to fine-tune the LLM to do this well and/or just have a long-context one).
 And we should add a captcha or something to prevent robot abuse.
-
-### Deployed via Fly.io
-
-Automatic redeploy on every push to github to the main branch.
