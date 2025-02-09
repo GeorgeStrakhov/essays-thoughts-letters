@@ -42,9 +42,11 @@ const toc = JSON.parse(
 );
 
 //helper function to format dates
-const formatDate = (dateString) => { //date string in YYYYMMDD format
+const formatDate = (dateString) => { //date string in 0YYYYMMDD format
+    // Remove the leading '0' from the timestamp
+    dateString = dateString.slice(1);
     const year = dateString.slice(0, 4);
-    const month = dateString.slice(4, 6) - 1; // JavaScript months are 0-11, so subtract 1 from the month
+    const month = dateString.slice(4, 6) - 1; // JavaScript months are 0-11
     const day = dateString.slice(6);
     const dateObj = new Date(year, month, day);
     return dateObj.toUTCString();
