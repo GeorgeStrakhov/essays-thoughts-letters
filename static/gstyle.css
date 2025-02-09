@@ -374,6 +374,7 @@ table td {
     .zoom-control {
         padding: 1.5rem 1rem;
         margin: 1rem 0;
+        margin-top: 3rem;
     }
 
     .zoom-slider {
