@@ -47,7 +47,7 @@
         "vettedTimestamp": "020250114"
       },
       "15m": {
-        "wordCount": 984,
+        "wordCount": 888,
         "isOriginal": false,
         "isHumanVetted": false
       }
@@ -106,7 +106,7 @@
         "isOriginal": true
       },
       "1m": {
-        "wordCount": 155,
+        "wordCount": 179,
         "isOriginal": false,
         "isHumanVetted": false
       }
@@ -235,6 +235,14 @@
       "5m": {
         "wordCount": 560,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 147,
+        "isOriginal": false
+      },
+      "30m": {
+        "wordCount": 1416,
+        "isOriginal": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -290,7 +298,7 @@
         "isHumanVetted": false
       },
       "5m": {
-        "wordCount": 644,
+        "wordCount": 562,
         "isOriginal": false,
         "isHumanVetted": false
       },
@@ -374,6 +382,10 @@
         "wordCount": 2028,
         "isOriginal": false,
         "isHumanVetted": false
+      },
+      "15m": {
+        "wordCount": 900,
+        "isOriginal": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -432,6 +444,11 @@
       "5m": {
         "wordCount": 686,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 151,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m"
@@ -444,6 +461,10 @@
       "5m": {
         "wordCount": 814,
         "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 129,
+        "isOriginal": false
       }
     },
     "naturalZoomLevel": "5m",
@@ -458,6 +479,25 @@
         "wordCount": 472,
         "isOriginal": true,
         "isAIGenerated": true
+      }
+    },
+    "naturalZoomLevel": "5m",
+    "isAIGenerated": true
+  },
+  {
+    "title": "The Beauty Of A Button In The Age Of Universal Basic Intelligence",
+    "description": "In the beginning was the button. A simple mechanical interface between human intention and technological action. Press here, and something happens there. The directness of this connection shaped our early relationship with machines - from elevator buttons to Nintendo controllers, we learned to expect immediate, predictable responses to our physical inputs.",
+    "slug": "the-beauty-of-a-button-in-the-age-of-universal-basic-intelligence",
+    "timestamp": "020250215",
+    "versions": {
+      "5m": {
+        "wordCount": 817,
+        "isOriginal": true
+      },
+      "1m": {
+        "wordCount": 144,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "5m",

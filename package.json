@@ -20,7 +20,7 @@
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-footnote": "^3.0.3",
     "marked": "^4.2.12",
-    "node-fetch": "^3.2.6",
+    "node-fetch": "^3.3.2",
     "openai": "^4.83.0",
     "postmark": "^4.0.5",
     "xml": "^1.0.1"

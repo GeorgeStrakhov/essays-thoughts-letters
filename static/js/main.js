@@ -12,21 +12,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // AI essays toggle
-    const toggleButton = document.getElementById('toggle-ai');
-    if (toggleButton) {
-        const aiEssays = document.querySelectorAll('.ai-essay');
+    const toggleButtons = document.querySelectorAll('.toggle-ai-btn');
+    const aiEssays = document.querySelectorAll('.ai-essay');
 
-        toggleButton.addEventListener('click', function() {
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function() {
             const isHidden = aiEssays[0]?.classList.contains('hidden');
             
             aiEssays.forEach(essay => {
                 essay.classList.toggle('hidden');
             });
 
-            // Update button text and save preference
-            toggleButton.textContent = isHidden ? 
-                'Hide AI-generated essays' : 
-                'Show AI-generated essays';
+            // Update all button texts
+            toggleButtons.forEach(btn => {
+                btn.textContent = isHidden ? 
+                    ' (hide all robo-written)' : 
+                    ' (show all robo-written)';
+            });
         });
-    }
+    });
 }); 

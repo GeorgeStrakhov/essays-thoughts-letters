@@ -20,7 +20,7 @@
                 </p>
                 <div class="zoom-slider">
                     {{#each zoomLevels}}
-                        <a href="?zoom={{@key}}" 
+                        <a href="{{#if (lookup ../essay.versions @key)}}?zoom={{@key}}{{else}}#{{/if}}" 
                            class="zoom-level 
                                 {{#if (eq @key ../zoomLevel)}}active{{/if}}
                                 {{#if (eq @key ../naturalZoomLevel)}}natural{{/if}}
@@ -31,6 +31,10 @@
                                         ai
                                     {{/unless}}
                                 {{/if}}"
+                           data-zoom="{{@key}}"
+                           {{#unless (lookup ../essay.versions @key)}}
+                           data-needs-generation="true"
+                           {{/unless}}
                            title="{{this.description}} 
                                   {{#if (lookup ../essay.versions @key)}}
                                       ({{lookup (lookup ../essay.versions @key) 'wordCount'}} words)
@@ -102,6 +106,20 @@
     </div>
 </section>
 
+<!-- Add this modal markup after the section -->
+<div id="captcha-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <h2>Human Verification Required</h2>
+            <p>Before generating a new version, please verify that you're human.</p>
+            <div class="captcha-container" id="captcha-container"></div>
+            <p class="is-size-7">Funny how we need to verify you're human before we can get a robot to write for you. Isn't it?</p>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
 {{#if isGenerating}}
 <script>
     function checkVersion() {
@@ -131,4 +149,75 @@
         }
     }, 60000);
 </script>
+{{else}}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize reCAPTCHA
+        window.onRecaptchaLoad = function() {
+            grecaptcha.render('captcha-container', {
+                'sitekey': '6Lcd0M8qAAAAAIcq38vEPUsdZ9clKiunuZAF_cy8',
+                'callback': onCaptchaSuccess,
+                'expired-callback': onCaptchaExpired
+            });
+        };
+
+        const modal = document.getElementById('captcha-modal');
+        let pendingZoomLevel = null;
+
+        // Handle clicks on zoom levels that need generation
+        document.querySelectorAll('.zoom-level[data-needs-generation="true"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                pendingZoomLevel = this.getAttribute('data-zoom');
+                modal.classList.add('is-active');
+                grecaptcha.reset();
+            });
+        });
+
+        // Handle modal close
+        document.querySelector('.modal-close').addEventListener('click', function() {
+            modal.classList.remove('is-active');
+            pendingZoomLevel = null;
+        });
+
+        document.querySelector('.modal-background').addEventListener('click', function() {
+            modal.classList.remove('is-active');
+            pendingZoomLevel = null;
+        });
+
+        async function onCaptchaSuccess(token) {
+            if (!pendingZoomLevel) return;
+            
+            try {
+                const response = await fetch(`/{{slug}}/generate-version`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        captchaToken: token,
+                        zoomLevel: pendingZoomLevel
+                    })
+                });
+
+                if (response.ok) {
+                    // Redirect to the generating page
+                    window.location.href = `?zoom=${pendingZoomLevel}&generating=true`;
+                } else {
+                    throw new Error('Generation failed');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to start generation. Please try again.');
+                modal.classList.remove('is-active');
+                grecaptcha.reset();
+            }
+        }
+
+        function onCaptchaExpired() {
+            pendingZoomLevel = null;
+        }
+    });
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
 {{/if}}

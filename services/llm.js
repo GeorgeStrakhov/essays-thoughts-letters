@@ -5,6 +5,7 @@ import fs from 'fs';
 import { NEW_ESSAY_PROMPTS, SYSTEM_PROMPTS } from './prompts.js';
 import path from 'path';
 import { sendMarkdownEmail } from './email.js';
+import fetch from 'node-fetch';
 
 // Load environment variables
 dotenv.config();
@@ -19,6 +20,50 @@ const DEFAULT_MODEL = "anthropic/claude-3.5-sonnet";
 //const DEFAULT_MODEL = "google/gemini-2.0-flash-001";
 const FALLBACK_MODEL = "google/gemini-2.0-flash-001";
 const DEFAULT_TEMPERATURE = 0.7;
+
+async function checkUrl(url) {
+    try {
+        const response = await fetch(url, {
+            method: 'HEAD',
+            timeout: 5000
+        });
+        return response.status !== 404;
+    } catch (error) {
+        return false;
+    }
+}
+
+async function stripInvalidLinks(content) {
+    // Regular expression to find markdown links
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const links = [...content.matchAll(linkRegex)];
+    
+    let newContent = content;
+    
+    for (const link of links) {
+        const [fullMatch, text, url] = link;
+        
+        // Skip relative image paths
+        if (url.startsWith('./')) {
+            continue;
+        }
+        
+        // Skip anchor links
+        if (url.startsWith('#')) {
+            continue;
+        }
+        
+        // Check if URL is valid
+        const isValid = await checkUrl(url);
+        
+        if (!isValid) {
+            // Replace [text](url) with just text
+            newContent = newContent.replace(fullMatch, text);
+        }
+    }
+    
+    return newContent;
+}
 
 /**
  * Get a chat completion from the LLM
@@ -92,6 +137,9 @@ export async function getVersion(
 
             const response = completion.choices[0].message.content;
             
+            // Strip invalid links before proceeding
+            const cleanedResponse = await stripInvalidLinks(response);
+            
             // Extract zoom level from the system prompt by matching it with SYSTEM_PROMPTS
             const contentLength = Object.entries(SYSTEM_PROMPTS)
                 .find(([_, prompt]) => prompt === systemPrompt)?.[0] || '5m';
@@ -103,11 +151,11 @@ export async function getVersion(
                 
             await sendMarkdownEmail(
                 emailSubject,
-                response,
+                cleanedResponse,
                 filename
             );
 
-            return response;
+            return cleanedResponse;
 
         } catch (error) {
             lastError = error;

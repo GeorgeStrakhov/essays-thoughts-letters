@@ -44,3 +44,9 @@ NB! Since the deployed version on Fly is ephemeral, it will be lost after a whil
 If the requested essay is not found - we can show a button to generate the essay on the fly, based on the style of the other essays
 (need to fine-tune the LLM to do this well and/or just have a long-context one).
 And we should add a captcha or something to prevent robot abuse.
+
+# TODO:
+
+- fix bug on showing "not yet generated when it is"
+- when generating: add pre-check on validity of ULRs when generating. otherwise llms invent urls. if not real url - clean it.
+- add admin interface to approve, regect, regenerate, edit essays that were generated. and have programmatic github push behind the scenes, otherwise useless. OR - add a DB?

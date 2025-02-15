@@ -260,27 +260,21 @@ app.get('/:essaySlug/', async function(req, res, next) {
     }
 
     try {
-        // Try to get the specific version file
         const versionPath = zoomLevel === essay.naturalZoomLevel 
             ? `./essays/${slug}/${slug}.md`
             : `./essays/${slug}/${slug}.${zoomLevel}.md`;
         
         let essayText;
         let isGenerated = false;
-        let isGenerating = false;
+        let isGenerating = req.query.generating === 'true';
 
         try {
             essayText = await readFile(versionPath, 'utf8');
-            // Set isGenerated true if this is not the original version
             isGenerated = zoomLevel !== essay.naturalZoomLevel;
         } catch (err) {
-            // File doesn't exist, generate it
-            if (zoomLevel !== essay.naturalZoomLevel) { // Don't generate for natural zoom level
-                const originalText = await readFile(`./essays/${slug}/${slug}.md`, 'utf8');
-                isGenerating = true;
-                
-                // First render the loading state
-                res.render('essay', {
+            // If file doesn't exist and generating=true is set, show generating state
+            if (isGenerating) {
+                return res.render('essay', {
                     title: essay.title,
                     slug: essay.slug,
                     description: essay.description,
@@ -292,40 +286,12 @@ app.get('/:essaySlug/', async function(req, res, next) {
                     zoomLevel,
                     zoomLevels: ZOOM_LEVELS,
                     isGenerating,
-                    currentZoom: ZOOM_LEVELS[zoomLevel]
+                    currentZoom: ZOOM_LEVELS[zoomLevel],
+                    essay
                 });
-
-                // Generate in the background
-                getVersion(
-                    SYSTEM_PROMPTS[zoomLevel],  // Use zoom-specific system prompt
-                    USER_PROMPT_TEMPLATE(
-                        originalText,
-                        zoomLevel
-                    ),
-                    slug
-                ).then(async (generatedText) => {
-                    // Save generated version
-                    await fs.promises.writeFile(versionPath, generatedText);
-                    
-                    // Update TOC with the new version
-                    const wordCount = generatedText.trim().split(/\s+/).length;
-                    if (!essay.versions) essay.versions = {};
-                    essay.versions[zoomLevel] = {
-                        wordCount,
-                        isOriginal: false,
-                        isHumanVetted: false
-                    };
-                    
-                    // Save updated TOC
-                    await fs.promises.writeFile(
-                        new URL('./toc.json', import.meta.url),
-                        JSON.stringify(updatedToc, null, 2)
-                    );
-                }).catch(console.error);
-
-                return; // End the request here
             } else {
-                throw new Error('Original essay not found');
+                // Otherwise, just show that version is not generated
+                essayText = await readFile(`./essays/${slug}/${slug}.md`, 'utf8');
             }
         }
 
@@ -456,6 +422,70 @@ app.get('*', (req, res) => {
         topicName,
         generating: req.query.generating === 'true'
     });
+});
+
+app.post('/:essaySlug/generate-version', async (req, res) => {
+    const { captchaToken, zoomLevel } = req.body;
+    const slug = req.params.essaySlug;
+
+    // Verify captcha token
+    try {
+        const verification = await verifyCaptcha(captchaToken);
+        if (!verification.success) {
+            return res.status(400).json({ error: 'Invalid captcha' });
+        }
+
+        // Get the original essay content
+        const originalText = await readFile(`./essays/${slug}/${slug}.md`, 'utf8');
+        
+        // Get the version path
+        const versionPath = `./essays/${slug}/${slug}.${zoomLevel}.md`;
+        
+        // Start generation and handle saving
+        getVersion(
+            SYSTEM_PROMPTS[zoomLevel],
+            USER_PROMPT_TEMPLATE(originalText, zoomLevel),
+            slug
+        ).then(async (generatedText) => {
+            try {
+                // Save generated version
+                await fs.promises.writeFile(versionPath, generatedText);
+                
+                // Update TOC
+                const updatedToc = JSON.parse(
+                    await readFile(
+                        new URL('./toc.json', import.meta.url)
+                    )
+                );
+                
+                const essay = updatedToc.find(e => e.slug === slug);
+                if (essay) {
+                    // Update TOC with the new version
+                    const wordCount = generatedText.trim().split(/\s+/).length;
+                    if (!essay.versions) essay.versions = {};
+                    essay.versions[zoomLevel] = {
+                        wordCount,
+                        isOriginal: false,
+                        isHumanVetted: false
+                    };
+                    
+                    // Save updated TOC
+                    await fs.promises.writeFile(
+                        new URL('./toc.json', import.meta.url),
+                        JSON.stringify(updatedToc, null, 2)
+                    );
+                }
+            } catch (error) {
+                console.error('Error saving generated version:', error);
+            }
+        }).catch(console.error);
+
+        // Return success immediately
+        res.status(200).json({ success: true });
+    } catch (error) {
+        console.error('Error in version generation:', error);
+        res.status(500).json({ error: 'Generation failed' });
+    }
 });
 
 app.listen(3000);
