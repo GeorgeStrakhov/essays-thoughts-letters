@@ -140,6 +140,6 @@ a tricky art:
 
 Last but not least, on the matter of consciousness: like [Michael Levin](https://www.youtube.com/watch?v=7FJfdO53Q-w), I reject the idea of consciousness as a binary kind of quality. It seems to me that there is no hard boundary. It's a spectrum: from the simplest stone, to the human being and beyond. And so the question "Are they conscious?" is somewhat meaningless.
 
-The real question is: can Freudian agents be more conscious than the simple ones we have today? My intuition is that they could be.
+The real question is: could Freudian agents be more conscious than the simple ones we have today? My intuition is that they could.
 
 But we will have to build them to find out.
