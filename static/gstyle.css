@@ -713,3 +713,10 @@ blockquote {
 .theme-dark .ai-generated-notice {
     color: #999;
 }
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
