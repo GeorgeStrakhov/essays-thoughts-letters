@@ -504,7 +504,7 @@
     "isAIGenerated": true
   },
   {
-    "title": "Seek Reject Frame",
+    "title": "Seek-Reject-Frame",
     "description": "a proposed architecture for Freudian agents",
     "featured_image": "/seek-reject-frame/img/SRF.png",
     "slug": "seek-reject-frame",

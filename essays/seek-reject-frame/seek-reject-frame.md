@@ -1,4 +1,8 @@
-__a proposed architecture for Freudian agents__
+###### _a proposed architecture for Freudian agents_
+
+- - -
+
+
 
 ## The assembly line, the org chart, the parliament
 
@@ -8,7 +12,7 @@ Most agentic approaches and frameworks today are following the same basic patter
 - Allow it to run a few loops - using tools to achieve the goal.
 - Return a result when the goal is reached.
 
-And then one can string these agents together into a more powerful meta-agent. For this there are a few patterns (as, for example, implemented in [crew.ai](https://docs.crewai.com/concepts/processes)):
+And then one can string these agents together into a more powerful meta-agent or agent team. For this there are a few patterns (as, for example, implemented in [crew.ai](https://docs.crewai.com/concepts/processes)):
 
 - Sequential: no magic here, just a simple programmatic flow. This is like agents working on a pre-defined assembly line. 
 
@@ -18,11 +22,14 @@ And then one can string these agents together into a more powerful meta-agent. F
 
 All of the above is very logical and makes sense, as this is how we are used to think about human collaboration in organisational and societal settings: the assembly line, the org chart, the parliament.
 
+
+
 ## Seek - Reject - Frame
 
 I would like to suggest a possibility for an alternative approach: what if instead of taking inspiration from the inter-human organisational patterns, we look into the intrinsic organisation of a single human being? What if we try to assume that LLM mini-agents are not "worker" building blocks for an organisation, but rather parts of a [society of mind](https://en.wikipedia.org/wiki/Society_of_Mind)?
 
 The latest research in neuropsychology [suggests](https://www.google.com/search?q=the+hidden+spring+mark+solms) that the brain is not organised in a top-down way and neither is it democratic. Most importantly, the overall drive / goal of the system is not coming from the top at all. It's coming from the bottom. Here is a brutally simplified idea:
+
 
 ### 1. Seek
 
@@ -48,6 +55,7 @@ How does the grand filter of the REJECTOR operate? We don't really know, but her
 The last, but critically important step is to post-rationalize story. The is where _after_ the choice is made and action or non-action is performed, a FRAMER comes in. The job of the FRAMER is to invent a plausible story about why the collective intelligence of SEEKERS + REJECTOR are doing what they are doing. Self-story-making here is very important for the future operation of the REJECTOR. You see, SEEKERs don't much care about past or future. They are just maximizing their drives in the here and now. But the REJECTOR needs access to long-term memories and stories so that it can project into the future better. And so it's the FRAMER's job to continuously form and deform memories in a way that would imply a consistent, coherent self. A story that can be continued and against which the possible future actions can be evaluated. If the REJECTOR is concerned with physical self-preservation, then the FRAMER is concerned with conceptual self-preservation.
 
 As Mark Solms likes to put it: memories are of the past, but they are for the future. Past memories can easily be altered and molded to fit the needs for a coherent self-story, because without a coherent self-story a REJECTOR would not have enough basis for choice that would optimize longer-term success of the collective intelligence.
+
 
 
 ## SRF in practice
@@ -90,6 +98,8 @@ Let us now imagine how SEEK-REJECT-FRAME (SRF) pattern could be implemented in p
 
 - This concludes a single loop of our SRF agent existence. And we are off onto the next iteration. Where the results of actions taken, as well as new user messages or sensor readings may be present in the context. And the merry go round starts again.
 
+
+
 ## Are Freudian Agents practical? Are they conscious?
 
 So we have successfully imagined a new kind of SRF (SEEK-REJECT-FRAME) system, which we can call a Freudian agent, since it starts with the "subconscious" wishes and then suppresses them later.
@@ -100,7 +110,7 @@ A couple of important questions arise:
 - Would they be practical and valuable?
 - Would they be more (or less) conscious than the simpler hierarchical agents that we are used to?
 
-I don't have the answers. But my intuition is that they can be built (nothing in the diagram above looks outside of the realm of the possibiliy). I also do believe that there will be practical uses for such agents. In complex, long-running, highly ambiguous environments where today's simple hierarchical agents fail miserably - freudian agents could should more resilience and more sensible and ultimately intelligent goal-directed behavior. However designing a good Freudian agent will be
+I don't have the answers. But my intuition is that they can be built (nothing in the diagram above looks impossible). I also do believe that there will be practical uses for such agents. In complex, long-running, highly ambiguous environments where today's simple hierarchical agents fail miserably - Freudian agents could show more resilience and more sensible and ultimately intelligent goal-directed behavior. However designing a good Freudian agent will be
 an art: what baseline desires (for SEEKERs) do you need in order to have the final agent behave in a way that you want it to behave?
 
 Last but not least, on the matter of consciousness... here everything depends on the definition. Like Michael Levin, I reject consciousness as a binary thing. There is no hard boundary. It's a spectrum - from the simplest stone, to the human being and beyond. And so the question "are they conscious" is somewhat meaningless.
