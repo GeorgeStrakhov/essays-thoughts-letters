@@ -502,5 +502,19 @@
     },
     "naturalZoomLevel": "5m",
     "isAIGenerated": true
+  },
+  {
+    "title": "Seek Reject Frame",
+    "description": "a proposed architecture for Freudian agents",
+    "featured_image": "/seek-reject-frame/img/SRF.png",
+    "slug": "seek-reject-frame",
+    "timestamp": "020250217",
+    "versions": {
+      "15m": {
+        "wordCount": 2111,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "15m"
   }
 ]
