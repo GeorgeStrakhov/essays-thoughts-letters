@@ -336,7 +336,6 @@ app.get('/:essaySlug/check-version', async function(req, res) {
     }
 
     try {
-        // Read TOC fresh from disk
         const currentToc = JSON.parse(
             await readFile(
                 new URL('./toc.json', import.meta.url)

@@ -4,30 +4,24 @@
     "slug": "cambrian-explosion-of-software",
     "timestamp": "020250206",
     "versions": {
-      "1m": {
+      "small": {
         "wordCount": 313,
         "isOriginal": true
       },
-      "5m": {
+      "medium": {
         "wordCount": 412,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020250206"
       },
-      "15m": {
-        "wordCount": 988,
-        "isOriginal": false,
-        "isHumanVetted": true,
-        "vettedTimestamp": "020250206"
-      },
-      "30m": {
-        "wordCount": 1371,
+      "large": {
+        "wordCount": 1366,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020250206"
       }
     },
-    "naturalZoomLevel": "1m"
+    "naturalZoomLevel": "small"
   },
   {
     "title": "23 Points on Microconsciousness",
@@ -36,23 +30,23 @@
     "slug": "microconsciousness",
     "timestamp": "020250114",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 1670,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 156,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020250114"
       },
-      "15m": {
+      "large": {
         "wordCount": 888,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "The Ladder of Artificial Agency",
@@ -61,18 +55,18 @@
     "slug": "artificial-agency-ladder",
     "timestamp": "020250108",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 1494,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 121,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020250108"
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "Progress is Humbling",
@@ -81,18 +75,18 @@
     "slug": "progress-is-humbling",
     "timestamp": "020240409",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 961,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 77,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020240409"
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "You only live N times",
@@ -101,17 +95,17 @@
     "slug": "you-only-live-n-times",
     "timestamp": "020240406",
     "versions": {
-      "30m": {
+      "large": {
         "wordCount": 7154,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 179,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "30m"
+    "naturalZoomLevel": "large"
   },
   {
     "title": "The Pact with Power",
@@ -120,22 +114,22 @@
     "slug": "pact-with-power",
     "timestamp": "020240317",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 1167,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 158,
         "isOriginal": false,
         "isHumanVetted": false
       },
-      "15m": {
+      "large": {
         "wordCount": 466,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "Intention is all you need",
@@ -144,17 +138,17 @@
     "slug": "intention-is-all-you-need",
     "timestamp": "020231118",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 1049,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 119,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "Reflections on the first year of ChatGPT",
@@ -163,12 +157,12 @@
     "slug": "a-year-of-chatgpt",
     "timestamp": "020231114",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 683,
         "isOriginal": true
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "5 questions from under the rug",
@@ -177,22 +171,22 @@
     "slug": "5-questions-from-under-the-rug",
     "timestamp": "020231004",
     "versions": {
-      "15m": {
+      "large": {
         "wordCount": 2689,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 157,
         "isOriginal": false,
         "isHumanVetted": false
       },
-      "5m": {
+      "medium": {
         "wordCount": 410,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "15m"
+    "naturalZoomLevel": "large"
   },
   {
     "title": "The Test of Prometheus",
@@ -201,30 +195,30 @@
     "slug": "the-test-of-prometheus",
     "timestamp": "020230417",
     "versions": {
-      "15m": {
+      "large": {
         "wordCount": 3855,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 151,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020230417"
       }
     },
-    "naturalZoomLevel": "15m"
+    "naturalZoomLevel": "large"
   },
   {
     "title": "Personal Prophets and the Next Awakening",
     "slug": "personal-prophets",
     "timestamp": "020230415",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 996,
         "isOriginal": true
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "The Return of the Gut",
@@ -232,54 +226,54 @@
     "slug": "the-return-of-the-gut",
     "timestamp": "020230316",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 560,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 147,
         "isOriginal": false
       },
-      "30m": {
-        "wordCount": 1416,
+      "large": {
+        "wordCount": 1562,
         "isOriginal": false
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "Creative Gardener's Job Description",
     "slug": "creative-gardeners-job-description",
     "timestamp": "020230228",
     "versions": {
-      "1m": {
+      "small": {
         "wordCount": 198,
         "isOriginal": true
       },
-      "5m": {
+      "medium": {
         "wordCount": 480,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020230228"
       }
     },
-    "naturalZoomLevel": "1m"
+    "naturalZoomLevel": "small"
   },
   {
     "title": "AI is not a horse",
     "slug": "ai-is-not-a-horse",
     "timestamp": "020230117",
     "versions": {
-      "15m": {
+      "large": {
         "wordCount": 2725,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 1,
         "isOriginal": false
       }
     },
-    "naturalZoomLevel": "15m"
+    "naturalZoomLevel": "large"
   },
   {
     "title": "Gods have to play dice",
@@ -288,45 +282,41 @@
     "slug": "gods-have-to-play-dice",
     "timestamp": "020221123",
     "versions": {
-      "30m": {
+      "large": {
         "wordCount": 6405,
-        "isOriginal": true
+        "isOriginal": true,
+        "isHumanVetted": false
       },
-      "1m": {
+      "small": {
         "wordCount": 163,
         "isOriginal": false,
         "isHumanVetted": false
       },
-      "5m": {
+      "medium": {
         "wordCount": 562,
-        "isOriginal": false,
-        "isHumanVetted": false
-      },
-      "15m": {
-        "wordCount": 1158,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "30m"
+    "naturalZoomLevel": "large"
   },
   {
     "title": "Three Laws of Consumerism",
     "slug": "three-laws-of-consumerism",
     "timestamp": "020220705",
     "versions": {
-      "1m": {
+      "small": {
         "wordCount": 49,
         "isOriginal": true
       },
-      "5m": {
+      "medium": {
         "wordCount": 448,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020220705"
       }
     },
-    "naturalZoomLevel": "1m"
+    "naturalZoomLevel": "small"
   },
   {
     "title": "The Function of Art is to save the Artist",
@@ -334,39 +324,39 @@
     "slug": "the-function-of-art-is-to-save-the-artist",
     "timestamp": "020220301",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 1206,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 71,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "108 thoughts for strategists",
     "slug": "108-thoughts-for-strategists",
     "timestamp": "020220204",
     "versions": {
-      "15m": {
+      "large": {
         "wordCount": 2911,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 668,
         "isOriginal": false,
         "isHumanVetted": false
       },
-      "5m": {
+      "medium": {
         "wordCount": 381,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "15m"
+    "naturalZoomLevel": "large"
   },
   {
     "title": "To Doubt or Not to Doubt?",
@@ -374,100 +364,95 @@
     "slug": "to-doubt-or-not-to-doubt",
     "timestamp": "020220103",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 893,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 2028,
         "isOriginal": false,
         "isHumanVetted": false
       },
-      "15m": {
+      "large": {
         "wordCount": 900,
         "isOriginal": false
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "Towards a more Elvish vision of technology",
     "slug": "elvish",
     "timestamp": "020210703",
     "versions": {
-      "15m": {
+      "large": {
         "wordCount": 3344,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 127,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020210703"
       }
     },
-    "naturalZoomLevel": "15m"
+    "naturalZoomLevel": "large"
   },
   {
     "title": "Telescopic Content",
     "slug": "telescopic-content",
     "timestamp": "020250207",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 1287,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 201,
         "isOriginal": false,
         "isHumanVetted": true,
         "vettedTimestamp": "020250207"
       },
-      "15m": {
-        "wordCount": 1387,
-        "isOriginal": false,
-        "isHumanVetted": false
-      },
-      "30m": {
-        "wordCount": 4022,
+      "large": {
+        "wordCount": 4275,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "Creative Midwifery",
     "slug": "creative-midwifery",
     "timestamp": "020250207",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 686,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 151,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "5m"
+    "naturalZoomLevel": "medium"
   },
   {
     "title": "Fucking With The Wind",
     "slug": "fucking-with-the-wind",
     "timestamp": "020250208",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 814,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 129,
         "isOriginal": false
       }
     },
-    "naturalZoomLevel": "5m",
+    "naturalZoomLevel": "medium",
     "isAIGenerated": true
   },
   {
@@ -475,13 +460,13 @@
     "slug": "yak-yak-shmuk-fuck",
     "timestamp": "020250208",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 472,
         "isOriginal": true,
         "isAIGenerated": true
       }
     },
-    "naturalZoomLevel": "5m",
+    "naturalZoomLevel": "medium",
     "isAIGenerated": true
   },
   {
@@ -490,31 +475,36 @@
     "slug": "the-beauty-of-a-button-in-the-age-of-universal-basic-intelligence",
     "timestamp": "020250215",
     "versions": {
-      "5m": {
+      "medium": {
         "wordCount": 817,
         "isOriginal": true
       },
-      "1m": {
+      "small": {
         "wordCount": 144,
         "isOriginal": false,
         "isHumanVetted": false
       }
     },
-    "naturalZoomLevel": "5m",
+    "naturalZoomLevel": "medium",
     "isAIGenerated": true
   },
   {
     "title": "Seek-Reject-Frame",
     "description": "a proposed architecture for Freudian agents",
-    "featured_image": "/seek-reject-frame/img/SRF.png",
+    "featured_image": "https://essays.georgestrakhov.com/seek-reject-frame/img/SRF.png",
     "slug": "seek-reject-frame",
     "timestamp": "020250217",
     "versions": {
-      "15m": {
-        "wordCount": 2480,
+      "large": {
+        "wordCount": 2479,
         "isOriginal": true
+      },
+      "small": {
+        "wordCount": 201,
+        "isOriginal": false,
+        "isHumanVetted": true
       }
     },
-    "naturalZoomLevel": "15m"
+    "naturalZoomLevel": "large"
   }
 ]

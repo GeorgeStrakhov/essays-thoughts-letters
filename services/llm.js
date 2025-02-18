@@ -249,13 +249,13 @@ export async function generateNewEssay(slug) {
             slug: slug,
             timestamp: formatCurrentDate(),
             versions: {
-                "5m": {
+                "medium": {
                     wordCount: wordCount,
                     isOriginal: true,
                     isAIGenerated: true
                 }
             },
-            naturalZoomLevel: '5m',
+            naturalZoomLevel: "medium",
             isAIGenerated: true
         };
 
