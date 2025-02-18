@@ -44,7 +44,7 @@ At the top - we have a REJECTOR. The job of the higher brain is not to generate 
 
 > Yes there is tasty food on the table next to you in the restaraunt. And you have an urge to grab it. But it's probably not wise to do so as the people next to you won't be amused and you would end up in a fight or a police station. And your date won't like that. So thank you very much SEEKER, but no thank you. Not right now. Wait.
 
-The REJECTOR's job is to say no. To look at all the things that the SEEKER (or in reality a few SEEKERS, each with different goals / drives) wants to do and to reject 99% of them 99% of the time. Occasionally some wish (proposed action) looks decent enough to go for it. Or maybe one of the SEEKERs gets such a strong desire that REJECTOR just can't do anything about it and has to let it through (as longs as there are tools available to action on it).
+The REJECTOR's job is to say no. To look at all the things that the SEEKER (or in reality a few SEEKERS, each with different goals / drives) wants to do and to reject 99% of them 99% of the time. Occasionally some wish (proposed action) looks decent enough to go for it. Or maybe one of the SEEKERs gets such a strong desire that REJECTOR just can't do anything about it and has to let it through (as long as there are tools available to action on it).
 
 > SEEKER: We are starving. Let's grab this right now.
 
@@ -110,7 +110,7 @@ Let us now imagine how SEEK-REJECT-FRAME (SRF) pattern could be implemented in p
 
 - The FRAMER is activated _after_ the action is taken (or at least after the signal to do the action is sent) so as not to slow down the process. The FRAMER takes in the action, the reasoning and previous self-story. It then proceeds to rewrite/update the self-story to frame the action (or non-action) as a coherent continuation of the self. It also decides what new individual memories to add to the memory store and does so (write a snippet, calculate embeddings, add to the vector store). The FRAMER, like the REJECTOR needs to be driven by a strong LLM with a large context window, and ability to conceptualize and post-rationalize.
 
-- It's important that actions-not-taken are equally contributing to the self-story and memories because suppressed wishes are an important aspect of personality (hello, Freud!). From a pragmatic standpoint, actions not taken are really important learning moments. One of the reasons humans are so much "smarter" than other animals is that our ability to **"learn by not doing** is very strong. We can imagine in our heads the consequences and we can learn from those imaginary tries over time. Without actually suffering the consequences in the real world.
+- It's important that actions-not-taken are equally contributing to the self-story and memories because suppressed wishes are an important aspect of personality (hello, Freud!). From a pragmatic standpoint, actions not taken are really important learning moments. One of the reasons humans are so much "smarter" than other animals is that our ability to **"learn by not doing"** is very strong. We can imagine in our heads the consequences and we can learn from those imaginary tries over time. Without actually suffering the consequences in the real world.
 
 - This concludes a single loop of our SRF agent existence. And we are off onto the next iteration. Where the results of actions taken, as well as new user messages or sensor readings may be present in the context. And the merry go round starts again.
 
@@ -119,7 +119,7 @@ As an interesting side benefit, the SRF design allows an agent to "dream". In a 
 
 ## Are Freudian Agents practical? Are they conscious?
 
-So we have successfully imagined a new kind of SRF (SEEK-REJECT-FRAME) system, which we can call a Freudian agent, since it starts with the "subconscious" wishes and then suppresses them later.
+So we have successfully imagined a new kind of SRF (SEEK-REJECT-FRAME) system, which we can call a Freudian Agent, since it starts with the "subconscious" wishes and then suppresses them later.
 
 A couple of important questions arise:
 
@@ -134,12 +134,12 @@ a tricky art:
 
 > What baseline desires (for SEEKERs) do you need in order to have the final agent behave in a way that you want it to behave?
 
-> How cautious and strict should the REJECTOR be? Is the cautiousness (i.e. wish-to-action threshold) a fixed meta-parameter or something that dynamically changes depending on the context and system state as a whole?
+> How cautious and strict should the REJECTOR be? Is the cautiousness (i.e. wish-to-action threshold) a fixed meta-parameter or something that dynamically changes depending on the context and the state of the system as a whole?
 
 > What initial self-story (if any) would you want to implant into the FRAMER's memory?
 
 Last but not least, on the matter of consciousness: like [Michael Levin](https://www.youtube.com/watch?v=7FJfdO53Q-w), I reject the idea of consciousness as a binary kind of quality. It seems to me that there is no hard boundary. It's a spectrum: from the simplest stone, to the human being and beyond. And so the question "Are they conscious?" is somewhat meaningless.
 
-The real question is: could Freudian agents be more conscious than the simple ones we have today? My intuition is that they could.
+The real question is: could Freudian Agents be _more_ conscious than the simple ReACT ones we have today? My intuition is that they could.
 
 But we will have to build them to find out.
