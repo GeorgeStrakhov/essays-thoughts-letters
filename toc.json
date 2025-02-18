@@ -502,7 +502,13 @@
       "small": {
         "wordCount": 201,
         "isOriginal": false,
-        "isHumanVetted": true
+        "isHumanVetted": true,
+        "vettedTimestamp": "020250217"
+      },
+      "medium": {
+        "wordCount": 545,
+        "isOriginal": false,
+        "isHumanVetted": false
       }
     },
     "naturalZoomLevel": "large"

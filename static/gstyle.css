@@ -167,6 +167,10 @@ img {
     font-style: italic;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /* Layout */
 .section {
     padding: 2rem 1.5rem;
@@ -242,9 +246,8 @@ table td {
     color: #666;
     font-size: 0.9em;
     font-style: italic;
-    margin-bottom: 1.2rem;
     padding-top: 2rem;
-    padding-bottom: 1.7rem;
+    padding-bottom: 1rem;
 }
 
 .theme-dark .zoom-explanation {
@@ -258,6 +261,7 @@ table td {
     justify-content: space-between;
     padding: 0 1rem;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Progress bar behind the buttons */
@@ -738,4 +742,65 @@ blockquote {
 
 .theme-dark .modal-close:hover {
     background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* AI Essays Control */
+.ai-essays-control {
+    position: relative;
+    margin: 2rem 0;
+    padding: 2rem 1.5rem 1.5rem;
+    background: #f8f8f8;
+    border-radius: 12px;
+}
+
+.theme-dark .ai-essays-control {
+    background: #2a2a2a;
+}
+
+.ai-essays-explanation {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 0 !important;
+    padding-right: 1.5rem;
+}
+
+.theme-dark .ai-essays-explanation {
+    color: #999;
+}
+
+
+
+/* Add to existing zoom-close styles */
+.ai-essays-control .zoom-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    color: inherit;
+}
+
+.ai-essays-control .zoom-close:hover {
+    opacity: 1;
+}
+
+.ai-essays-control.hidden {
+    display: none;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .ai-essays-control {
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+    }
+    
+    .ai-essays-explanation {
+        font-size: 0.85em;
+    }
 }
