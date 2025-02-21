@@ -42,7 +42,7 @@ This kind of thing. The time horizon is short. There is very little planning inv
 
 At the top - we have a REJECTOR. The job of the higher brain is not to generate desires and goals. It's to tame them, to prevent them from ruining your life. The drives are coming from a bunch of SEEKERs below, but those SEEKERs themselves are too simplistic to be trusted fully to run such a complex organism:
 
-> Yes there is tasty food on the table next to you in the restaraunt. And you have an urge to grab it. But it's probably not wise to do so as the people next to you won't be amused and you would end up in a fight or a police station. And your date won't like that. So thank you very much SEEKER, but no thank you. Not right now. Wait.
+> Yes there is tasty food on the table next to you in the restaurant. And you have an urge to grab it. But it's probably not wise to do so as the people next to you won't be amused and you would end up in a fight or a police station. And your date won't like that. So thank you very much SEEKER, but no thank you. Not right now. Wait.
 
 The REJECTOR's job is to say no. To look at all the things that the SEEKER (or in reality a few SEEKERS, each with different goals / drives) wants to do and to reject 99% of them 99% of the time. Occasionally some wish (proposed action) looks decent enough to go for it. Or maybe one of the SEEKERs gets such a strong desire that REJECTOR just can't do anything about it and has to let it through (as long as there are tools available to action on it).
 
@@ -58,7 +58,7 @@ How does the grand filter of the REJECTOR operate? Here is a possible model:
 
 - First, the REJECTOR collects all the proposed wishes from the SEEKERs. For each wish there is an associated strength (which can be used as a weight or for a gate function of some sort).
 
-- Then, the REJECTOR tries to understand whether there is a concrete action that can be taken to fulfill this wish and then does some imaginary time-travel to predict the consequences of each proposed action on different time horizons. This is the superpower of the higher brain: doing time-travel and running multiple simulations of the future, to understand whether the SEEKER's wishes could be realized and whether going for it makes any sense in the longer run. What does "making sense" mean here? I'm not too sure how to best formalize this. But a good first guess is to simplify the judgement to the followingthree factors:
+- Then, the REJECTOR tries to understand whether there is a concrete action that can be taken to fulfill this wish and then does some imaginary time-travel to predict the consequences of each proposed action on different time horizons. This is the superpower of the higher brain: doing time-travel and running multiple simulations of the future, to understand whether the SEEKER's wishes could be realized and whether going for it makes any sense in the longer run. What does "making sense" mean here? I'm not too sure how to best formalize this. But a good first guess is to simplify the judgement to the following three factors:
     - **safety** (self-preservation drive)
     - **satisfaction** of the same drives of the SEEKERs but in the future.
     - **self-story** consistency i.e. are we continuing what we have always been about? More on this below.

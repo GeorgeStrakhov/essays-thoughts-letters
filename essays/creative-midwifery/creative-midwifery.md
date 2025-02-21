@@ -8,9 +8,9 @@ I call this "creative midwifery", and yes, [Socrates had this thought first](htt
 
 ## The Art of Letting Go
 
-The first step in becoming a creative midwife (for yourself or for another human being) is to let go of the illusion of control. We often cling to our ideas with a possessive grip, afraid to deviate from our initial vision (even if this vission is justa mirage). But true creativity often arises from the unexpected, from the surprising twists and turns that emerge when we allow the idea to guide us, rather than the other way around.
+The first step in becoming a creative midwife (for yourself or for another human being) is to let go of the illusion of control. We often cling to our ideas with a possessive grip, afraid to deviate from our initial vision (even if this vision is just a mirage). But true creativity often arises from the unexpected, from the surprising twists and turns that emerge when we allow the idea to guide us, rather than the other way around.
 
-As Keth Jarret said, you can either be in the improvisation or be an ["improvisation ecologist"](https://youtu.be/BUH-FbhS-A4?si=GI94w0Spvh5SbR4u&t=472) who understands the rules and constraints and intentions... but whose improvisation is ultimately stillborn.
+As Keith Jarret said, you can either be in the improvisation or be an ["improvisation ecologist"](https://youtu.be/BUH-FbhS-A4?si=GI94w0Spvh5SbR4u&t=472) who understands the rules and constraints and intentions... but whose improvisation is ultimately stillborn.
 
 Think of a sculptor working with a piece of marble. They begin with a vague idea of what they want to create, but the final form emerges from a dialogue with the stone itself. The sculptor listens to the grain, the fissures, the inherent qualities of the material, and allows these to shape the final outcome. They don't force the marble to become something it's not; they help it become what it is meant to be. Carving out, not carving up.
 
