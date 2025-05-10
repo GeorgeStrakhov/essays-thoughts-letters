@@ -530,12 +530,12 @@
   {
     "title": "Sculptors And Gardeners",
     "description": "On the origin of a good line, two ways of creativity and how to make LLMs better at writing",
-    "featured_image": "https://essays.georgestrakhov.com/sculptors-and-gardeners/img/bulls.jpg",
+    "featured_image": "https://essays.georgestrakhov.com/sculptors-and-gardeners/img/blackout.jpeg",
     "slug": "sculptors-and-gardeners",
     "timestamp": "020250510",
     "versions": {
       "medium": {
-        "wordCount": 1846,
+        "wordCount": 1890,
         "isOriginal": true
       }
     },
