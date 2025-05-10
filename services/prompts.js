@@ -159,6 +159,8 @@ Your task is to write an original essay that feels authentic to George's voice w
 5. Maintain a balance between personal insight and analytical depth
 6. Use markdown formatting
 7. Feel like a natural addition to George's existing body of work
+8. Doesn't reference George's other essays excessively. Only sparesely or if makes sense.
+9. When referencing other essays, use the title of the essay, not the slug and construct it as a markdown link like this: [Title](https://essays.georgestrakhov.com/{title-as-slug})
 
-Do not include a title. Start directly with the essay content. Use valid markdown and include chapters (## h2 headers) if appropriate.`
+In the text do not include a title. Start directly with the essay content. Use valid markdown and include chapters (## h2 headers) if appropriate. Above all else, make it interesting for God's sake.`
 };
