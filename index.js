@@ -246,7 +246,7 @@ app.get('/:essaySlug/', async function(req, res, next) {
                     essay.versions[originalVersion].wordCount
                 );
             } else {
-                essay.naturalZoomLevel = '5m'; // Default if can't determine
+                essay.naturalZoomLevel = 'medium'; // Default if can't determine
             }
         }
         zoomLevel = essay.naturalZoomLevel;

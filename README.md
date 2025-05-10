@@ -7,10 +7,9 @@ This is a simple minimal repo for my essays, letters and thoughts that can expan
 - Inside `essays` each essay has its own directory containing:
   - `{essayName}.md` - the original essay (standard 5-minute version)
   - Time-based variations: `{essayName}.{time}.md` where time is:
-    - `1m` - One-minute version (TLDR with bullets)
-    - `5m` - Five-minute version (basic argument)
-    - `15m` - Fifteen-minute version (detailed exploration)
-    - `30m` - Thirty-minute version (comprehensive analysis with interdisciplinary commentary)
+    - `small` - One-minute version (TLDR with bullets)
+    - `medium` - Five-minute version (basic argument)
+    - `large` - Fifteen-minute version or more (detailed exploration)
   - `img/` subfolder - containing images (.png, .jpg, or .svg files)
 - `toc.json` file containing the list of all essays, each with a name, slug(directory_name) and last edited date
 - `index.js` - Express.js server that generates HTML for individual essays, 404s, or the essay list
@@ -23,7 +22,7 @@ These essays are telescopic (inspired by TelescopicText.org), allowing readers t
 
 - Shorter versions (10s, 1m) are concise distillations of the main ideas
 - The original essay (.md) serves as the standard 5-minute version
-- Longer versions (15m, 30m) add additional content and enhance the original by adding:
+- Longer versions add additional content and enhance the original by adding:
   - Commentary from multiple perspectives
   - Analysis from different viewpoints
   - Related discussions and context

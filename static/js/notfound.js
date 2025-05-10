@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         // Start polling for completion
                         const checkStatus = async () => {
                             try {
-                                const response = await fetch(`/${slug}/check-version?zoom=5m`);
+                                const response = await fetch(`/${slug}/check-version?zoom=medium`);
                                 const data = await response.json();
                                 if (data.exists) {
                                     window.location.href = `/${slug}/`;

@@ -427,7 +427,7 @@
     "timestamp": "020250207",
     "versions": {
       "medium": {
-        "wordCount": 686,
+        "wordCount": 687,
         "isOriginal": true
       },
       "small": {
@@ -470,6 +470,20 @@
     "isAIGenerated": true
   },
   {
+    "title": "Declaration of Interdependence",
+    "slug": "declaration-of-interdependence",
+    "timestamp": "020250510",
+    "versions": {
+      "medium": {
+        "wordCount": 876,
+        "isOriginal": true,
+        "isAIGenerated": true
+      }
+    },
+    "naturalZoomLevel": "medium",
+    "isAIGenerated": true
+  },
+  {
     "title": "The Beauty Of A Button In The Age Of Universal Basic Intelligence",
     "description": "In the beginning was the button. A simple mechanical interface between human intention and technological action. Press here, and something happens there. The directness of this connection shaped our early relationship with machines - from elevator buttons to Nintendo controllers, we learned to expect immediate, predictable responses to our physical inputs.",
     "slug": "the-beauty-of-a-button-in-the-age-of-universal-basic-intelligence",
@@ -496,7 +510,7 @@
     "timestamp": "020250217",
     "versions": {
       "large": {
-        "wordCount": 2479,
+        "wordCount": 2484,
         "isOriginal": true
       },
       "small": {

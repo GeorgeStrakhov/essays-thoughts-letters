@@ -16,16 +16,16 @@ const openai = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY
 });
 
-const DEFAULT_MODEL = "anthropic/claude-3.5-sonnet";
-//const DEFAULT_MODEL = "google/gemini-2.0-flash-001";
-const FALLBACK_MODEL = "google/gemini-2.0-flash-001";
+//const DEFAULT_MODEL = "anthropic/claude-3.7-sonnet";
+const DEFAULT_MODEL = "google/gemini-2.5-pro-preview";
+const FALLBACK_MODEL = "google/gemini-2.5-flash-preview";
 const DEFAULT_TEMPERATURE = 0.7;
 
 async function checkUrl(url) {
     try {
         const response = await fetch(url, {
             method: 'HEAD',
-            timeout: 5000
+            timeout: 10000
         });
         return response.status !== 404;
     } catch (error) {
@@ -142,7 +142,7 @@ export async function getVersion(
             
             // Extract zoom level from the system prompt by matching it with SYSTEM_PROMPTS
             const contentLength = Object.entries(SYSTEM_PROMPTS)
-                .find(([_, prompt]) => prompt === systemPrompt)?.[0] || '5m';
+                .find(([_, prompt]) => prompt === systemPrompt)?.[0] || 'medium';
             
             const filename = `${currentSlug}${contentLength ? `.${contentLength}` : ''}.md`;
             const emailSubject = originalContent !== null ?
@@ -196,7 +196,7 @@ export async function getRefinedChatCompletion(
     currentSlug,
     originalContent,
     //model = "google/gemini-2.0-flash-001",
-    model = "anthropic/claude-3.5-sonnet",
+    model = DEFAULT_MODEL,
     temperature = 0.4
 ) {
     try {
