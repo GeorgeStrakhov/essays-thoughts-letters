@@ -556,5 +556,19 @@
     },
     "naturalZoomLevel": "medium",
     "isAIGenerated": true
+  },
+  {
+    "title": "AI's Near Future: Choose Your Quadrant",
+    "description": "The mid-term future of AI software, and the user experience around it, is starting to get a little clearer. Not in terms of exactly where things will go, but at least in terms of where they could go. Not the final destination, but at least a map of the possible terrain.",
+    "featured_image": "/four-quadrant-future-of-ai/img/mid-term-ai-future-map-filled.png",
+    "slug": "four-quadrant-future-of-ai",
+    "timestamp": "020250925",
+    "versions": {
+      "medium": {
+        "wordCount": 1658,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "medium"
   }
 ]
