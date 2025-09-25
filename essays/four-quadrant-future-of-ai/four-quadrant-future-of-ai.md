@@ -70,4 +70,4 @@ In reality, the future will probably look like a little bit of everything for a 
 
 ![Pace Layering](./img/pace_layering.jpg){style="width: 100%;"}
 
-In the meantime, every builder and investor is invited to place a bet on a quadrant of the future map. And while the long-term reality will likely be a blend, the dominant platforms and value chains of the next decade(s) will likely be forged by those who choose their quadrant wisely today.
+In the meantime, every builder and investor is invited to place a bet on a quadrant of the future map. And while the long-term reality will likely be a blend, the dominant platforms and value chains of the next decade(s) will be forged by those who choose their quadrant wisely today.
