@@ -13,7 +13,7 @@ We all know this distinction from our human interactions. We've all met that imp
 
 Now, this same dichotomy is coming to life in our machines. The latest LLMs can sound impressively intelligent — generating coherent documents, plausible strategies, and articulate explanations — without necessarily having any grounding in reality. The problem is telling the two apart is harder than it looks. They say that even a broken clock is right twice a day. And when it comes to LLMs - they are right more often than that even without grounding or verification. Simply because certain heurstics extracted from pre and post training - just work most of the time.
 
-## So how many times a day does the clock need to be right in order  to be useful?
+## So how many times a day does a clock need to be right in order  to be useful?
 
 The pragmatic answer to this question depends on the problem domain and the variety distribution within it. As well as the cost of mistakes.
 But most people are not going to settle for a pragmatic answer. The want their clock to be damn right all the time. And if that's what you want (and you should indeed want that, at least in a lot of business-critical tasks) - then we have to approach the question not pragmatically, but scientifically.
