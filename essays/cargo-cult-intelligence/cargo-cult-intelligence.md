@@ -1,8 +1,11 @@
-## why you should allow your LLM to get punched in the mouth
+## or why you should allow your LLM to get punched in the mouth
 
-    “The first principle is that you must not fool yourself—and you are the easiest person to fool.”
 
-    - Richard Feynman
+<p style="text-align: right; padding-right: 1em;">
+    <span style="font-style: italic;">The first principle is that you must not fool yourself — and you are the easiest person to fool.</span>
+<br />
+- Richard Feynman
+</p>
 
 There is a profound difference between sounding smart and being smart. One is a performance, an imitation of intelligence. The other is a capability, an ability to achieve goals in a messy, ever-changing world. We all know this distinction from our human interactions. We've all met that impressive-sounding businessperson, armed with jargon and platitudes, who glides from meeting to meeting but never produces anything of substance. They are masters of the appearance of work, shielded from the real-world consequences that demand adaptation and tangible results.
 
