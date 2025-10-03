@@ -1768,3 +1768,59 @@ In reality, the future will probably look like a little bit of everything for a 
 In the meantime, every builder and investor is invited to place a bet on a quadrant of the future map. And while the long-term reality will likely be a blend, the dominant platforms and value chains of the next decade(s) will be forged by those who choose their quadrant wisely today.
 
 
+=====================================
+Cargo Cult Intelligence
+=====================================
+
+### or why you should allow your LLM to get punched in the mouth
+
+    The first principle is that you must not fool yourself — and you are the easiest person to fool.
+
+- Richard Feynman
+
+There is a difference between sounding smart and being smart. One is a performance, the other is a capability. True intelligence is an ability to achieve goals in a messy, ever-changing world. Fake intelligence just goes through the motions that may be right, or wrong - without knowing the difference.
+
+We all know this distinction from our human interactions. We've all met that impressive-sounding businessperson, armed with jargon and platitudes, who glides from meeting to meeting but never produces anything of substance. They are masters of the appearance of work, shielded by their bullshit and jobhopping from the real-world consequences that demand adaptation and tangible results.
+
+Now, this same dichotomy is coming to life in our machines. The latest LLMs can sound impressively intelligent — generating coherent documents, plausible strategies, and articulate explanations — without necessarily having any grounding in reality. The problem is telling the two apart is harder than it looks. They say that even a broken clock is right twice a day. And when it comes to LLMs - they are right more often than that even without grounding or verification. Simply because certain heurstics extracted from pre and post training - just work most of the time.
+
+## So how many times a day does the clock need to be right in order  to be useful?
+
+The pragmatic answer to this question depends on the problem domain and the variety distribution within it. As well as the cost of mistakes.
+But most people are not going to settle for a pragmatic answer. The want their clock to be damn right all the time. And if that's what you want (and you should indeed want that, at least in a lot of business-critical tasks) - then we have to approach the question not pragmatically, but scientifically.
+
+The problem here is not new at all. Richard Feynman famously called it ["cargo cult science"](https://people.cs.uchicago.edu/~ravenben/cargocult.html). He was referring to the islanders in the South Pacific who, after seeing military cargo planes land during World War II, built elaborate replicas of runways, control towers, and even airplanes out of wood and straw. They performed the rituals—they mimicked the form of the operation—but the planes didn't land. They had the appearance of an airfield but lacked the underlying substance. Feynman used this as a metaphor for scientific practices that mimic the rigor and process of science without embodying its core principle of intellectual honesty, leading to results that look plausible but lack validity.
+
+For a long time, AI systems could only perform this kind of imitation. They were masters of “cargo cult intelligence,” capable of producing coherent-looking text that, upon closer inspection, was ungrounded and useless for achieving real-world goals. This was before they had interfaces with the real world. Today, however, the top AI systems are capable of both. Depending on the context, the tools they are given, and the architecture of how they are assembled and used, they can exhibit either “cargo cult intelligence” or “real intelligence.”
+
+The difference is not always easy to spot. For the untrained eye, distinguishing between a plausible-sounding but vacuous AI-generated business plan and a genuinely strategic one is as difficult as telling a real business presentation from a jargon-filled BS one. Experienced people with domain-specific knowledge can sniff it on the second slide. The rest of the crowd (including the decision makers) often just eat it up, because they don't know any better.
+
+Imagine, for instance, you ask a powerful LLM to write a marketing plan for your startup. It will produce a perfectly plausible document, filled with smart-sounding sections on SWOT analysis, target demographics, and channel strategies. It will look like a marketing plan. It will sound like a marketing plan. It may even have some useful ideas in it, mixed in with all the platitudes and bullshit. But it will be a cargo cult artifact — an imitation of a plan, disconnected from the reality of your customers, your brand and business, your market, and your goals.
+
+But the result is entirely different if you take that same LLM, give it an agentic harness and allow it to:
+
+- Access historical and real-time data about your product's performance.
+- Access customer research and complaints database.
+- Analyze data about your competitors, including their marketing and media strategies.
+- Research both internal and external best practices.
+- Investigate the wider context of market trends and cultural shifts.
+- Utilize a wide range of available creative assets.
+- Draw from a repository of proven and new marketing tactics and frameworks.
+- Run an "in-vitro" create-test-adjust loop (where one agent produces a concept, another acts as a synthetic audience reacting to it, a third judges and adjusts, etc.) in an adversarial setup to plan scenarios and improve outcomes.
+- Check its proposals against your benchmarks and KPIs to optimize for your actual goals.
+- And ideally it should actually run small-scale tests in the real world and adjust its plan based on the feedback it receives.
+
+A system like this can produce not just a plausible-sounding plan, but an output that is truly useful, adaptive, and grounded in reality. It shifts from mere imitation to genuine capability. It wouldn’t be perfect (nothing ever is), but it will be grounded. And it will be special to your context. The intelligence is not in the core model alone, but also in the membrane between the agent and the environment. In fact, I’m not sure the very concept of intelligence has any meaning in a vacuum. If there is no world, and there is no goal - how can anything be deemed intelligent?
+
+Oh, and don't get me wrong. There are plenty of good heuristics and lots of useful common sense in LLMs even without the harness and the interface with the world. The problem with those heuristics is that without the contact with reality - their potential usefulness is that of a broken clock that is right twice a day.
+
+This brings us back to Feynman’s warning. The most important skill in this new era is continuously learning how to not fool ourselves. And boy, do we love to be fooled. We are drawn to the answer that sounds good, the polished presentation, the confident-sounding assertion. The cargo cult is seductive because it offers the appearance of truth without the hard work of understanding. If your AI system can't meaningfully be wrong within its own context... then how can it be right?
+
+The challenge, then, is not to simply marvel at the coherence of AI-generated text (and a marvel it is!). It's to build and use systems that connect that coherence to consequences. According to Richs Sutton and some other proponents of ultimate from-the-ground-up Reinforcement Learning, true intelligence won't emerge until the real-time learning from reality is built right in at the gorund level of our AI systems. I am not sure he is right on this one. I think we can get meaningfully and pragmatically intelligent things but it's on us to provide the interface to reality and the adjustment. Maybe this is the shape of our hybrid, collectively co-intelligent system for now: humans not just being the reproductive organs of technology, but also its sensors and continuous learning subsystems.
+
+But philosophy aside, it seems to me that the immediate future of intelligence, both human and artificial, depends on our ability to tell the difference between the mock runway and the real thing.
+So for practical AI builders today the question is this: are we building systems to help us land real cargo, or are we just getting better at carving airplanes out of straw? The only way to find out is - using Mike Tyson's words - to get punched in the mouth. We have to allow our systems to fail. And we need to build robust ways of finding out early and often when they do, so that we can change them… or they can change themselves.
+
+### Are you ready to let your LLM be punched in the mouth? Or would you rather keep building airplanes out of straw, hoping for VC cargo to fall from the sky?
+
+
