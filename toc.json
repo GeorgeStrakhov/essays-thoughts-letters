@@ -565,7 +565,21 @@
     "timestamp": "020250925",
     "versions": {
       "medium": {
-        "wordCount": 1658,
+        "wordCount": 1659,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "medium"
+  },
+  {
+    "title": "Cargo Cult Intelligence",
+    "description": "why you should allow your LLM to get punched in the mouth",
+    "featured_image": "/cargo-cult-intelligence/img/tyson-vs-llm.jpg",
+    "slug": "cargo-cult-intelligence",
+    "timestamp": "020251003",
+    "versions": {
+      "medium": {
+        "wordCount": 1045,
         "isOriginal": true
       }
     },

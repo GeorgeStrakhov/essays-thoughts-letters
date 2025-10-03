@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js --watch essays --watch views --watch static --watch toc.json --watch index.js"
+    "dev": "nodemon index.js --watch essays --watch views --watch static --watch toc.json --watch index.js",
+    "corpus": "node scripts/buildCorpus.js",
+    "update-toc": "node scripts/updateToc.js"
   },
   "keywords": [],
   "author": "",
