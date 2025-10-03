@@ -1,4 +1,4 @@
-## or why you should allow your LLM to get punched in the mouth
+### or why you should allow your LLM to get punched in the mouth
 
 
 <p style="text-align: right; padding-right: 1em;">
@@ -13,7 +13,7 @@ We all know this distinction from our human interactions. We've all met that imp
 
 Now, this same dichotomy is coming to life in our machines. The latest LLMs can sound impressively intelligent — generating coherent documents, plausible strategies, and articulate explanations — without necessarily having any grounding in reality. The problem is telling the two apart is harder than it looks. They say that even a broken clock is right twice a day. And when it comes to LLMs - they are right more often than that even without grounding or verification. Simply because certain heurstics extracted from pre and post training - just work most of the time.
 
-## So how often does the clock need to be right to be useful?
+## So how many times a day does the clock need to be right in order  to be useful?
 
 The pragmatic answer to this question depends on the problem domain and the variety distribution within it. As well as the cost of mistakes.
 But most people are not going to settle for a pragmatic answer. The want their clock to be damn right all the time. And if that's what you want (and you should indeed want that, at least in a lot of business-critical tasks) - then we have to approach the question not pragmatically, but scientifically.
@@ -49,9 +49,9 @@ This brings us back to Feynman’s warning. The most important skill in this new
 
 The challenge, then, is not to simply marvel at the coherence of AI-generated text (and a marvel it is!). It's to build and use systems that connect that coherence to consequences. According to Richs Sutton and some other proponents of ultimate from-the-ground-up Reinforcement Learning, true intelligence won't emerge until the real-time learning from reality is built right in at the gorund level of our AI systems. I am not sure he is right on this one. I think we can get meaningfully and pragmatically intelligent things but it's on us to provide the interface to reality and the adjustment. Maybe this is the shape of our hybrid, collectively co-intelligent system for now: humans not just being the reproductive organs of technology, but also its sensors and continuous learning subsystems.
 
+![Mike Tyson vs LLM](./img/tyson-vs-llm.jpg)
+
 But philosophy aside, it seems to me that the immediate future of intelligence, both human and artificial, depends on our ability to tell the difference between the mock runway and the real thing.
 So for practical AI builders today the question is this: are we building systems to help us land real cargo, or are we just getting better at carving airplanes out of straw? The only way to find out is - using Mike Tyson's words - to get punched in the mouth. We have to allow our systems to fail. And we need to build robust ways of finding out early and often when they do, so that we can change them… or they can change themselves.
 
-![Mike Tyson vs LLM](./img/tyson-vs-llm.jpg)
-
-Are you ready to let your LLM be punched in the mouth? Or would you rather keep building airplanes out of straw, hoping for VC cargo to drop from the sky?
+### Are you ready to let your LLM be punched in the mouth? Or would you rather keep building airplanes out of straw, hoping for VC cargo to fall from the sky?
