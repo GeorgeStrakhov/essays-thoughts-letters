@@ -579,7 +579,21 @@
     "timestamp": "020251003",
     "versions": {
       "medium": {
-        "wordCount": 1409,
+        "wordCount": 1407,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "medium"
+  },
+  {
+    "title": "To Hell With Agi Lets Solve Dct",
+    "description": "The AI discourse is currently drowning in its own intellectual masturbation. Everyone's jerking off about whether ChatGPT can pass the bar exam or generate a pharmaceutical patent or simulate a convincing universe. Meanwhile, I can't get a robot to help me with the one task that makes me want to fake my own death every week: changing the fucking duvet cover.",
+    "featured_image": "/to-hell-with-agi-lets-solve-dct/img/robot-vs-duvet.jpg",
+    "slug": "to-hell-with-agi-lets-solve-dct",
+    "timestamp": "020251028",
+    "versions": {
+      "medium": {
+        "wordCount": 1532,
         "isOriginal": true
       }
     },
