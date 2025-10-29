@@ -1,6 +1,6 @@
 The AI discourse is currently drowning in its own intellectual masturbation. Everyone's jerking off about whether ChatGPT can pass the bar exam or generate a pharmaceutical patent or simulate a convincing universe. Meanwhile, I can't get a robot to help me with the one task that makes me want to fake my own death every week: changing the fucking duvet cover.
 
-We're obsessed with AGI like it's the Second Coming. We've got benchmarks for everything—can it solve calculus? Can it write poetry? Can it beat humans at StarCraft? Above all: can it make ads that dumb people on facebook will click? These are the questions of people who've never had to wrestle a king-size duvet cover at 11 PM on a work night, alone, sweating, questioning every life choice that led them to that moment.
+We're obsessed with AGI like it's the Second Coming. We've got benchmarks for everything - can it solve calculus? Can it write poetry? Can it beat humans at StarCraft? Above all: can it make ads that dumb people on facebook will click? These are the questions of people who've never had to wrestle a king-size duvet cover at 11 PM on a work night, alone, sweating, questioning every life choice that led them to that moment.
 
 I'm proposing a new test. Forget Turing. Forget the bar exam. Forget ARC-AGI.
 
