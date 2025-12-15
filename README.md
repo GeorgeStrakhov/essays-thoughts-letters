@@ -49,3 +49,5 @@ And we should add a captcha or something to prevent robot abuse.
 - fix bug on showing "not yet generated when it is"
 - when generating: add pre-check on validity of ULRs when generating. otherwise llms invent urls. if not real url - clean it.
 - add admin interface to approve, regect, regenerate, edit essays that were generated. and have programmatic github push behind the scenes, otherwise useless. OR - add a DB?
+- add diagram generation with nano banana pro (need to define the style) - including when creating from 404
+- add auto-listen generation with notebookLM - including when creating from 404

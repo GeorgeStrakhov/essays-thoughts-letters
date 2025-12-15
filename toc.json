@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Real Four Horsemen",
+    "description": "An Etiological Framework of Biological and Cognitive Aging",
+    "slug": "the-real-four-horsemen",
+    "featured_image": "https://essays.georgestrakhov.com/the-real-four-horsemen/img/cascade_of_sacrifice.jpg",
+    "timestamp": "020251215",
+    "versions": {
+      "large": {
+        "wordCount": 3390,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "large"
+  },
+  {
     "title": "The Cambrian Explosion of Software",
     "slug": "cambrian-explosion-of-software",
     "timestamp": "020250206",
@@ -593,7 +607,7 @@
     "timestamp": "020251028",
     "versions": {
       "medium": {
-        "wordCount": 1532,
+        "wordCount": 1534,
         "isOriginal": true
       }
     },
