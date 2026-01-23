@@ -18,7 +18,7 @@
     <meta property="og:image" content="{{featured_image}}">
     <meta name="twitter:image" content="{{featured_image}}">
   {{/if}}
-  
+
   {{#if description}}
     <meta property="og:description" content="{{description}}">
     <meta name="twitter:description" content="{{description}}">
@@ -62,12 +62,12 @@
   </button>
 
   <section class="section">
-    <div class="container is-max-desktop"> 
-      <div class="content"> 
+    <div class="container is-max-desktop">
+      <div class="content">
       {{{body}}}
 
       <hr class="footer-divider no-print" />
-      <p class="footer-note no-print">On the off chance you'd like to subscribe to my writing, please feel free to <a href="https://x.com/ohwellnotreally" target="_blank">subscribe on twitter</a> or use <a href="https://essays.georgestrakhov.com/feed.rss" target="_blank">this RSS feed</a>. Thank you.</p>
+      <p class="footer-note no-print">On the off chance you'd like to subscribe to my writing, please feel free to <a href="https://x.com/notevenwrongg" target="_blank">subscribe on twitter</a> or use <a href="https://essays.georgestrakhov.com/feed.rss" target="_blank">this RSS feed</a>. Thank you.</p>
       </div>
     </div>
   </section>
@@ -76,15 +76,15 @@
     // Theme toggle functionality
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
-    
+
     // Check for saved theme preference, otherwise use system preference
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       html.className = `theme-${savedTheme}`;
     } else {
       // Check system preference
-      html.className = window.matchMedia('(prefers-color-scheme: dark)').matches 
-        ? 'theme-dark' 
+      html.className = window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'theme-dark'
         : 'theme-light';
     }
 
@@ -109,7 +109,7 @@
 
     window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
-        
+
         if (currentScrollY <= scrollThreshold) {
             // Near the top - show the buttons
             themeToggle.style.opacity = '1';
@@ -127,7 +127,7 @@
                 homeButton.style.pointerEvents = 'none';
             }
         }
-        
+
         lastScrollY = currentScrollY;
     });
 
