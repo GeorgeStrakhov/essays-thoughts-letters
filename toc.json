@@ -612,5 +612,23 @@
       }
     },
     "naturalZoomLevel": "medium"
+  },
+  {
+    "title": "On the Wave-Particle Duality of Consciousness",
+    "description": "Consciousness, Computation and the Power of Now",
+    "slug": "wave-particle-consciousness",
+    "timestamp": "020260214",
+    "versions": {
+      "medium": {
+        "wordCount": 1496,
+        "isOriginal": true
+      },
+      "small": {
+        "wordCount": 213,
+        "isOriginal": false,
+        "isHumanVetted": false
+      }
+    },
+    "naturalZoomLevel": "medium"
   }
 ]

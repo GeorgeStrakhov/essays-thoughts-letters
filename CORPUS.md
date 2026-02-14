@@ -1,4 +1,173 @@
 =====================================
+The Real Four Horsemen
+=====================================
+
+### _An Etiological Framework of Biological and Cognitive Aging_
+
+> "How did you go bankrupt?"
+>
+> "Two ways. Gradually, then suddenly."
+>
+> *— Ernest Hemingway, The Sun Also Rises*
+
+I have been thinking about death recently. Not the kind that finally takes us offline, but the other kind. The slow kind. The kind that many people experience for decades while still being technically alive.
+
+As I approach 40, I have started to feel the initial tremors of that specific decay. It prompted me to do some research. I wanted to understand this slow living death - its mechanism, its inevitability, and what I can do to ensure that when I finally wrestle with her, it is at least a fair match.
+
+The current landscape of longevity medicine - often called "Medicine 3.0" - correctly identifies the primary drivers of mortality as the "Four Horsemen": heart disease, cancer, neurodegeneration, and metabolic dysfunction. This is correct as far as it goes. These are the names written on death certificates. But they are outcomes, not causes. They are lagging indicators. By the time the diagnosis arrives, the underlying processes have been running for decades.
+
+To understand what makes people old - not just what kills them - we need to look upstream. We need to see the riders before they arrive.
+
+## The Four Horsemen
+
+It seems to me that the primary agents of decay are not diseases, but Mother Nature's normal forces, taken out of context and out of proportion. They are the mechanisms of conservation that, once they have done their thing, have the potential to dissolve the order of a living system. I call them **The Real Four Horsemen**: **Sugar**, **Stress**, **Solitude**, and **Stiffness**.
+
+These are the riders. They don't work alone - they ride together, reinforcing each other, until they converge into a single overwhelming force: systemic inflammation. And inflammation is the road that leads to most of the diseases that finally kill us.
+
+We can think of each of these Horsemen operating on two fronts: **Body** and **Mind**. And I don't mean this as a metaphor - we're integrated systems. The forces that stiffen arteries stiffen thinking. The forces that fragment attention fragment tissue. Modern life attacks us on both fronts at once.
+
+Here's how the entropy takes hold.
+
+## 1. Sugar: The Agent of Acceleration
+
+### The Body: Caramelization
+
+Sugar is a chaotic, sticky molecule. Flood the system with excess glucose and it triggers **glycation** - a reaction where sugar bonds to proteins and fats without enzymatic supervision. The resulting compounds are called Advanced Glycation End-products. AGEs.
+
+The acronym is perfect. AGEs literally caramelize us from the inside. They form irreversible cross-links between collagen fibers, turning flexible skin and arteries into rigid, brittle structures. Think of healthy tissue as combed hair, and glycated tissue as a tangled, matted knot that no amount of conditioner will fix.
+
+The damage isn't only structural. AGEs bind to a receptor called RAGE (Receptor for Advanced Glycation End-products), triggering a cascade of chronic inflammation. Which feeds the Stress Horseman. The Horsemen always work together.
+
+This acceleration is now quantifiable. A 2024 study using the GrimAge epigenetic clock found that reducing added sugar intake was associated with a biological age reduction of about 2.4 months. Excess sugar isn't just fast calories and a path to diabetes. It's an instruction to the genome: we've got too much energy over here, so *age faster*.
+
+### The Mind: Dopamine Dysregulation
+
+There's a mental equivalent. Refined sugar gives a caloric spike with low nutritional density. Short-form algorithmic content gives a dopamine spike with low epistemic density. TikTok is the high-fructose corn syrup of information.
+
+Both create tolerance. The "swipe" is a variable reward schedule - a slot machine in the pocket. Chronic use downregulates dopamine D2 receptors. This is insulin resistance of the mind. Once the baseline shifts, activities with slower payoffs - books, deep conversation, complex problems - feel chemically unrewarding. Not boring. *Aversive*.
+
+The damage shows up on scans. Active use of short-form video platforms degrades the brain's "Alerting Network" - the system responsible for maintaining readiness to respond. Use it or lose it. We're losing it.
+
+Now, before we throw out all the bread: the brain burns 20% of metabolic energy. We need fuel. The same goes for novelty - it drives curiosity and learning. The Horseman is not the substance. It's the *dose* and the *velocity*. When fuel arrives faster than the machinery can process it, and when fuel never runs out, things break. This is true for cells drowning in glucose. It's true for minds drowning in content. We've evolved for scarcity of fast fuel and bright, interesting patterns. We've evolved to feast _and_ fast. If we are only feasting - we die.
+
+A good example of how the feast-fast approach is something that we evolved for are ketones. When glucose is plentiful - insulin helps store it into fat. So that when glucose is scarce the liver can turn fat back into ketone bodies, and the brain and muscles can burn them instead. Some researchers think this metabolic flexibility - the ability to switch fuel sources - is itself protective. Fasting, low-carb diets, and endurance exercise all trigger ketosis. It's like cross-training for the mitochondria. The body that can only run on sugar is brittle. The body that can switch fuels is resilient. Same goes for a mind that can only be stimulated by fast content versus one that can still find a book interesting.
+
+## 2. Stress: The Agent of Erosion
+
+### The Body: Inflammaging
+
+Stress used to be temporary. A lion appears, cortisol spikes, we run or fight, and then it's over. The system resets. The Horseman is what happens when the system never resets. When the stress becomes chronic, unrecovered. This manifests as **Inflammaging** - a sterile, low-grade, systemic fire that burns without infection.
+
+Under chronic stress, the HPA axis (hypothalamic-pituitary-adrenal - the body's stress thermostat) breaks. We develop glucocorticoid resistance. Immune cells stop listening to cortisol's "stand down" signal and pump out inflammatory cytokines around the clock. Meanwhile, stressed mitochondria start leaking. They release debris (DAMPs - Damage-Associated Molecular Patterns) that the body mistakes for bacterial invasion. The immune system attacks a threat that isn't there. The threat is us.
+
+But this damage isn't permanent - *if* we recover. A 2023 study found that biological age is fluid. It spikes during severe stress and fully restores upon recovery. The Horseman isn't stress itself. It's the missing recovery signal. Never getting the "all clear."
+
+### The Mind: Decision Fatigue
+
+The prefrontal cortex is expensive to run. Under the crushing load of modern life - too many choices, too many notifications, too many open loops - it depletes. This is "technostress," and it's different from being chased by a lion. The lion eventually goes away. The inbox never does.
+
+When the PFC depletes, glutamate accumulates, and the brain starts shutting down high-cost processing. Control shifts from the "Rational Planner" (prefrontal cortex) to the "Impulsive Toddler" (amygdala). The result is a tilt toward anxiety and away from long-term thinking. We lose the ability to simulate the future. We get trapped in a reactive present, bouncing from stimulus to stimulus.
+
+Complete lack of stress is also deadly. We need **hormesis** - acute, intentional stress. Exercise. Cold exposure. Fasting. Heat. These trigger the Nrf2 pathway, which upregulates antioxidant defenses and cellular repair. The poison becomes medicine when we control the dose and - crucially - when we stop. A sprint followed by rest makes us stronger. A marathon we're never allowed to finish grinds us to dust.
+
+## 3. Solitude: The Agent of Vulnerability
+
+### The Body: Threat Vigilance
+
+Social isolation increases all-cause mortality by 32% - comparable to smoking 15 cigarettes a day, worse than obesity or physical inactivity. Loneliness kills faster than cheeseburgers.
+
+Why? Lots of underlying causes and variables are hard to isolate. But the most interesting causal link I've stumbled upon so far is the **Social Baseline Theory**: we evolved as obligate social animals. Our brains expect to share the metabolic load of survival - vigilance, resource gathering, defense - with a tribe. When we're alone, the brain perceives a resource deficit and a threat surplus. It starts revving the engine, preparing for attack.
+
+This triggers what researchers call the CTRA profile (Conserved Transcriptional Response to Adversity). The lonely body upregulates genes for inflammation (preparing to fight wounds from predators) and downregulates antiviral defense (less important when about to be eaten). We're biologically preparing for a war that isn't coming, burning through cardiovascular reserves in the process.
+
+### The Mind: Epistemic Isolation
+
+The mental version of solitude is the echo chamber. The brain is a prediction engine that learns through error correction. Real social interaction forces this: decoding micro-expressions, navigating disagreement, inhibiting impulses, modeling other minds. Hard work. This friction is what maintains the machinery.
+
+But if we retreat into algorithmic validation, into echo chambers, into AI-only conversations that create an endless "yes you are so right" feeling - then we stop encountering "error." The neural circuits for perspective-taking and complex reasoning atrophy from disuse. Shrinking the world to a monoculture is the mental equivalent of staying in bed for a decade. The social muscles waste away.
+
+There's a difference between being alone and being lonely. **Isolation** is the Horseman - the ultimately unwanted, chronic disconnection that biology reads as a survival threat. **Deliberate Solitude** is something else entirely. The brain needs time alone to run its "Default Mode Network" - the processing required for creativity, self-reflection, and making sense of experience. Monks seek it. Artists require it. The danger is losing the bridge back. Solitude chosen is restorative, and is punctuated by intentional encounters with the new and the other. But pure isolation is corrosive.
+
+## 4. Stiffness: The Agent of Rigidity
+
+### The Body: The Fibrotic Cage
+
+Stiffness is the terminal Horseman. It's what happens when the damage becomes permanent.
+
+This plays out in the Extracellular Matrix (ECM) - the scaffolding between cells. At both the structure and the signaling environment levels. When the ECM stiffens (from Sugar's glycation, Stress's inflammation), it undergoes changes that silence stem cells. Muscle stem cells can't regenerate in a stiff environment - they turn into fat or scar tissue instead. This is sarcopenia: the age-related loss of muscle mass. The soil hardens, and the seeds can no longer grow.
+
+A lot of this stiffness isn't even "wear and tear." It's a neurological brake. The nervous system senses weakness or instability and tightens muscles to limit range of motion - a protective mechanism. Safety feature gone haywire. To reverse it, stretching the tissue isn't enough. We have to convince the nervous system it's safe to move. This is why loaded stretching and strength training work better than passive flexibility work. It's not just lengthening muscle - it's updating a threat model.
+
+### The Mind: Cognitive Rigidity
+
+The psychological version is loss of Openness, which is one of the most robust predictors of longevity. Open people live longer.
+
+Why? Openness drives (and is driven by) neuroplasticity. Open people learn new skills, new languages, seek unfamiliar patterns, build new synaptic roads, change their minds. Closed people run on cached heuristics. As the brain ages, it naturally shifts from plasticity to stability - this is energy-efficient but dangerous. Without active effort to maintain flexibility, we ossify. The paths we don't walk get overgrown. And as the snow of time covers the small paths, only the big familiar autopilot-worthy roads remain open (until in advanced dementia even they get closed).
+
+Of course (unless you are a newborn), total plasticity would be chaos. Amnesia. We need "muscle memory" - the intimate knowledge of the shapes that lets a pianist's hands find the chords without thinking. We need mental structures and patterns too: convictions, values, reliable models of how things work. The problem isn't structure. It's **ossification** - losing the capacity to bend when the wind changes, to update one's priors. A strong, healthy bone is rigid under normal load but flexes before it shatters. A brittle bone just snaps.
+
+## 5. The Vicious Cycle
+
+These Horsemen don't ride alone. They recruit each other.
+
+Sugar stiffens us - literally. Glycation cross-links collagen, clogging arteries. Movement becomes harder. Pain increases. So we move less. When we move less, we see fewer people. Isolation sets in. Loneliness is stressful - the body starts running its threat-detection routines on high alert, burning through resources. Stress depletes willpower. Depleted willpower reaches for the easiest dopamine hit available. Which is sugar. And the wheel turns again, a little faster each time.
+
+The same loop runs in the mind. Dopamine dysregulation (mental sugar) makes focused thought feel unrewarding. So we avoid hard cognitive work and retreat to passive scrolling (of what the algorithm thinks we will like) - epistemic isolation. The world shrinks. Fewer perspectives, less friction, less error-correction. Thinking stiffens into familiar grooves. Stiff thinking is anxious thinking - it can't model new situations well, so more things feel threatening. Anxiety is stressful. Stress sends us back to the dopamine slot machine.
+
+The loop runs both ways, though. Each intervention point can trigger a virtuous cycle instead. Move more, and the body clears glucose better. Clearer blood sugar means better mood and more willpower. More willpower means tolerating harder conversations and richer relationships. Richer relationships reduce the stress signal. Less stress means less inflammation. Less inflammation means tissues stay supple longer. And on it goes.
+
+## 6. Fighting Back
+
+All four Horsemen started as adaptations. Sugar was rare energy worth storing for future famine. Stress was a survival signal. Solitude was a moment to reflect and form new connections and patterns. Stiffness was structural integrity and strength. The modern world took these survival mechanisms and cranked up the dose until they became poison.
+
+So what can we do? Restore the original signal-to-noise ratio.
+
+**Against Sugar**: I'm trying to create scarcity. Not deprivation - scarcity. Intermittent fasting. Time-restricted eating. Periods of ketosis. The body remembers it has a backup fuel system. For the mind: friction before the feed. Turned off notifications. Scheduled periods of deep work windows where fast content is simply unavailable. The slot machine is harder to reach.
+
+**Against Stress**: The intervention isn't less stress - it's more high-quality stress, followed by recovery. The off-switch matters more than the on-switch. Sleep is non-negotiable (this is where most of the repair happens). But also: deliberate downregulation. Cold water plunges. Breathwork. Meditation. Time in nature. Anything that activates the parasympathetic system and signals that the tiger is gone.
+
+**Against Solitude**: Modern life doesn't deliver spontaneous social contact the way a village did, so it has to be consciously put in. It will be different for everyone. For me the core of it - is the nuclear family: there is not too much talking in our house, but there is a lot of hugging. Then, there are my music retreats. And climbing gyms. But it could be anything that forces the brain to realise that it can share the load (likes and comments don't count).
+
+**Against Stiffness**: Moving in ways that require adaptation. Novel movement patterns. New skills. New musical instruments. New languages. New ideas. Reading things I wouldn't normally read. Exploring new paths and places. Situations where old heuristics don't work and new ones have to be built. Mobility work. Plasticity. Perspectives.
+
+The opposite of "old" isn't "young." The opposite of old is **alive**, changing, plastic, learning, rebalancing. To be alive is to be capable of change, connection, and repair. We don't stop the Horsemen by fighting them head-on. We slow them down by refusing to pour concrete on the road they ride on.
+
+## 7. Who is Aging?
+
+Ok, one more question, a final little mental stretch before we conclude: if we are systems made of smaller systems, and parts of larger systems, then **who exactly is doing the aging?**
+
+Some theories suggest aging is itself an adaptation - a form of "Pathogen Control." Aging as a programmed immune system for the tribe, removing older individuals who might become reservoirs for chronic infection or occupy niches needed by the young. From this angle, my individual death is an act of life-preservation for the species. My cells die to keep me alive. I die to keep the tribe alive.
+
+There is a beautiful cosmic picture here of a cycle of self-sacrifice on the path to cosmic renewal. A choice of multi-scale living, all the way down (and up). When a cell prioritizes its own growth and reproduction above all else - ignoring the signals from the body, refusing to die when it should - it becomes cancer. It kills the host, and then itself. The same pattern plays out at every scale. Individuals who exploit their tribe eventually destroy the community that sustains them - and then themselves. Species that consume their environment without balancing... well, we're running that experiment now.
+
+The choice isn't between self and whole - that's a false binary. It's about conscious balancing. A healthy cell serves itself AND the body. A healthy individual serves themselves AND their community. The needs of each level and the levels above and below aren't in opposition. They're in dynamic tension. The skill is learning to hold that tension without collapsing into either pure selfishness (cancer) or pure self-sacrifice (death).
+
+If humanity is a single organism - or a planetary super-organ, the "nervous system" of Gaia - then we face the same choice every cell faces. Are we going to be the healthy tissue that serves both ourselves and the larger body? Or are we going rogue?
+
+The Four Horsemen are the signs of rogue behavior at every scale. Sugar is endless consumption. Stress is perpetual conflict. Solitude is disconnection. Stiffness is refusal to adapt. A cell consumed by these forces becomes cancer - and kills its host. A person consumed by them poisons their relationships - and dies alone. A species consumed by them degrades their environment - and the planet has immune systems too, which may or may not be strong enough. I hope we never find out.
+
+Fighting the Four Horsemen in our own bodies, in our communities, on our planet is - like everything - a practice. If we can learn to balance energy, recover from stress, reconnect with our tribe, and stay flexible in our thinking, we might have a chance to extend our own healthspans... and along the way relearn something we used to know: how to be a good cell in whatever body we find ourselves in.
+
+---
+
+## Notes
+
+: Chiu, D. T., et al. (2024). Essential Nutrients, Added Sugar Intake, and Epigenetic Age in Midlife Black and White Women. *JAMA Network Open*, 7(7), e2422749. The study utilized the GrimAge2 clock and found significant associations between added sugar and accelerated aging markers.
+
+: Zhai, G., et al. (2025). The sacrifice of alerting in active short video users. *Neuropsychologia*, 219, 109291. This study links "active" usage behaviors (liking, commenting, scrolling) on short-form platforms with a degradation in the alerting component of the attention network, though effects are noted as subtle/modest in some contexts.
+
+: Poganik, J. R., et al. (2023). Biological age is increased by stress and restored upon recovery. *Cell Metabolism*, 35(5). A critical finding that challenges the "one-way street" theory of aging, showing that biological age markers fluctuate based on stress load and recovery status.
+
+: Zhao, Y., et al. (2023). Social isolation and loneliness and mortality: a systematic review and meta-analysis. *Nature Human Behaviour*. This review aggregated data from 90 prospective cohort studies, solidifying the mortality risk of social isolation (32% for all-cause mortality).
+
+: Stephan, Y., et al. (2025). Personality traits and mortality risk. *Journal of Research in Personality*. Recent research highlights that phenotypes associated with high openness and engagement act as significant protective factors against mortality, likely through the mechanism of Cognitive Reserve.
+
+: Josh Mitteldorf (2016). *Aging is a Group-Selected Adaptation: Theory, Evidence, and Medical Implications*. CRC Press. References the "Pathogen Control Hypothesis," which posits that aging evolved to eliminate immune-compromised older individuals.
+
+: The Gaia hypothesis, proposed by James Lovelock and Lynn Margulis, suggests that living organisms interact with their inorganic surroundings on Earth to form a synergistic and self-regulating system.
+
+
+=====================================
 The Cambrian Explosion of Software
 =====================================
 
@@ -1825,12 +1994,12 @@ So for practical AI builders today the question is this: are we building systems
 
 
 =====================================
-To Hell With Agi Lets Solve Dct
+To Hell With AGI Lets Solve DCT
 =====================================
 
 The AI discourse is currently drowning in its own intellectual masturbation. Everyone's jerking off about whether ChatGPT can pass the bar exam or generate a pharmaceutical patent or simulate a convincing universe. Meanwhile, I can't get a robot to help me with the one task that makes me want to fake my own death every week: changing the fucking duvet cover.
 
-We're obsessed with AGI like it's the Second Coming. We've got benchmarks for everything—can it solve calculus? Can it write poetry? Can it beat humans at StarCraft? Above all: can it make ads that dumb people on facebook will click? These are the questions of people who've never had to wrestle a king-size duvet cover at 11 PM on a work night, alone, sweating, questioning every life choice that led them to that moment.
+We're obsessed with AGI like it's the Second Coming. We've got benchmarks for everything - can it solve calculus? Can it write poetry? Can it beat humans at StarCraft? Above all: can it make ads that dumb people on facebook will click? These are the questions of people who've never had to wrestle a king-size duvet cover at 11 PM on a work night, alone, sweating, questioning every life choice that led them to that moment.
 
 I'm proposing a new test. Forget Turing. Forget the bar exam. Forget ARC-AGI.
 
@@ -1944,5 +2113,211 @@ Until then, we're building oracles who can tell us the meaning of life but can't
 And I'm not sure which future is stranger: the one where robots are our overlords, or the one where we're doing their laundry because their hands still suck.
 
 Now if you'll excuse me, I have a duvet cover to fight. It's currently winning.
+
+
+=====================================
+The Sweeter Lesson
+=====================================
+
+In March 2019, just as Deep Learning revolution was gathering steam and the signs of the new AI Spring were starting to become widely visible, Rich Sutton published his ["Bitter Lesson"](https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf).
+
+His main argument can be broadly summarized as follows:
+
+0. (Underlying Assumption): People tend to care about AI's specialized ability (e.g. translation, programming, playing chess, image understanding and manipulation, doing laundry etc.), not about its general ability to learn and reason in the abstract.
+
+1. If you are trying to increase specialized ability, it's natural to try and imbue the AI agent with some human-validated knowledge about the problem domain. For example if a researcher wants the AI agent to play chess better, they would aim at extracting some deep knowledge about the nature of the game and decision-making heuristics from expert humans (grandmasters) and then put that knowledge into the programming of the agent.
+
+2. This approach, though natural, is misguided. It may lead to short-term increases in specialized ability. But in the long run - raw increase in computing power will inevitably make the approach obsolete. General systems capable of end-to-end learning are going to find their own heuristics and generalizations more suitable to their way of thinking and the amount of compute available. The textbook example here is Deep Blue - the first computer to beat a Chess World Champion in 1997. It managed to achieve this level of specialised ability not through better "understanding of the game", but almost exclusively through brute-force search. Since then better approaches of generalized autonomous learning - such as self-play - have allowed computers to unlock superhuman abilities in even more "difficult" problem domains such as Go (difficulty here refers to the branching factor of possible positions, making pure search too costly for both humans and machines).
+
+3. The bitter lesson is that working on specialized AI agents by focusing on increasing specialized knowledge is not an effective long-term strategy. A much better strategy is to focus on increasing general learning capability and providing the best possible specialized context. By context here I mean not just information, but also tools and interfaces with the world that are necessary for proper self-play or, more generally speaking, for real-world execution with a feedback loop. Different versions of such specialized context need to be provided both at training time and at execution time in order for the agent to be as effective as it can be.
+
+[ diagram : the bitter lesson]
+
+_The best way to increase an AI agent's special capability is to increase its general capability and provide it with special context_
+
+(vs. sweeter lesson: there are very few interesting and economically valuable problem domains in which all we care about if obviously defined and clearly measured, one-dimensional performance metric. For the vast majority of human activity the reward function is ambiguous, personal, circumstantial and transient.
+
+The real job is and has always been figuring out who _we_ are and what _we_ want.
+
+//term: narrowmaxing behavior (!)
+anthing that can be narrowmaxed - should be.
+
+The economically valuable jobs will be the philosophically interesting ones.
+)
+
+[ /diagram ]
+
+This lesson feels bitter because it effectively states that the specialized knowledge that human experts worked so hard to acquire and that they take great pride in - is not in any way absolute. It is in fact almost "useless" in an absolute sense. Sutton's principle shows that the hard-learned heuristics that humans develop when interacting with a certain problem domain are not inherently valuable or "truthful" in relation to this domain. They just represent a certain level of abstract patterns that seem relevant to us and suitable to our natural mode of computation as well as the amount of available compute. A different system with a different amount and type of computing power available can and will (if given enough opportunity) discover different patterns and heuristics in the same problem domain (provided that the problem domain itself is sufficiently complex). And these alternative patterns may very well prove to be superior to ours by any chosen metric (note how for the time being we excluded the very important questions of whether the agents have the same _goal_ in the environment. We will tackle that question later).
+
+Let's pause here for a second. What we have posited above is that the only things that are "true" or "real" are the environment and the goal. The actual knowledge and strategy of achieving this goal - are always relative to the agent at play. In other words, the idea of Knowledge only makes sense in the context of a given Knower.
+
+Here the reader, struck by the outrageous idea of the ultimate relativity of any knowledge, may ask: but what about the fundamental patterns of mathematics? Aren't math theorems "true" regardless of whether a human or a computer is doing the math? Wouldn't aliens know π is a special number because the relationship between the diameter of a circle and its diameter is a "real" thing? And what about the basic laws of physics? Isn't the discovery of Planck Constant a "real" discovery that makes sense and has value for any kind of mind in this universe?
+
+The answer here, I'm afraid, is not as simple a "yes" as it seems.
+We will put the Platonic discussions about whether math is discovered or invented aside. I don't have anything novel or useful to say in that regard. But let us assume that Pi does have a real significance. So there
+
+[diagram]
+
+truthfulness vs. usefulness
+
+inherent complexity of a problem domain scale
+from tic tac toe to full universe and beyond
+
+the knower vs. the known
+
+cognitive lens
+
+[/diagram]
+
+/// tic tac toe. consider chess.
+/// rulliad
+///underpromotion
+
+//continuum on how simple the problem domain is. //
+
+This is a general principle that applies to almost every practical problem domain, with pure mathematics being possibly the only exception. And even there - while the patterns human can discover and prove as theorems are still "truthful" for machines or other minds operating within the same formal system, these patterns may not be "useful" to them in the same way. And other minds may be able to discover other true patterns that we wouldn't be able to comprehend.
+
+The bitter lesson may feel humiliating, or diminishing our value, but it doesn't have to be this way. The only thing it diminishes is our false and damaging exeptionalist sentiment when it comes to intellectual work.
+
+Let me illustrate this point but switching our attention from solving abstract problems in abstract spaces, to solving a very concrete problem of locomotion.  We all take it for granted that moving one foot in front of the other (a.k.a. running) is an optimal strategy of getting from A to B for a human (without the aid of tools). It's not the only strategy: we can crawl, we can hop, some of us can walk on our hands. But walking or running is clearly the best way (if we are travelling on land). However this idea of moving one foot in front of the other - would be ridiculous for an organism or mechanism of a different shape and physical configuration.
+
+For a bird - flying would be faster. A snake doesn't have any feet to put in front of each other. A centipede wouldn't get very far by moving only two legs. And cars can get from A to B more efficiently by utilizing a wheel.
+
+No matter what key metric you choose for evaluating locomotion quality (speed, energy efficiency, quitness... etc.), there is always going to be a way of improving that metric beyond the level of human capability - and that way will most likely not involve legs.
+
+But in the context of locomotion we don't take this fact to seriously, we never had false exceptionalist assimptions that "moving one foot in front of the other is best" heuristic was a universal rule of space. It's quite clear that our preferred heuristic is saying much more about our anatomy than about the nature of space.
+
+I want to emphasize that the fact it's not universal doesn't make this heuristic less valuable to us. Neither does it render the process of discovering better human heuristics obsolete. When the [Fosbury Flop](https://en.wikipedia.org/wiki/Fosbury_flop) was discovered and popularized in the 1960s - it represented a genuine progression in the sport of high jumping. Nobody looked at it and said "oh, this isn't remarkable or valuable because Kangaroo rats can jump so much higher relative
+the their body size and they do it using a very different technique".
+
+The key insight here is that in sports it was always clear that the actor was a part of the problem space. The problem space in high jumping is how high can unassisted humans jump, not how high anything can jump.
+
+The good thing about jumping or running is that we were never under the illusion that we as humans were exceptional in it in some absolute sense. Lots of things jump around. And if we want to design a system that can jump higher - we would get lots of ideas of different methods from human and non-human jumpers.
+
+Now when we go back to thinking tasks - things tend to feel different. For all we know Kangaroo rats don't write poetry and don't play chess. And the lack of diversity in observable methods of doing intellectual and creative labour led us to believe that our way of doing it was _the_ way.
+
+Now as capable AI systems are coming along - we are faced with the reality that "we were part of the problem" all along.
+
+
+=====================================
+Wave Particle Consciousness
+=====================================
+
+Physics spent decades fighting over whether light was a wave or a particle. The answer turned out to be: yes.
+
+Consciousness might work the same way. Below is a short meditation on this possibility.
+
+### 1. The Wave
+
+Neuroscience keeps finding that consciousness correlates with synchrony. Coordinated activity. Brain regions firing in phase. Oscillations locking together. The technical term is "phase synchrony," but the poetic term is resonance. You are conscious when the collective (the society of mind) that makes you up moves in resonance.
+
+Michael Timothy Bennett recently formalized this intuition. In his paper "A Mind Cannot Be Smeared Across Time," he proves something that sounds obvious but isn't: a system can process all the ingredients of a conscious moment across time without ever instantiating the conjunction — the moment itself.
+
+Sequential processing isn't enough. The parts have to sync in objective time.
+
+Let us call it the wave view: consciousness isn't what the brain computes, but the integration of what it computes. The standing wave across neurons. The field, not the particles.
+
+Thomas Metzinger lands somewhere similar. His "phenomenal self-model" isn't a thing the brain builds — it's a pattern the brain is. You don't have a self-model; you are one. And the model is transparent: it doesn't see itself as a model, just as the eye doesn't see itself seeing.
+
+Every other "integration"-based theory (global workspace, integrated information, attention schema etc.) dances around the same core assumption.
+
+Consciousness as wave: the resonance is the mind.
+
+### 2. The Particle
+
+But we also experience consciousness as a stream of discrete events. Thoughts. Perceptions. Decisions. One thing after another, like beads on a string.
+
+Let's call it the particle view. The one that makes LLMs seem plausibly conscious — or at least conscious-ish. After all, what's a mind but a next token (or world state) predictor with very good priors? Process enough information the right way, and maybe something is home.
+
+Functionalism lives here. All sorts of computationalisms too. This view assumes that minds are what certain algorithms do, regardless of what substrate they're implemented on.
+
+The particle view says: it's the processing events that make the mind.
+
+### 3. The Collapse
+
+In quantum mechanics, the wave function doesn't "become" a particle until you measure it. Before measurement: superposition, possibility, everything at once, unborn. After: one outcome, definite, here, done, dead.
+
+What if consciousness works like this?
+
+The wave is the resonance — the synchronized field of neural activity that integrates everything into a unified "moment." But it's not articulate. It doesn't have content you can report. It just is. And in this isness is the possibility for the whole world to exist.
+
+Articulation is the collapse. When you put something into words. When you notice what you're feeling. When a thought crystallizes out of the resonant background hum.
+
+Qualia — the "what it's like" — might be what happens at the collapse. The wave becomes a particle. The field becomes a fact.
+
+This hints at why introspection changes what it observes. Why the deepest experiences resist description. Why meditators report that staying before the thought is qualitatively different from thinking.
+
+The collapse is where content is born. And where the core of consciousness dies.
+Before the collapse, there's consciousness — but no thing you're conscious of.
+After the collapse, there is the content of the thought — but no more consciousness out of which that thought was born.
+
+The "self" — the voice in your head, the sense that there's a you doing the thinking — lives downstream of the collapse. It's made of collapsed particles. Thoughts about thoughts. Memories of perceptions. A story stitched from beads **after** the fact.
+
+The small I experiences itself as the cause of articulation. It feels like the thinker thinking the thoughts. But it might actually be a product of the collapse, mistaking itself for the collapser.
+
+The dance dancing itself, then claiming to be the dancer.
+
+### 4. The Lantern, The Spotlight and The Samadhi
+
+Alison Gopnik distinguished two modes of consciousness:
+
+Spotlight: focused, selective, goal-directed. Adult consciousness. You pick one thing, ignore the rest, optimize.
+
+Lantern: diffuse, open, taking in everything without categorizing or filtering. Infant consciousness. The whole field, nothing excluded.
+
+Lantern is pure wave-mode. It lets the field be without crystallizing. Spotlight is collapse-ready. It's already selecting what will become a particle.
+
+We start as lanterns. We get trained into spotlights. By the time we're adults, we've forgotten there was ever another way.
+
+But every contemplative tradition says that even for adults there's a shift available.
+
+You can stop identifying just with the collapsed particles. You can stop believing you're the voice, the thinker, the story. And shift the locus of your self upstream — to the resonance itself, which feels like unifying the particles back into the wave they are born from ("samadhi" in Sanskrit literally means "collecting the mind back together"). It's simply unlearning the spotlight habit. Remembering how to lantern.
+
+The mystics call it "witness consciousness" or "awareness aware of itself." It's not that you become the wave — it's that you notice you always were. The small I was a ripple pattern, not the water.
+
+Awakening is shifting the locus of identity from the post-collapse debris field to the pre-collapse resonance.
+
+From particle to wave.
+
+"In the beginning was the Word" (John 1:1) says the Bible, and the LLM folks and "Turing-machine-is-all-you-need" computationalists agree.
+
+"In the beginning was the World" says Michael Timothy Bennett and all the other "embodiment is not an afterthought" folks.
+
+"In the beginning was the Valence" says Mark Solms.
+
+But today I feel like "in the beginning — there **is** a Wave". And everything else (the words, worlds, the valence) is downstream of this wave's ongoing and never-ending collapse.
+
+---
+#### footnotes
+
+:
+     Marvin Minsky, *Society of Mind* (1986). The idea that the mind is not a single entity but a collection of simpler processes ("agents") that together produce what we experience as intelligence and consciousness.
+
+:
+     Michael Timothy Bennett, "A Mind Cannot Be Smeared Across Time" ([arXiv:2601.11620](https://arxiv.org/abs/2601.11620), 2026). Bennett augments his Stack Theory with temporal semantics to prove that "existential temporal realisation does not preserve conjunction" — meaning a system can process all components of a conscious moment sequentially without ever instantiating them together. He distinguishes StrongSync (simultaneous co-instantiation required) from WeakSync (temporal distribution permitted) and argues that consciousness attribution requires architectural inspection, not just functional performance. See also his earlier "Emergent Causality & the Foundation of Consciousness" (Best Student Paper, 16th International Conference on Artificial General Intelligence, Stockholm, 2023).
+
+:
+     Thomas Metzinger, *Being No One: The Self-Model Theory of Subjectivity* (MIT Press, 2003). For a more accessible treatment of the same ideas, see his *The Ego Tunnel: The Science of the Mind and the Myth of the Self* (Basic Books, 2009).
+
+:
+     The three main "integration"-flavored theories of consciousness: Global Workspace Theory — Bernard Baars, *A Cognitive Theory of Consciousness* (Cambridge University Press, 1988); Integrated Information Theory — Giulio Tononi, "An Information Integration Theory of Consciousness," *BMC Neuroscience* (2004); Attention Schema Theory — Michael Graziano, *Consciousness and the Social Brain* (Oxford University Press, 2013). They differ significantly in their details, but all share the intuition that consciousness arises from some form of large-scale integration or coordination across the brain.
+
+:
+     I'm using quantum mechanics here as a structural analogy, not as a claim about literal quantum processes in the brain. This is not Penrose-Hameroff. The wave-particle duality is a metaphor for two modes of description that seem mutually exclusive until you realize they are complementary aspects of the same phenomenon.
+
+:
+     Alison Gopnik, *The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life* (Farrar, Straus and Giroux, 2009).
+
+:
+     This is also reminiscent of what Iain McGilchrist describes in *The Master and His Emissary* (Yale University Press, 2009): the right hemisphere as the broader, contextual, "wave-like" mode and the left hemisphere as the narrowing, articulating, "particle-like" mode. The emissary (left hemisphere, the particle-maker) has usurped the master (right hemisphere, the wave-keeper).
+
+:
+     From the Sanskrit root *sam-ā-dhā*: *sam* (together) + *ā* (towards) + *dhā* (to place, to hold). Literally: to place or collect together. The Yoga Sutras of Patanjali (circa 2nd century BCE) define samadhi as the state in which the mind becomes one with the object of meditation — the distinction between observer and observed dissolves.
+
+:
+     See Bennett's work on embodied cognition and the argument that intelligence cannot be separated from its physical embedding in the world. Also relevant: the broader 4E cognition movement (embodied, embedded, enacted, extended) — see, for example, Evan Thompson, *Mind in Life: Biology, Phenomenology, and the Sciences of Mind* (Harvard University Press, 2007).
+
+:
+     Mark Solms, *The Hidden Spring: A Journey to the Source of Consciousness* (W. W. Norton, 2021). Solms argues that consciousness begins not in the cortex but in the brainstem, with affect and valence — the felt sense of good-or-bad — as its most primitive and fundamental form.
 
 

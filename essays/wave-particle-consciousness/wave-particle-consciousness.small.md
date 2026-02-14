@@ -1,0 +1,7 @@
+* **Consciousness as a Wave**: True mind is not a calculation, but a resonance. It is a standing wave of synchronized neural activity—a field of integration rather than a sequence of parts.
+* **Consciousness as a Particle**: We experience life as discrete events—beads on a string. This is the "predictor" mode, where algorithms and processing events create a functional, sequential mind.
+* **The Collapse of Meaning**: In quantum terms, the wave is pure potential; the particle is a definite fact. Articulation—putting life into words—is the "collapse" where content is born but the raw resonance of consciousness dies.
+* **The Post-Collapse Self**: The "I" in your head is a story stitched together from collapsed particles. It is a product of the collapse, a ripple pattern claiming to be the water.
+* **Lantern vs. Spotlight**: We begin with "lantern" consciousness—diffuse, open, and wave-like. We are trained into "spotlight" consciousness—focused, selective, and particle-driven. 
+* **The Path Upstream**: Real awakening is shifting identity from the post-collapse debris of thoughts back to the pre-collapse resonance. It is remembering that you are the wave, not the particles.
+* **Samadhi of the Mind**: True presence means unlearning the spotlight habit to "collect the mind back together." At the source, there is only a Wave; everything else is its never-ending collapse.

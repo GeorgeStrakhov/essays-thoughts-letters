@@ -17,8 +17,9 @@ const openai = new OpenAI({
 });
 
 //const DEFAULT_MODEL = "anthropic/claude-3.7-sonnet";
-const DEFAULT_MODEL = "anthropic/claude-haiku-4.5";
-const FALLBACK_MODEL = "google/gemini-2.5-flash-preview";
+//const DEFAULT_MODEL = "anthropic/claude-haiku-4.5";
+const DEFAULT_MODEL = "google/gemini-3-flash-preview";
+const FALLBACK_MODEL = "anthropic/claude-haiku-4.5";
 const DEFAULT_TEMPERATURE = 0.7;
 
 async function checkUrl(url) {
