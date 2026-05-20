@@ -5,3 +5,7 @@ replit.nix
 package-lock.json
 .DS_Store
 .env
+.dev.vars
+.wrangler
+public
+worker-configuration.d.ts

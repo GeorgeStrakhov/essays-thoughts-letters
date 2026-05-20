@@ -1,33 +1,31 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "essays-thoughts-letters",
+  "version": "2.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js --watch essays --watch views --watch static --watch toc.json --watch index.js",
-    "corpus": "node scripts/buildCorpus.js",
-    "update-toc": "node scripts/updateToc.js"
+    "dev": "npm run build:assets && wrangler dev",
+    "deploy": "npm run build:assets && wrangler deploy",
+    "build:assets": "node scripts/build-assets.js",
+    "build:corpus": "node scripts/buildCorpus.js",
+    "update-toc": "node scripts/updateToc.js",
+    "db:migrate:local": "wrangler d1 migrations apply essays-thoughts-letters --local",
+    "db:migrate:remote": "wrangler d1 migrations apply essays-thoughts-letters --remote",
+    "db:seed:local": "node scripts/seed.js --local",
+    "db:seed:remote": "node scripts/seed.js --remote",
+    "typegen": "wrangler types"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@types/node": "^18.0.6",
-    "dotenv": "^16.4.7",
-    "express": "^4.18.2",
-    "express-handlebars": "^6.0.6",
-    "markdown-it": "^13.0.1",
-    "markdown-it-attrs": "^4.1.6",
-    "markdown-it-footnote": "^3.0.3",
-    "marked": "^4.2.12",
-    "node-fetch": "^3.3.2",
-    "openai": "^4.83.0",
-    "postmark": "^4.0.5",
-    "xml": "^1.0.1"
+    "hono": "^4.6.14",
+    "markdown-it": "^14.1.0",
+    "markdown-it-attrs": "^4.3.0",
+    "markdown-it-footnote": "^4.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "@cloudflare/workers-types": "^4.20251101.0",
+    "@types/markdown-it": "^14.1.2",
+    "@types/markdown-it-footnote": "^3.0.4",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.93.0"
   }
 }

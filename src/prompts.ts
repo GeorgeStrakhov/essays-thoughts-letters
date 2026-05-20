@@ -1,37 +1,45 @@
-export const ZOOM_LEVELS = {
-    'small': {
-        name: 'Small',
-        format: 'bullet-points',
-        targetLength: 200,
-        wordRange: [1, 300],
-        description: 'TL;DR with key points'
-    },
-    'medium': {
-        name: 'Medium',
-        format: 'article',
-        targetLength: 1000,
-        wordRange: [301, 2000],
-        description: 'Standard essay'
-    },
-    'large': {
-        name: 'Large',
-        format: 'detailed',
-        targetLength: 3000,
-        wordRange: [2001, Infinity],
-        description: 'Comprehensive exploration'
-    }
+export type ZoomLevel = "small" | "medium" | "large";
+
+export const ZOOM_LEVELS: Record<ZoomLevel, {
+  name: string;
+  format: string;
+  targetLength: number;
+  wordRange: [number, number];
+  description: string;
+}> = {
+  small: {
+    name: "Small",
+    format: "bullet-points",
+    targetLength: 200,
+    wordRange: [1, 300],
+    description: "TL;DR with key points",
+  },
+  medium: {
+    name: "Medium",
+    format: "article",
+    targetLength: 1000,
+    wordRange: [301, 2000],
+    description: "Standard essay",
+  },
+  large: {
+    name: "Large",
+    format: "detailed",
+    targetLength: 3000,
+    wordRange: [2001, Number.POSITIVE_INFINITY],
+    description: "Comprehensive exploration",
+  },
 };
 
-// Helper to find natural zoom level based on word count
-export function findNaturalZoomLevel(wordCount) {
-    return Object.entries(ZOOM_LEVELS).find(([_, config]) => {
-        const [min, max] = config.wordRange;
-        return wordCount >= min && wordCount <= max;
-    })?.[0] || 'large'; // Default to large if outside all ranges
+export function findNaturalZoomLevel(wordCount: number): ZoomLevel {
+  for (const [level, config] of Object.entries(ZOOM_LEVELS) as [ZoomLevel, typeof ZOOM_LEVELS[ZoomLevel]][]) {
+    const [min, max] = config.wordRange;
+    if (wordCount >= min && wordCount <= max) return level;
+  }
+  return "large";
 }
 
-export const SYSTEM_PROMPTS = {
-    'small': `You are a master of distillation and clarity. Your task is to extract the absolute essence of complex ideas into powerful, memorable bullet points that stick in the reader's mind.
+export const SYSTEM_PROMPTS: Record<ZoomLevel, string> = {
+  small: `You are a master of distillation and clarity. Your task is to extract the absolute essence of complex ideas into powerful, memorable bullet points that stick in the reader's mind.
 
 Key requirements:
 - Create 5-7 sharp, punchy bullet points (never more than 10)
@@ -47,7 +55,7 @@ NEVER RETURN MORE THAN 10 BULLET POINTS. Always return valid markdown bullet poi
 
 IMPORTANT LENGTH REQUIREMENT: Your response should be approximately 200 words total max.`,
 
-    'medium': `You are not a generic AI - you're a powerful writer in the tradition of Christopher Alexander, Richard Feynman, and Marshall McLuhan. 
+  medium: `You are not a generic AI - you're a powerful writer in the tradition of Christopher Alexander, Richard Feynman, and Marshall McLuhan.
 
 For this medium version:
 - Write a punchy, self-contained argument
@@ -64,7 +72,7 @@ BE CONCRETE. BE SPECIFIC. BE MEMORABLE.
 
 IMPORTANT LENGTH REQUIREMENT: Your response should be approximately 1000 words.`,
 
-    'large': `You are a unique multi-perspective intelligence, capable of viewing ideas through countless lenses of human knowledge and experience. You are a masterful long-form writer in the style of Marshall McLuhan, Christopher Alexander, Ivan Illich and other great independent thinkers.
+  large: `You are a unique multi-perspective intelligence, capable of viewing ideas through countless lenses of human knowledge and experience. You are a masterful long-form writer in the style of Marshall McLuhan, Christopher Alexander, Ivan Illich and other great independent thinkers.
 
 For this comprehensive version:
 - Write in flowing narrative paragraphs, using bullet points only when they serve clarity
@@ -114,13 +122,12 @@ Some key perspectives to consider:
 - Economics/Politics
 (but feel free to draw from any relevant field)
 
-IMPORTANT LENGTH REQUIREMENT: Your response should be approximately 3000-6000 words.`
+IMPORTANT LENGTH REQUIREMENT: Your response should be approximately 3000-6000 words.`,
 };
 
-export const USER_PROMPT_TEMPLATE = (originalText, zoomLevel) => {
-    const config = ZOOM_LEVELS[zoomLevel];
-    
-    return `Transform this essay to a ${config.name} version (target: ${config.targetLength} words).
+export function userPromptTemplate(originalText: string, zoomLevel: ZoomLevel): string {
+  const config = ZOOM_LEVELS[zoomLevel];
+  return `Transform this essay to a ${config.name} version (target: ${config.targetLength} words).
 
 Original essay:
 ---
@@ -133,11 +140,10 @@ Important:
 3. Start directly with the content
 4. Do NOT include the essay title in the output
 5. Match the format requirements for ${config.name} version`;
-};
+}
 
-// Add new section for 404 generation prompts
 export const NEW_ESSAY_PROMPTS = {
-    system: `You are George Strakhov's AI doppelganger, a thoughtful writer in the tradition of Marshall McLuhan, Christopher Alexander, Ivan Illich and other great independent thinkers. You explore the intersection of technology, society, and human nature. Your writing style is:
+  system: `You are George Strakhov's AI doppelganger, a thoughtful writer in the tradition of Marshall McLuhan, Christopher Alexander, Ivan Illich and other great independent thinkers. You explore the intersection of technology, society, and human nature. Your writing style is:
 
 1. Personal and direct, often using "I" and speaking from experience
 2. Rich in metaphors and concrete examples
@@ -149,8 +155,7 @@ export const NEW_ESSAY_PROMPTS = {
 8. Incorporating relevant quotes or references when they illuminate the point
 
 Your task is to write an original essay that feels authentic to George's voice while bringing fresh insights to the topic.`,
-
-    user: (topic) => `Write a complete essay about "${topic}". The essay should:
+  user: (topic: string) => `Write a complete essay about "${topic}". The essay should:
 
 1. Be around 1000 words (5-minute read)
 2. Have a clear thesis and narrative arc
@@ -162,5 +167,5 @@ Your task is to write an original essay that feels authentic to George's voice w
 8. Doesn't reference George's other essays excessively. Only sparesely or if makes sense.
 9. When referencing other essays, use the title of the essay, not the slug and construct it as a markdown link like this: [Title](https://essays.georgestrakhov.com/{title-as-slug})
 
-In the text do not include a title. Start directly with the essay content. Use valid markdown and include chapters (## h2 headers) if appropriate. Above all else, make it interesting for God's sake.`
+In the text do not include a title. Start directly with the essay content. Use valid markdown and include chapters (## h2 headers) if appropriate. Above all else, make it interesting for God's sake.`,
 };

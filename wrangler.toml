@@ -1,0 +1,36 @@
+name = "essays-thoughts-letters"
+main = "src/index.tsx"
+compatibility_date = "2026-05-20"
+compatibility_flags = ["nodejs_compat"]
+account_id = "a7b1e373a9581b6f04e2a48d3abc9aa3"
+workers_dev = true
+preview_urls = false
+
+routes = [
+  { pattern = "essays.georgestrakhov.com", custom_domain = true }
+]
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[vars]
+BASE_URL = "https://essays.georgestrakhov.com"
+RECAPTCHA_SITE_KEY = "6Lcd0M8qAAAAAIcq38vEPUsdZ9clKiunuZAF_cy8"
+ADMIN_EMAIL = "george@move38.org"
+FROM_EMAIL = "admin@move38.org"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "essays-thoughts-letters"
+database_id = "7387d63c-a5e0-4b22-9084-14ff5840e2ef"
+
+# Bundle CORPUS.md and the seed JSON as importable text modules.
+[[rules]]
+type = "Text"
+globs = ["**/*.md", "**/*.txt"]
+fallthrough = true
