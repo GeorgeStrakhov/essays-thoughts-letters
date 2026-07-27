@@ -648,11 +648,12 @@
   {
     "title": "Artificial Creativity Manifesto",
     "description": "Artificial Intelligence is here. The next frontier is Artificial Creativity.",
+    "featured_image": "https://essays.georgestrakhov.com/artificial-creativity-manifesto/img/manifesto.jpeg",
     "slug": "artificial-creativity-manifesto",
     "timestamp": "020260727",
     "versions": {
       "medium": {
-        "wordCount": 1386,
+        "wordCount": 1401,
         "isOriginal": true
       }
     },

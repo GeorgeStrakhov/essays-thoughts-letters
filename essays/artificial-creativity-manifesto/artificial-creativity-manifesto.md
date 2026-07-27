@@ -1,3 +1,5 @@
+![A robotic hand and a human hand reaching toward each other, sparking at the fingertips](./img/manifesto.jpeg)
+
 1. Artificial Intelligence is here. The next frontier is Artificial Creativity.  
      
 2. Current AI systems are great (and will get better) at coding, math, science etc. i.e. domains where there is a verifiable and context-independent correct answer or objectively optimal solution to strive for.  
