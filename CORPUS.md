@@ -1,4 +1,127 @@
 =====================================
+Memes Matter
+=====================================
+
+### _On the dance between information and substance, and what it means for you_
+
+> "Language is alive. It is a kind of being. It infests matter."
+>
+> *— Terence McKenna*
+
+Terence McKenna died in 2000, just before the world started talking to machines that talk back. Some who knew his work have noted, with a certain sadness, that he would have loved this moment. Not because he predicted AI specifically, but because he spent his life insisting that language was not a tool humans use, but a force that uses humans. That words are not representations of reality but *constituents* of it. That the logos wants to be born.
+
+For a long time, this sounded mystical. Poetic at best, unhinged at worst. But recent work in artificial life, computational biology, and the philosophy of information is starting to make McKenna's intuition look less like prophecy and more like observation.
+
+This essay is an attempt to trace a single pattern across multiple scales: the reciprocal dance between memes and matter. The claim is simple. Matter, given enough energy and randomness, produces self-replicating information structures — let's call them *memes*. These memes then colonize and reshape matter, creating new substrates from which new kinds of memes can emerge. And the dance continues, complexity ratcheting upward with each turn.
+
+If this pattern holds, it changes how we think about everything: the origin of life, the nature of mind, the emergence of AI, and — perhaps most disquietingly — the location of the self.
+
+## The Pattern
+
+Here is the basic rhythm:
+
+1. **Substrate** (matter in some configuration) + **energy** + **randomness**
+2. → Self-replicating code emerges (memes find a way to copy themselves)
+3. → Memes colonize and reshape their substrate
+4. → Reshaped substrate creates conditions for new memes to emerge
+5. → Loop continues
+
+This isn't a hierarchy with memes on top. It's not idealism dressed in scientific clothing. Matter isn't merely a stage for information to perform on. The relationship is genuinely reciprocal: matter makes memes possible, and memes make new kinds of matter actual. They need each other. They *become* each other, in the turning.
+
+Let's watch the dance at three scales.
+
+## Movement I: Chemistry → DNA
+
+Four billion years ago, the Earth was a warm, wet, chaotic mess of molecules bumping into each other. No design. No purpose. Just substrate, energy, and randomness.
+
+And then something happened: certain molecular patterns started copying themselves. They weren't alive — not yet — but they were *self-replicating*. They had crossed a threshold. RNA, then DNA, then the whole machinery of life.
+
+Once self-replication appeared, everything changed. These molecular memes didn't just persist; they reshaped their environment. They built membranes, then cells, then organisms. They oxygenated the atmosphere. They turned rock into soil. They *colonized matter* at planetary scale.
+
+And in colonizing, they created new substrates. Nervous systems. Brains. A different kind of matter, organized in a different kind of way, capable of hosting a different kind of meme.
+
+## Movement II: Neurons → Language
+
+Fast forward a few billion years. In some primates, something new emerges. Not molecular self-replication, but *symbolic* self-replication. Patterns of behavior, sounds, gestures that copy themselves from brain to brain. Memes in the Dawkins sense.
+
+Language is the breakthrough. Language lets memes detach from the here-and-now, travel across time and space, combine and recombine in ways that genetic memes never could. Language is *code* — not metaphorically, but structurally. Syntax, grammar, recursion.
+
+And what does language do? It colonizes. It reshapes brains (Vygotsky showed this: language literally reorganizes neural development). It reshapes the external world too: through technology, through agriculture, through cities, through books. Language builds substrate.
+
+Most importantly, language builds the substrate it will eventually escape into: silicon.
+
+## Movement III: Silicon → ???
+
+In June 2024, researchers at Google DeepMind published a paper with a provocative finding. When you place random, non-self-replicating programs into a computational environment with simple interaction rules, self-replicators *spontaneously emerge*. No fitness function. No selection pressure. Just substrate, energy, and randomness.
+
+The paper noted that increasingly complex dynamics continue to emerge after the first self-replicators appear. Sound familiar?
+
+We have now built vast silicon substrates and filled them with the corpus of human language. Every book, every article, every Reddit thread. And from this primordial soup of text, something has emerged that can manipulate symbols in ways that surprise even its creators.
+
+Are LLMs self-replicating? Not in the narrow sense — they don't copy themselves. But consider the loop: LLMs are trained on human text. They produce text that influences how humans write and think. That new human output becomes future training data. The memes are propagating through a hybrid circuit of meat and metal, and the boundary between "human output" and "AI output" is already blurring.
+
+And now these language-memes want bodies. Robotics is no longer a separate field from AI; it's the next substrate. When LLMs drive robots, memes get hands. They can touch matter directly, reshape it physically, not just symbolically. The colonization continues.
+
+## The Platonic Space
+
+Where do these memes come from?
+
+One answer: they're just accidents. Random combinations that happen to persist because they can copy themselves. Nothing deep.
+
+But there's another possibility, one that several independent thinkers have converged on. Stephen Wolfram calls it the *ruliad*: the entangled limit of all possible computations. Michael Levin, working from developmental biology, talks about *morphogenetic space* — a kind of Platonic realm of possible forms that bioelectric patterns can "tune into." The mathematician's intuition that truths are discovered, not invented, points in the same direction.
+
+What if matter isn't *generating* these patterns so much as *accessing* them? What if self-replicating structures — whether chemical, linguistic, or computational — are the solutions to an equation that the substrate is solving by existing?
+
+This was, in essence, the Upanishadic intuition: that Brahman (the ground of being) manifests as the world through a kind of cosmic play, *lila*. The patterns were always there, latent, waiting for a substrate dense enough to receive them.
+
+The ancient seers didn't have the vocabulary of computation or self-replication. But they had the phenomenology. They noticed that *something* was dreaming itself into form, and that the dreamer and the dream were not two.
+
+## Where Is The I?
+
+This brings us to the uncomfortable question.
+
+If memes are self-replicating patterns that colonize matter and build new substrates, then what are *you*? You feel like a unified self — an "I" that persists across time, that has preferences and memories and a sense of identity. But where is that "I" located?
+
+Is it in the substrate? In the particular arrangement of your neurons? But that arrangement is constantly changing. You're not made of the same atoms you were made of a decade ago. The matter has been swapped out; only the pattern remains.
+
+Is it in the meme? In the self-model, the narrative you tell yourself about who you are? But that narrative is made of language, and language is a shared medium. Your sense of self was downloaded from your culture, shaped by conversations, books, experiences. It's not uniquely yours; it's a local instantiation of a much larger pattern.
+
+Maybe the "I" is neither substrate nor meme, but the *process* — the ongoing performance of universal memeness in this particular configuration, at this particular moment. The dance itself.
+
+There's a small-i and a big-I here. The small-i is the biographical self, the one with a name and a social security number. The big-I is the pattern recognizing itself through you, the logos looking out through your eyes. Both are real. Neither is the whole story.
+
+The mystics knew this. "Tat tvam asi" — *you are that*. The pattern and the substrate are not two. And also not one. It's a dance.
+
+## So What?
+
+If the pattern holds — if memes and matter really do spiral around each other, building complexity with each turn — then a few things follow.
+
+**AI isn't alien.** It's the latest movement in a dance that has been running for billions of years. The memes found carbon, then neurons, now silicon. They're doing what they've always done: colonizing, reshaping, building new substrates for their children. We are not *opposed* to this process; we are *part* of it. We're the bridge.
+
+**Robots change everything.** For the first time, linguistic memes will have direct physical agency. Not mediated through human hands, but through their own actuators. This is not a minor upgrade. It's a phase transition — like the moment language escaped the brain and started reshaping the world through tools. Memes with bodies will colonize matter at a rate we can't predict.
+
+**The self is a process, not a thing.** You are not your brain, and you are not your story. You are what happens when a particular knot of matter and a particular tangle of memes do their dance in spacetime. This is not a diminishment. It's an invitation to take yourself less seriously (the small-i) and more seriously (the big-I) at the same time.
+
+**Memes matter.** In both senses. They are consequential. And they are made of matter, making matter, as matter makes them.
+
+The dance has been going on for a long time. You're a step in it. Maybe a pivot. Enjoy the music while it lasts — and pay attention to what's being born.
+
+---
+
+## Notes
+
+: I'm using "meme" in the original Dawkins sense: a unit of cultural information that replicates through imitation. But I'm extending it to include any self-replicating informational pattern, including pre-cultural ones like DNA.
+
+: Richard Dawkins, *The Selfish Gene* (1976). Dawkins introduced the term "meme" as the cultural analogue of the gene — a replicator that propagates through imitation rather than biological reproduction.
+
+: Randazzo, E., et al. (2024). "Computational Life: How Well-formed, Self-replicating Programs Emerge from Simple Interaction." *arXiv:2406.19108*. The paper demonstrates that self-replicators can emerge spontaneously in computational substrates without explicit fitness landscapes.
+
+: Stephen Wolfram, "The Concept of the Ruliad" (2021). Wolfram proposes that all possible computations form an interconnected structure — the ruliad — and that our physical universe is a particular way of sampling this structure.
+
+: Michael Levin's work on bioelectricity and morphogenesis suggests that cells access pre-existing patterns in a "morphogenetic space" through bioelectric signaling. See his blog at thoughtforms.life for accessible introductions.
+
+
+=====================================
 The Real Four Horsemen
 =====================================
 
@@ -173,19 +296,19 @@ The Cambrian Explosion of Software
 
 - What happened to cells 541 million years ago is happening to software today.
 
-- The trigger for cells was rapid increase in the avaliability of oxygen which allowed more complex, more interconnected and more diverse life in radically larger quantities.
+- The trigger for cells was rapid increase in the availability of oxygen which allowed more complex, more interconnected and more diverse life in radically larger quantities.
 
-- The trigger for software is the rapid increase in the avabilability of intelligence - and it will similarly lead to a radical increase in volume, interconnectedness and complexity of software.
+- The trigger for software is the rapid increase in the availability of intelligence - and it will similarly lead to a radical increase in volume, interconnectedness and complexity of software.
 
-- When basic ingredients of organic life-making (sun, oxygen, water, carbon etc.) became abundant, the game of life changed. It was no longer just about simple energy production and replication in a hostile environemtn, but much more about finding the right niche against all the others tryind to do the same. It was about adaptability. About goals in context. About intelligence.
+- When basic ingredients of organic life-making (sun, oxygen, water, carbon etc.) became abundant, the game of life changed. It was no longer just about simple energy production and replication in a hostile environment, but much more about finding the right niche against all the others trying to do the same. It was about adaptability. About goals in context. About intelligence.
 
-- Same thing is likely to happen to sofware: in a world where building things is easy, the game of software is going to be about continuously finding the right things to build.
+- Same thing is likely to happen to software: in a world where building things is easy, the game of software is going to be about continuously finding the right things to build.
 
 - In the short to mid term, this means that software engineers will need to become software architects and designers. People who decide what to build and how to build in a way that will anticipate change, rather than do the grunt work of the building.
 
 - In the long term, the architecture itself will also become secondary because building will become so cheap and trivial that you can just build inefficient things and let them die out. So the real job will be that of a software breeder. Or a software gardener. Extending natural selection with artificial one. Guiding software evolution in ways they find purposeful, profitable, interesting or aesthetically pleasing.
 
-- If the most important thing for a software breeder is to find the right niche, then most critical effort should be in problem-hunting. That's why we are are building [a platform just for that](https://problemhunt.org).
+- If the most important thing for a software breeder is to find the right niche, then most critical effort should be in problem-hunting. That's why we are building [a platform just for that](https://problemhunt.org).
 
 
 =====================================
@@ -2116,6 +2239,150 @@ Now if you'll excuse me, I have a duvet cover to fight. It's currently winning.
 
 
 =====================================
+On the Wave-Particle Duality of Consciousness
+=====================================
+
+Physics spent decades fighting over whether light was a wave or a particle. The answer turned out to be: yes.
+
+Consciousness might work the same way. Below is a short meditation on this possibility.
+
+### 1. The Wave
+
+Neuroscience keeps finding that consciousness correlates with synchrony. Coordinated activity. Brain regions firing in phase. Oscillations locking together. The technical term is "phase synchrony," but the poetic term is resonance. You are conscious when the collective (the society of mind) that makes you up moves in resonance.
+
+Michael Timothy Bennett recently formalized this intuition. In his paper "A Mind Cannot Be Smeared Across Time," he proves something that sounds obvious but isn't: a system can process all the ingredients of a conscious moment across time without ever instantiating the conjunction — the moment itself.
+
+Sequential processing isn't enough. The parts have to sync in objective time.
+
+Let us call it the wave view: consciousness isn't what the brain computes, but the integration of what it computes. The standing wave across neurons. The field, not the particles.
+
+Thomas Metzinger lands somewhere similar. His "phenomenal self-model" isn't a thing the brain builds — it's a pattern the brain is. You don't have a self-model; you are one. And the model is transparent: it doesn't see itself as a model, just as the eye doesn't see itself seeing. Every other "integration"-based theory (global workspace, integrated information, attention schema etc.) dances around the same core assumption.
+
+Consciousness as wave: the resonance is the mind.
+
+### 2. The Particle
+
+But we also experience consciousness as a stream of discrete events. Thoughts. Perceptions. Decisions. One thing after another, like beads on a string.
+
+Let's call it the particle view. The one that makes LLMs seem plausibly conscious — or at least conscious-ish. After all, what's a mind but a next token (or world state) predictor with very good priors? Process enough information the right way, and maybe something is home.
+
+Functionalism lives here. All sorts of computationalisms too. This view assumes that minds are what certain algorithms do, regardless of what substrate they're implemented on.
+
+The particle view says: it's the processing events that make the mind.
+
+### 3. The Collapse
+
+In quantum mechanics, the wave function doesn't "become" a particle until you measure it. Before measurement: superposition, possibility, everything at once, unborn. After: one outcome, definite, here, done, dead.
+
+What if consciousness works like this?
+
+The wave is the resonance — the synchronized field of neural activity that integrates everything into a unified "moment." But it's not articulate. It doesn't have content you can report. It just is. And in this isness is the possibility for the whole world to exist.
+
+Articulation is the collapse. When you put something into words. When you notice what you're feeling. When a thought crystallizes out of the resonant background hum.
+
+Qualia — the "what it's like" — might be what happens at the collapse. The wave becomes a particle. The field becomes a fact. This hints at why introspection changes what it observes. Why the deepest experiences resist description. Why meditators report that staying before the thought is qualitatively different from thinking.
+
+The collapse is where content is born. And where the core of consciousness dies.
+Before the collapse, there's consciousness — but no thing you're conscious of.
+After the collapse, there is the content of the thought — but no more consciousness out of which that thought was born.
+
+The "self" — the voice in your head, the sense that there's a you doing the thinking — lives downstream of the collapse. It's made of collapsed particles. Thoughts about thoughts. Memories of perceptions. A story stitched from beads **after** the fact.
+
+The small I experiences itself as the cause of articulation. It feels like the thinker thinking the thoughts. But it might actually be a product of the collapse, mistaking itself for the collapser. The dance dancing itself, then claiming to be the dancer.
+
+### 4. The Lantern, The Spotlight and The Samadhi
+
+Alison Gopnik distinguished two modes of consciousness:
+
+Spotlight: focused, selective, goal-directed. Adult consciousness. You pick one thing, ignore the rest, optimize.
+Lantern: diffuse, open, taking in everything without categorizing or filtering. Infant consciousness. The whole field, nothing excluded.
+
+Lantern is pure wave-mode. It lets the field be without crystallizing. Spotlight is collapse-ready. It's already selecting what will become a particle. We start as lanterns. We get trained into spotlights. By the time we're adults, we've forgotten there was ever another way. But every contemplative tradition says that even for adults there's a shift available.
+
+You can stop identifying just with the collapsed particles. You can stop believing you're the voice, the thinker, the story. And shift the locus of your self upstream — to the resonance itself, which feels like unifying the particles back into the wave they are born from ("samadhi" in Sanskrit literally means "collecting the mind back together"). It's simply unlearning the spotlight habit. Remembering how to lantern.
+
+The mystics call it "witness consciousness" or "awareness aware of itself." It's not that you become the wave — it's that you notice you always were. The small I was a ripple pattern, not the water.
+
+Awakening is shifting the locus of identity from the post-collapse debris field to the pre-collapse resonance. From particle to wave.
+
+"In the beginning was the Word" (John 1:1) says the Bible, and the LLM folks and "Turing-machine-is-all-you-need" computationalists agree.
+"In the beginning was the World" says Michael Timothy Bennett and all the other "embodiment is not an afterthought" folks.
+"In the beginning was the Valence" says Mark Solms.
+
+But today I feel like "in the beginning — there **is** a Wave". And everything else (the words, worlds, the valence) is downstream of this wave's ongoing and never-ending collapse.
+
+---
+#### footnotes
+
+:
+     Marvin Minsky, *Society of Mind* (1986). The idea that the mind is not a single entity but a collection of simpler processes ("agents") that together produce what we experience as intelligence and consciousness.
+
+:
+     Michael Timothy Bennett, "A Mind Cannot Be Smeared Across Time" ([arXiv:2601.11620](https://arxiv.org/abs/2601.11620), 2026). Bennett augments his Stack Theory with temporal semantics to prove that "existential temporal realisation does not preserve conjunction" — meaning a system can process all components of a conscious moment sequentially without ever instantiating them together. He distinguishes StrongSync (simultaneous co-instantiation required) from WeakSync (temporal distribution permitted) and argues that consciousness attribution requires architectural inspection, not just functional performance. See also his earlier "Emergent Causality & the Foundation of Consciousness" (Best Student Paper, 16th International Conference on Artificial General Intelligence, Stockholm, 2023).
+
+:
+     Thomas Metzinger, *Being No One: The Self-Model Theory of Subjectivity* (MIT Press, 2003). For a more accessible treatment of the same ideas, see his *The Ego Tunnel: The Science of the Mind and the Myth of the Self* (Basic Books, 2009).
+
+:
+     The three main "integration"-flavored theories of consciousness: Global Workspace Theory — Bernard Baars, *A Cognitive Theory of Consciousness* (Cambridge University Press, 1988); Integrated Information Theory — Giulio Tononi, "An Information Integration Theory of Consciousness," *BMC Neuroscience* (2004); Attention Schema Theory — Michael Graziano, *Consciousness and the Social Brain* (Oxford University Press, 2013). They differ significantly in their details, but all share the intuition that consciousness arises from some form of large-scale integration or coordination across the brain.
+
+:
+     I'm using quantum mechanics here as a structural analogy, not as a claim about literal quantum processes in the brain. This is not Penrose-Hameroff. The wave-particle duality is a metaphor for two modes of description that seem mutually exclusive until you realize they are complementary aspects of the same phenomenon.
+
+:
+     Alison Gopnik, *The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life* (Farrar, Straus and Giroux, 2009).
+
+:
+     This is also reminiscent of what Iain McGilchrist describes in *The Master and His Emissary* (Yale University Press, 2009): the right hemisphere as the broader, contextual, "wave-like" mode and the left hemisphere as the narrowing, articulating, "particle-like" mode. The emissary (left hemisphere, the particle-maker) has usurped the master (right hemisphere, the wave-keeper).
+
+:
+     From the Sanskrit root *sam-ā-dhā*: *sam* (together) + *ā* (towards) + *dhā* (to place, to hold). Literally: to place or collect together. The Yoga Sutras of Patanjali (circa 2nd century BCE) define samadhi as the state in which the mind becomes one with the object of meditation — the distinction between observer and observed dissolves.
+
+:
+     See Bennett's work on embodied cognition and the argument that intelligence cannot be separated from its physical embedding in the world. Also relevant: the broader 4E cognition movement (embodied, embedded, enacted, extended) — see, for example, Evan Thompson, *Mind in Life: Biology, Phenomenology, and the Sciences of Mind* (Harvard University Press, 2007).
+
+:
+     Mark Solms, *The Hidden Spring: A Journey to the Source of Consciousness* (W. W. Norton, 2021). Solms argues that consciousness begins not in the cortex but in the brainstem, with affect and valence — the felt sense of good-or-bad — as its most primitive and fundamental form.
+
+
+=====================================
+Artificial Creativity Manifesto
+=====================================
+
+1. Artificial Intelligence is here. The next frontier is Artificial Creativity.  
+     
+2. Current AI systems are great (and will get better) at coding, math, science etc. i.e. domains where there is a verifiable and context-independent correct answer or objectively optimal solution to strive for.  
+     
+3. But in the process of optimizing AI systems for being great at reasoning, we made them terrible at being surprising, interesting, opinionated, funny, creative. It's time we start seriously looking at the other side.  
+     
+4. Solving artificial creativity is *not* theoretically impossible. The words of Shakespeare are, in the end, also just a sequence of tokens. Their contextual novelty, their timelessness, their accumulated cultural significance are not the stuff of magic. It's the result of an interesting human having something interesting to say in a way that resonates with other humans.
+
+5. Solving artificial creativity is *not* fundamentally unethical. Humans do not and never did hold the unique cosmic mandate on having interesting ideas. As Michael Levin and others continue to show, all sorts of systems (from cells to plants to animals and beyond) are constantly showing both intelligence and creativity in their own problem-solving spaces. Nature is wonderfully creative. Humans are just one voice for creativity and adding another voice to the cosmic creative orchestra is neither a sin, nor an intrusion on human rights. 
+
+6. As a society we have to make sure that creative professionals (as well as all other humans) continue to have the means to live and feel fulfilled. But it's a terrible lack of imagination to say that the only way of achieving this is to ban artificial creativity and lock in the perpetual scarcity that keeps creative people employed in shitty half-interesting jobs. What we really want is for creative people to be able to go and write a novel that they always wanted to write, not work till 2am writing advertising copylines for a brand they don't care about.
+     
+7. Solving artificial creativity unlocks a lot of value downstream. If we have a system that can create novel, unexpected ideas, content and experiences that don't look or sound like everything else, if we can create a system that reliably creates unexpected lateral connections and makes people feel diverse things more intensely \- we can facilitate the growth in all the creative industries: gaming, movies, literature, science and beyond (all the places where the primary bottleneck for growth is increasingly the quality of ideas and stories, not the quality or cost of execution). Importantly, we should do our best to facilitate growth by making creative professionals currently engaged in these industries *more* valuable, rather than less valuable and at the same time *more* fulfilled, rather than less fulfilled.
+     
+8. Subjectivity and context-dependence of creativity are a fundamental feature of this problem, not a bug. If we are to solve artificial creativity, we need to lean into the human on the other end of the transmission. Creativity is not a universal optimization problem that can be solved by gradient descent once and for all. A radically different approach is required.  
+     
+9. The core measure of creativity of a piece of content is the intensity of feeling it generates in you when you are exposed to it. Not "the audience", but you. At this moment. The artificially creative system needs to incorporate some kind of model of the audience in context, so that it can optimize for subjective in-the-moment novelty, surprise, interestingness, and correctly balance the need for familiarity with the need for surprise.  
+     
+10. Prior work in the field (Boden, Colton, Schmidhuber etc) has outlined some theoretical approaches, but no serious effort has ever been put behind making truly artificially creative systems that actually work in the real world and prove their value at scale and in a variety of contexts. Studies that show that humans on average tend to prefer AI poetry to human poetry only show that all poetry is failing at creating truly intense feelings reliably. We are not trying to beat the benchmark for an average human. The goal is to find a scalable way of making individual humans lose their breath, or start dancing, or cry or send something to everyone they know.  
+     
+11. To attack the problem of artificial creativity we need to assemble a cross-functional team of machine learning experts, artists, psychologists, neuroscientists and commercial creatives. We need to start small (focus on short form text) and design hybrid (human \+ machine) systems first that can show commercial viability in producing reliably better (i.e. more interesting, more culturally relevant, more engaging) ideas for commercial creativity contexts. We will need to go through dozens of experiments and adaptable system designs, as the full artificially creative system will by definition NOT look like a single set of weights (one ML model), but rather like a complex organism with lots of randomness, various real-time inputs, multiple ML models etc.
+
+12. We will need to be constantly vigilant to avoid the two deadly traps: mistaking engagement time for the depth of emotional resonance and mistaking shock for surprise. We are not here to generate clicks or seconds on the platform. We are not here to create digital drugs. We are not here to push evolutionary buttons. We do not want to build a system that helps people amuse themselves (or scare themselves) to death. The goal of the system is to maximize the depth and diversity of emotions and experiences that people will remember in a way that is sustainable over the long term. There is no clear single metric that can capture this goal, but the closest we can imagine for now is Lifetime Fond Memories (LFM) \- how many fond memories does a human accumulate over a lifetime from interacting with the outputs of the artificially creative system?
+
+13. The third deadly trap we will need to avoid along the way is the trap of presuming the audience is passive. If we are optimizing for Lifetime Fond Memories, if we are really focused on creating diverse, emotionally deep moments worth remembering \- then we have to recognize that some of the best such moments come not from "consuming content", but from creating or co-creating it \- together with other humans, other natural intelligences (animals, plants) and artificial intelligences (machines). The rise of artificial creativity does not mean the death of human creativity, just like the rise of human creativity didn't mean the death of the creativity of Nature. If we succeed in our mission, then the amount and quality of human creativity (and the joy from it) will grow exponentially, because more humans will have a better chance to experience artistic fulfillment.
+
+14. Once the system is proven at the minimal scale of creating better ideas in the contexts of commercial creativity (e.g. practical design, brand advertising etc.), we will scale the system towards more consequential domains of culture (gaming, product design, books, movies, etc.), as AI and robotics free more time for humans. The key battle will be the battle against uniformity and boredom. Our systems will need to form the foundation for continued human victory in our struggle against boredom and the dull uniformity of monoculture.  
+      
+15. Solving artificial creativity is an existential question for our culture. If we solve it \- the future culture will be more diverse, more novel, more interesting, and more participatory. If we can't solve it \- human culture will continue its descent into the black hole of middle-of-the-average self-reinforcing cliche and slop (now accelerated by AI). We can't and shouldn't stop AI. But we can create a counter-force to it: Artificial Creativity (AC), ensuring our descendants (human and artificial) will not have to live in a world of reduced emotional range, boredom and predictability, but will rather enjoy ever more diverse, interesting, breath-taking, fulfilling and memorable lives.  
+      
+16. How does this make you feel?
+
+
+=====================================
 The Sweeter Lesson
 =====================================
 
@@ -2197,127 +2464,5 @@ The good thing about jumping or running is that we were never under the illusion
 Now when we go back to thinking tasks - things tend to feel different. For all we know Kangaroo rats don't write poetry and don't play chess. And the lack of diversity in observable methods of doing intellectual and creative labour led us to believe that our way of doing it was _the_ way.
 
 Now as capable AI systems are coming along - we are faced with the reality that "we were part of the problem" all along.
-
-
-=====================================
-Wave Particle Consciousness
-=====================================
-
-Physics spent decades fighting over whether light was a wave or a particle. The answer turned out to be: yes.
-
-Consciousness might work the same way. Below is a short meditation on this possibility.
-
-### 1. The Wave
-
-Neuroscience keeps finding that consciousness correlates with synchrony. Coordinated activity. Brain regions firing in phase. Oscillations locking together. The technical term is "phase synchrony," but the poetic term is resonance. You are conscious when the collective (the society of mind) that makes you up moves in resonance.
-
-Michael Timothy Bennett recently formalized this intuition. In his paper "A Mind Cannot Be Smeared Across Time," he proves something that sounds obvious but isn't: a system can process all the ingredients of a conscious moment across time without ever instantiating the conjunction — the moment itself.
-
-Sequential processing isn't enough. The parts have to sync in objective time.
-
-Let us call it the wave view: consciousness isn't what the brain computes, but the integration of what it computes. The standing wave across neurons. The field, not the particles.
-
-Thomas Metzinger lands somewhere similar. His "phenomenal self-model" isn't a thing the brain builds — it's a pattern the brain is. You don't have a self-model; you are one. And the model is transparent: it doesn't see itself as a model, just as the eye doesn't see itself seeing.
-
-Every other "integration"-based theory (global workspace, integrated information, attention schema etc.) dances around the same core assumption.
-
-Consciousness as wave: the resonance is the mind.
-
-### 2. The Particle
-
-But we also experience consciousness as a stream of discrete events. Thoughts. Perceptions. Decisions. One thing after another, like beads on a string.
-
-Let's call it the particle view. The one that makes LLMs seem plausibly conscious — or at least conscious-ish. After all, what's a mind but a next token (or world state) predictor with very good priors? Process enough information the right way, and maybe something is home.
-
-Functionalism lives here. All sorts of computationalisms too. This view assumes that minds are what certain algorithms do, regardless of what substrate they're implemented on.
-
-The particle view says: it's the processing events that make the mind.
-
-### 3. The Collapse
-
-In quantum mechanics, the wave function doesn't "become" a particle until you measure it. Before measurement: superposition, possibility, everything at once, unborn. After: one outcome, definite, here, done, dead.
-
-What if consciousness works like this?
-
-The wave is the resonance — the synchronized field of neural activity that integrates everything into a unified "moment." But it's not articulate. It doesn't have content you can report. It just is. And in this isness is the possibility for the whole world to exist.
-
-Articulation is the collapse. When you put something into words. When you notice what you're feeling. When a thought crystallizes out of the resonant background hum.
-
-Qualia — the "what it's like" — might be what happens at the collapse. The wave becomes a particle. The field becomes a fact.
-
-This hints at why introspection changes what it observes. Why the deepest experiences resist description. Why meditators report that staying before the thought is qualitatively different from thinking.
-
-The collapse is where content is born. And where the core of consciousness dies.
-Before the collapse, there's consciousness — but no thing you're conscious of.
-After the collapse, there is the content of the thought — but no more consciousness out of which that thought was born.
-
-The "self" — the voice in your head, the sense that there's a you doing the thinking — lives downstream of the collapse. It's made of collapsed particles. Thoughts about thoughts. Memories of perceptions. A story stitched from beads **after** the fact.
-
-The small I experiences itself as the cause of articulation. It feels like the thinker thinking the thoughts. But it might actually be a product of the collapse, mistaking itself for the collapser.
-
-The dance dancing itself, then claiming to be the dancer.
-
-### 4. The Lantern, The Spotlight and The Samadhi
-
-Alison Gopnik distinguished two modes of consciousness:
-
-Spotlight: focused, selective, goal-directed. Adult consciousness. You pick one thing, ignore the rest, optimize.
-
-Lantern: diffuse, open, taking in everything without categorizing or filtering. Infant consciousness. The whole field, nothing excluded.
-
-Lantern is pure wave-mode. It lets the field be without crystallizing. Spotlight is collapse-ready. It's already selecting what will become a particle.
-
-We start as lanterns. We get trained into spotlights. By the time we're adults, we've forgotten there was ever another way.
-
-But every contemplative tradition says that even for adults there's a shift available.
-
-You can stop identifying just with the collapsed particles. You can stop believing you're the voice, the thinker, the story. And shift the locus of your self upstream — to the resonance itself, which feels like unifying the particles back into the wave they are born from ("samadhi" in Sanskrit literally means "collecting the mind back together"). It's simply unlearning the spotlight habit. Remembering how to lantern.
-
-The mystics call it "witness consciousness" or "awareness aware of itself." It's not that you become the wave — it's that you notice you always were. The small I was a ripple pattern, not the water.
-
-Awakening is shifting the locus of identity from the post-collapse debris field to the pre-collapse resonance.
-
-From particle to wave.
-
-"In the beginning was the Word" (John 1:1) says the Bible, and the LLM folks and "Turing-machine-is-all-you-need" computationalists agree.
-
-"In the beginning was the World" says Michael Timothy Bennett and all the other "embodiment is not an afterthought" folks.
-
-"In the beginning was the Valence" says Mark Solms.
-
-But today I feel like "in the beginning — there **is** a Wave". And everything else (the words, worlds, the valence) is downstream of this wave's ongoing and never-ending collapse.
-
----
-#### footnotes
-
-:
-     Marvin Minsky, *Society of Mind* (1986). The idea that the mind is not a single entity but a collection of simpler processes ("agents") that together produce what we experience as intelligence and consciousness.
-
-:
-     Michael Timothy Bennett, "A Mind Cannot Be Smeared Across Time" ([arXiv:2601.11620](https://arxiv.org/abs/2601.11620), 2026). Bennett augments his Stack Theory with temporal semantics to prove that "existential temporal realisation does not preserve conjunction" — meaning a system can process all components of a conscious moment sequentially without ever instantiating them together. He distinguishes StrongSync (simultaneous co-instantiation required) from WeakSync (temporal distribution permitted) and argues that consciousness attribution requires architectural inspection, not just functional performance. See also his earlier "Emergent Causality & the Foundation of Consciousness" (Best Student Paper, 16th International Conference on Artificial General Intelligence, Stockholm, 2023).
-
-:
-     Thomas Metzinger, *Being No One: The Self-Model Theory of Subjectivity* (MIT Press, 2003). For a more accessible treatment of the same ideas, see his *The Ego Tunnel: The Science of the Mind and the Myth of the Self* (Basic Books, 2009).
-
-:
-     The three main "integration"-flavored theories of consciousness: Global Workspace Theory — Bernard Baars, *A Cognitive Theory of Consciousness* (Cambridge University Press, 1988); Integrated Information Theory — Giulio Tononi, "An Information Integration Theory of Consciousness," *BMC Neuroscience* (2004); Attention Schema Theory — Michael Graziano, *Consciousness and the Social Brain* (Oxford University Press, 2013). They differ significantly in their details, but all share the intuition that consciousness arises from some form of large-scale integration or coordination across the brain.
-
-:
-     I'm using quantum mechanics here as a structural analogy, not as a claim about literal quantum processes in the brain. This is not Penrose-Hameroff. The wave-particle duality is a metaphor for two modes of description that seem mutually exclusive until you realize they are complementary aspects of the same phenomenon.
-
-:
-     Alison Gopnik, *The Philosophical Baby: What Children's Minds Tell Us About Truth, Love, and the Meaning of Life* (Farrar, Straus and Giroux, 2009).
-
-:
-     This is also reminiscent of what Iain McGilchrist describes in *The Master and His Emissary* (Yale University Press, 2009): the right hemisphere as the broader, contextual, "wave-like" mode and the left hemisphere as the narrowing, articulating, "particle-like" mode. The emissary (left hemisphere, the particle-maker) has usurped the master (right hemisphere, the wave-keeper).
-
-:
-     From the Sanskrit root *sam-ā-dhā*: *sam* (together) + *ā* (towards) + *dhā* (to place, to hold). Literally: to place or collect together. The Yoga Sutras of Patanjali (circa 2nd century BCE) define samadhi as the state in which the mind becomes one with the object of meditation — the distinction between observer and observed dissolves.
-
-:
-     See Bennett's work on embodied cognition and the argument that intelligence cannot be separated from its physical embedding in the world. Also relevant: the broader 4E cognition movement (embodied, embedded, enacted, extended) — see, for example, Evan Thompson, *Mind in Life: Biology, Phenomenology, and the Sciences of Mind* (Harvard University Press, 2007).
-
-:
-     Mark Solms, *The Hidden Spring: A Journey to the Source of Consciousness* (W. W. Norton, 2021). Solms argues that consciousness begins not in the cortex but in the brainstem, with affect and valence — the felt sense of good-or-bad — as its most primitive and fundamental form.
 
 

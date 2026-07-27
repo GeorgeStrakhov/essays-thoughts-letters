@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { ZOOM_LEVELS, findNaturalZoomLevel } from '../services/prompts.js';
+import { ZOOM_LEVELS, findNaturalZoomLevel } from '../src/prompts.ts';
 
 // Helper to count words in text
 function countWords(text) {
@@ -13,6 +13,28 @@ function unslugify(slug) {
         .split('-')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
+}
+
+// Helper to pull a short description out of an essay's opening
+function extractDescription(content) {
+    const firstBlock = content.trim().split(/\n\s*\n/)[0] || '';
+
+    // Prefer an explicit subtitle after an em dash, otherwise use the opening block
+    const raw = firstBlock.split('---')[1]?.trim() || firstBlock;
+
+    const cleaned = raw
+        .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')  // markdown links -> their text
+        .replace(/^#+\s*/gm, '')                  // header markers
+        .replace(/^\s*(?:\d+[.)]|[-*])\s*/, '')   // leading list marker
+        .replace(/[#*_`]/g, '')                   // remaining markdown
+        .replace(/\s+/g, ' ')
+        .trim();
+
+    if (cleaned.length <= 200) return cleaned;
+
+    // Too long: fall back to the first sentence, then to a hard truncation
+    const firstSentence = cleaned.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? cleaned;
+    return firstSentence.length <= 200 ? firstSentence : `${cleaned.slice(0, 197).trimEnd()}…`;
 }
 
 // Helper to generate timestamp in required format (YYMMDD with '020' prefix)
@@ -51,14 +73,7 @@ async function updateToc() {
             const naturalZoomLevel = findNaturalZoomLevel(wordCount);
             
             // Look for description in the content (first paragraph)
-            const description = content
-                .split('\n\n')[0]
-                .split('---')[1]?.trim() ||  // Try to get subtitle after em dash
-                content
-                    .split('\n\n')[0]        // Otherwise get first paragraph
-                    .replace(/[#*_`]/g, '')  // Remove markdown formatting
-                    .replace(/^#+\s*/, '')   // Remove header markers
-                    .trim();
+            const description = extractDescription(content);
             
             // Look for featured image in content
             const featuredImageMatch = content.match(/!\[.*?\]\((.*?)\)/);

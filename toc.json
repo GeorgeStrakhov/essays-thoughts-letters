@@ -33,7 +33,7 @@
     "timestamp": "020250206",
     "versions": {
       "small": {
-        "wordCount": 313,
+        "wordCount": 312,
         "isOriginal": true
       },
       "medium": {
@@ -644,5 +644,32 @@
       }
     },
     "naturalZoomLevel": "medium"
+  },
+  {
+    "title": "Artificial Creativity Manifesto",
+    "description": "Artificial Intelligence is here. The next frontier is Artificial Creativity.",
+    "slug": "artificial-creativity-manifesto",
+    "timestamp": "020260727",
+    "versions": {
+      "medium": {
+        "wordCount": 1308,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "medium"
+  },
+  {
+    "title": "The Sweeter Lesson",
+    "description": "In March 2019, just as Deep Learning revolution was gathering steam and the signs of the new AI Spring were starting to become widely visible, Rich Sutton published his \"Bitter Lesson\".",
+    "slug": "the-sweeter-lesson",
+    "timestamp": "020251028",
+    "versions": {
+      "medium": {
+        "wordCount": 1610,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "medium",
+    "isDraft": true
   }
 ]

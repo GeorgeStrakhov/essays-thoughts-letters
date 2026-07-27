@@ -4,7 +4,7 @@ import { upsertEssay, upsertVersion, getEssayWithVersions } from "./db.ts";
 import { sendMarkdownEmail } from "./email.ts";
 import corpusText from "../CORPUS.md";
 
-const MODEL = "anthropic/claude-opus-4.7";
+const MODEL = "anthropic/claude-opus-5-fast";
 const TEMPERATURE = 0.7;
 const MAX_RETRIES = 3;
 
