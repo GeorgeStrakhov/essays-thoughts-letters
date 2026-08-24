@@ -1,6 +1,4 @@
-# The Future Belongs To the Weird
-
-_or the gospel for those out of distribution_
+#### _or the gospel for those out of distribution_
 
 If you were born in pre-modern times, the last thing you wanted to be was weird. Because the most likely outcome of being weird was dying an untimely and painful death. Unusually weak? They will not want to feed you. Unusually strong? They will send you to fight an impossible war. Unusually clever? They will accuse you of witchcraft and burn you at the stake. Yes, there were some exceptions (for example, "freaks" kept as curiosities by the kings), but the general rule for the vast majority of the population was: don't be weird, or get killed.
 

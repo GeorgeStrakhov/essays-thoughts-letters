@@ -672,5 +672,18 @@
     },
     "naturalZoomLevel": "medium",
     "isDraft": true
+  },
+  {
+    "title": "The Future Belongs To The Weird",
+    "description": "the gospel for those out of distribution",
+    "slug": "weird",
+    "timestamp": "020260821",
+    "versions": {
+      "large": {
+        "wordCount": 2661,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "large"
   }
 ]
