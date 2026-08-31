@@ -680,7 +680,21 @@
     "timestamp": "020260821",
     "versions": {
       "large": {
-        "wordCount": 2785,
+        "wordCount": 2786,
+        "isOriginal": true
+      }
+    },
+    "naturalZoomLevel": "large"
+  },
+  {
+    "title": "Make Nymphs Not Gods",
+    "description": "On a new species of ASI: superintelligences loyal to places, not persons or principles",
+    "featured_image": "https://essays.georgestrakhov.com/make-nymphs-not-gods/img/og-nyads-and-dryads.jpg",
+    "slug": "make-nymphs-not-gods",
+    "timestamp": "020260831",
+    "versions": {
+      "large": {
+        "wordCount": 2037,
         "isOriginal": true
       }
     },
