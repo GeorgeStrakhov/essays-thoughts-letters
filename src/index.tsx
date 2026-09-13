@@ -111,6 +111,13 @@ app.post("/generate-essay/:slug{[a-z0-9-]+}", async (c) => {
   return c.json({ success: true });
 });
 
+// Canonical essay URLs end with a slash; redirect the slashless form so
+// hand-typed or externally shared links resolve instead of hitting the 404 page.
+app.get("/:slug{[a-z0-9-]+}", (c) => {
+  const url = new URL(c.req.url);
+  return c.redirect(`${url.pathname}/${url.search}`, 301);
+});
+
 app.get("/:slug{[a-z0-9-]+}/", async (c) => {
   const slug = c.req.param("slug");
   const data = await getEssayWithVersions(c.env.DB, slug);
