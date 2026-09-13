@@ -1,10 +1,14 @@
-import MarkdownIt from "markdown-it";
+import MarkdownIt, { type PluginSimple } from "markdown-it";
 import mdFootnote from "markdown-it-footnote";
 import mdAttrs from "markdown-it-attrs";
 
+// The plugin typings resolve `markdown-it` through the `require` condition of
+// @types/markdown-it (dist/index.cjs.d.ts), while our ESM import resolves through
+// the `import` condition (lib/index.d.ts). The two declare structurally different
+// MarkdownIt types, so the plugins need to be re-typed against ours.
 export const markdown = new MarkdownIt({ html: true })
-  .use(mdFootnote)
-  .use(mdAttrs);
+  .use(mdFootnote as unknown as PluginSimple)
+  .use(mdAttrs as unknown as PluginSimple);
 
 const defaultRender =
   markdown.renderer.rules.link_open ??
